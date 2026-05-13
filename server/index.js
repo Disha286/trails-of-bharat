@@ -4,6 +4,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import dotenv from 'dotenv';
 import authRoutes from './routes/authRoutes.js';
+import destinationRoutes from './routes/destinationRoutes.js';
 
 dotenv.config();
 
@@ -14,6 +15,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({ origin: process.env.CLIENT_URL || 'http://localhost:5173' }));
+app.use('/api/destinations', destinationRoutes);
 app.use(helmet());
 
 // Routes
