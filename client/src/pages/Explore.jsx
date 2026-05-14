@@ -48,6 +48,14 @@ const Explore = () => {
   const [geoLoading, setGeoLoading] = useState(false);
   const [geoError, setGeoError]    = useState('');
 
+  // Sync filters when Navbar links change URL params (SPA navigation)
+  useEffect(() => {
+    const cat = searchParams.get('cat');
+    const q   = searchParams.get('q');
+    if (cat) setActiveCat(cat);
+    if (q)   setQuery(q);
+  }, [searchParams]);
+
   const filtered = useMemo(() => destinations.filter(d => {
     if (query && !d.name.toLowerCase().includes(query.toLowerCase()) && !d.state.toLowerCase().includes(query.toLowerCase()) && !d.tags.some(t => t.toLowerCase().includes(query.toLowerCase()))) return false;
     if (activeCat !== 'all' && d.category.toLowerCase() !== categories.find(c => c.id === activeCat)?.label.toLowerCase()) return false;

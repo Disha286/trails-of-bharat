@@ -8,38 +8,38 @@ const ThemeToggle = () => {
   return (
     <motion.button
       onClick={toggle}
-      whileHover={{ scale: 1.1 }}
+      whileHover={{ scale: 1.08 }}
       whileTap={{ scale: 0.92 }}
       title={dark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+      aria-label={dark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
       style={{
-        position: 'fixed',
-        top: '16px',
-        right: '16px',
-        zIndex: 200,
-        width: '42px',
-        height: '42px',
-        borderRadius: '50%',
+        width: '36px',
+        height: '36px',
+        borderRadius: '10px',
         border: '1.5px solid var(--border)',
         background: 'var(--bg-card)',
-        boxShadow: '0 4px 16px rgba(0,0,0,0.12)',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
         cursor: 'pointer',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         color: dark ? '#FBBF24' : '#6366F1',
-        transition: 'background 0.3s, border-color 0.3s, color 0.3s',
+        transition: 'background 0.25s, border-color 0.25s, box-shadow 0.25s',
+        flexShrink: 0,
       }}
+      onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 4px 14px rgba(99,102,241,.2)'; }}
+      onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)'; }}
     >
       <AnimatePresence mode="wait" initial={false}>
         <motion.span
           key={dark ? 'moon' : 'sun'}
-          initial={{ rotate: -45, opacity: 0, scale: 0.6 }}
+          initial={{ rotate: -30, opacity: 0, scale: 0.7 }}
           animate={{ rotate: 0,   opacity: 1, scale: 1   }}
-          exit={{    rotate:  45, opacity: 0, scale: 0.6 }}
-          transition={{ duration: 0.2, ease: 'easeOut' }}
+          exit={{    rotate:  30, opacity: 0, scale: 0.7 }}
+          transition={{ duration: 0.18, ease: 'easeOut' }}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
         >
-          {dark ? <Sun size={18} strokeWidth={2.2} /> : <Moon size={18} strokeWidth={2.2} />}
+          {dark ? <Sun size={16} strokeWidth={2.2} /> : <Moon size={16} strokeWidth={2.2} />}
         </motion.span>
       </AnimatePresence>
     </motion.button>
