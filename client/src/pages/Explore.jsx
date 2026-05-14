@@ -17,7 +17,7 @@ L.Icon.Default.mergeOptions({
 // Category colour → custom SVG pin
 const catColors = {
   Heritage: '#d97706', 'Eco Tourism': '#16a34a', Adventure: '#0284c7',
-  Spiritual: '#9333ea', Tribal: '#e11d48', Beaches: '#0891b2',
+  Spiritual: '#9333ea', Tribal: '#e11d48', Beaches: '#0891b2', Wildlife: '#15803d',
 };
 const makeIcon = (color) => L.divIcon({
   className: '',

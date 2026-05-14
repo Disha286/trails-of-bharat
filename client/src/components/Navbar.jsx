@@ -9,12 +9,12 @@ const navItems = [
   {
     label: 'Destinations',
     dropdown: [
-      { label: 'Rajasthan',        path: '/explore' },
-      { label: 'Kerala',           path: '/explore' },
-      { label: 'Himachal Pradesh', path: '/explore' },
-      { label: 'Goa',              path: '/explore' },
-      { label: 'Ladakh',           path: '/explore' },
-      { label: 'Tamil Nadu',       path: '/explore' },
+      { label: '🏔️ North India',      path: '/explore?cat=heritage' },
+      { label: '🌿 South India',       path: '/explore?cat=eco' },
+      { label: '🏖️ Goa & Beaches',    path: '/explore?cat=beaches' },
+      { label: '🐅 Wildlife Safari',   path: '/explore?cat=wildlife' },
+      { label: '🕌 Spiritual Tours',   path: '/explore?cat=spiritual' },
+      { label: '🎭 Tribal & NE India', path: '/explore?cat=tribal' },
     ],
   },
   {
