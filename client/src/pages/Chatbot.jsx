@@ -8,7 +8,11 @@ const suggestions = [
   'Hidden gems in Rajasthan',
   'Budget tips for Goa',
   'Wildlife safaris in India',
-  'Spiritual destinations near Varanasi',
+  'Best beaches in India',
+  'Tamil Nadu temples tour',
+  'Northeast India tips',
+  'Things to do in Hampi',
+  'Uttarakhand adventure trip',
 ];
 
 /* ── Smart mock response engine ─────────────────────────────────── */
@@ -65,6 +69,38 @@ const smartResponse = (msg) => {
 
   if (m.includes('thank') || m.includes('thanks') || m.includes('awesome') || m.includes('great')) {
     return `😊 You're welcome! Happy to help you plan the perfect Indian adventure. Is there anything else you'd like to know?\n\n🌟 You can also:\n• Use our **AI Trip Planner** to get a full day-by-day itinerary\n• Browse **destinations** across all 29 states\n• Check out the **Marketplace** for authentic local products`;
+  }
+
+  if (m.includes('beach') || m.includes('coastal') || m.includes('sea') || m.includes('ocean')) {
+    return `🏖️ **India's Best Beaches:**\n\n• **Goa** — Calangute, Anjuna, Palolem; best Nov–Feb\n• **Varkala, Kerala** — Dramatic red cliffs, sunset cafes\n• **Gokarna, Karnataka** — Om Beach, Half Moon Beach; quieter than Goa\n• **Andaman & Nicobar** — Radhanagar Beach (Asia's best); crystal waters\n• **Pondicherry** — French Riviera vibes, Auroville nearby\n• **Murudeshwar, Karnataka** — Beach + giant Shiva statue\n• **Vizag (Visakhapatnam)** — Rushikonda Beach + Araku Valley day trip\n\n🌊 **Best beach season:** Nov–Mar for all Indian coasts\n💡 Tip: South Goa and Gokarna are quieter and more budget-friendly than North Goa`;
+  }
+
+  if (m.includes('tamil') || m.includes('madurai') || m.includes('mahabalipuram') || m.includes('rameshwaram') || m.includes('kanyakumari') || m.includes('ooty') || m.includes('kodaikanal')) {
+    return `🕌 **Tamil Nadu — Temple Trails & Hill Stations:**\n\n**Temples (Oct–Mar):**\n• **Madurai** — Meenakshi Amman Temple; 8 towering gopurams\n• **Mahabalipuram** — UNESCO shore temples on the Bay of Bengal\n• **Rameshwaram** — Sacred island; one of the four Hindu dhams\n• **Kanyakumari** — Land's end where 3 seas meet; sunrise/sunset spectacular\n\n**Hill Stations:**\n• **Ooty** — Nilgiri toy train, Botanical Garden, tea estates\n• **Kodaikanal** — Star-shaped lake, Pillar Rocks, silent valley\n\n🍽️ Must eat: Chettinad Biryani, Idli-Sambar, Filter Coffee, Jigarthanda\n📅 Best time: Oct–Mar (avoid Apr–Jun heat)`;
+  }
+
+  if (m.includes('hampi') || m.includes('karnataka') || m.includes('coorg') || m.includes('mysore') || m.includes('mysuru') || m.includes('chikmagalur')) {
+    return `🗿 **Karnataka — Heritage & Nature:**\n\n• **Hampi** (Oct–Mar) — UNESCO ruins of Vijayanagara Empire; explore by bicycle\n• **Coorg/Kodagu** (Oct–Mar) — Scotland of India; coffee estates, Abbey Falls\n• **Mysuru** (Oct–Mar) — Illuminated Mysore Palace; best during Dasara festival\n• **Chikmagalur** (Sep–Mar) — Coffee country; Mullayanagiri peak (Karnataka's highest)\n• **Gokarna** (Oct–Mar) — Sacred temple town + pristine cliff beaches\n• **Hampi to Goa route** — One of India's most scenic road trips!\n\n🍽️ Must try: Bisi Bele Bath, Mysore Pak, Ragi Mudde, Filter Coffee\n💡 Hampi tip: Stay in Virupapur Gadde (across the river) for stunning views`;
+  }
+
+  if (m.includes('odisha') || m.includes('puri') || m.includes('konark') || m.includes('bhubaneswar') || m.includes('chilika')) {
+    return `🏛️ **Odisha — India's Undiscovered Gem:**\n\n• **Bhubaneswar** — Temple city with 700+ ancient temples; Lingaraj Temple\n• **Puri** — Jagannath Temple (one of four Hindu dhams) + golden beach\n• **Konark Sun Temple** — UNESCO masterpiece shaped like the Sun God's chariot\n• **Chilika Lake** — Asia's largest lagoon; spot Irrawaddy dolphins and 1M+ migratory birds\n• **Raghurajpur** — Entire village of Pattachitra artists\n\n📅 Best time: Oct–Mar\n🎭 Rath Yatra festival (Jun–Jul) in Puri draws millions — spectacular but very crowded\n💡 Golden Triangle: Bhubaneswar + Puri + Konark in 3 days`;
+  }
+
+  if (m.includes('gujarat') || m.includes('rann') || m.includes('kutch') || m.includes('dwarka') || m.includes('somnath') || m.includes('ahmedabad')) {
+    return `🏜️ **Gujarat — Land of Diversity:**\n\n• **Rann of Kutch** (Nov–Feb) — White salt desert; magical during Rann Utsav festival with folk music & crafts\n• **Statue of Unity** — World's tallest statue (182m) at Narmada River\n• **Dwarka & Somnath** — Two of India's most sacred pilgrimage sites on the Arabian Sea\n• **Ahmedabad** — India's first UNESCO Heritage City; Sabarmati Ashram; street food\n• **Gir National Park** — Earth's only Asiatic lions; Dec–Apr\n\n🍽️ Must eat: Dhokla, Thepla, Undhiyu, Fafda Jalebi, Gujarati Thali\n📅 Best time: Oct–Mar; Rann Utsav runs Nov–Feb\n💡 Combine Dwarka + Somnath + Gir in a 4-day pilgrimage-wildlife circuit`;
+  }
+
+  if (m.includes('uttarakhand') || m.includes('rishikesh') || m.includes('haridwar') || m.includes('nainital') || m.includes('mussoorie') || m.includes('auli') || m.includes('valley of flowers')) {
+    return `⛰️ **Uttarakhand — Devbhoomi (Land of Gods):**\n\n**Adventure & Trekking:**\n• **Rishikesh** — White-water rafting Grade 3–5; bungee, zip-line; yoga capital\n• **Auli** — India's best ski resort; Jan–Mar for snow; Nanda Devi views\n• **Valley of Flowers** — UNESCO alpine meadow; open Jul–Sep only\n\n**Spiritual:**\n• **Haridwar** — Ganga Aarti at Har Ki Pauri; gateway to Char Dham\n• **Kedarnath & Badrinath** — Open May–Nov only\n\n**Hill Stations:**\n• **Mussoorie** — Mall Road, Kempty Falls; 290km from Delhi\n• **Nainital** — Naini Lake, Snow View; 310km from Delhi\n\n📅 Best time: Mar–Jun and Sep–Nov`;
+  }
+
+  if (m.includes('bihar') || m.includes('bodh gaya') || m.includes('bodhgaya') || m.includes('patna') || m.includes('nalanda')) {
+    return `☸️ **Bihar — Buddhist & Ancient Heritage:**\n\n• **Bodh Gaya** — World's holiest Buddhist site; Mahabodhi Temple (UNESCO); Bodhi Tree where Buddha attained enlightenment\n• **Nalanda** (25km from Bodh Gaya) — Ancient university ruins; UNESCO World Heritage Site\n• **Patna** — Golghar granary; Patna Museum with 3rd-century Yakshi statue; gateway to all of Bihar\n• **Rajgir** — Hot springs + Vishwa Shanti Stupa; cable car ride\n• **Vaishali** — Where Buddha gave his last sermon\n\n📅 Best time: Oct–Mar\n🍽️ Must try: Litti Chokha, Sattu Paratha, Balushahi\n💡 Buddhist Circuit: Bodh Gaya → Nalanda → Rajgir → Vaishali`;
+  }
+
+  if (m.includes('book') || m.includes('train') || m.includes('irctc') || m.includes('flight') || m.includes('hotel') || m.includes('permit')) {
+    return `📋 **Booking Tips for India Travel:**\n\n**Trains (IRCTC):**\n• Book 60–120 days in advance for popular routes\n• Tatkal quota opens 1 day before — costs extra but always available\n• Sleeper class (SL) is the most authentic and affordable overnight option\n\n**Flights:**\n• IndiGo, Air India, SpiceJet — book 3–6 weeks ahead for best fares\n• Avoid booking within 1 week of travel (prices spike 2–3x)\n\n**Permits Required:**\n• Ladakh restricted areas: Inner Line Permit\n• Sikkim & Northeast states: Inner Line Permit from state capital\n• Andaman: Port Blair permit on arrival for most nationalities\n\n**Hotels:**\n• Use MakeMyTrip or Booking.com for verified stays\n• Book heritage havelis in Rajasthan 2–3 months early for peak season\n\n📞 Our platform connects you directly with local guides — no middlemen!`;
   }
 
   // Default response
