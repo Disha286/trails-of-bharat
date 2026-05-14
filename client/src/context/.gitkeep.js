@@ -1,0 +1,3 @@
+// Context directory
+// Add your React Context providers here
+// Example: AuthContext, ThemeContext, etc.

@@ -1,0 +1,19 @@
+/* ── Token & User storage helpers ───────────────────────────────── */
+const TOKEN_KEY = 'tob_token';
+const USER_KEY  = 'tob_user';
+
+// ── Token ──────────────────────────────────────────────────────────
+export const saveToken  = (token) => localStorage.setItem(TOKEN_KEY, token);
+export const getToken   = ()      => localStorage.getItem(TOKEN_KEY);
+export const removeToken = ()     => localStorage.removeItem(TOKEN_KEY);
+
+// ── User ───────────────────────────────────────────────────────────
+export const saveUser  = (user) => localStorage.setItem(USER_KEY, JSON.stringify(user));
+export const getUser   = ()     => {
+  try { return JSON.parse(localStorage.getItem(USER_KEY)); }
+  catch { return null; }
+};
+export const removeUser = () => localStorage.removeItem(USER_KEY);
+
+// ── Clear all auth data ────────────────────────────────────────────
+export const clearAuth = () => { removeToken(); removeUser(); };
