@@ -171,29 +171,55 @@ const Marketplace = () => {
         {cartOpen && <CartSidebar cart={cart} onClose={() => setCartOpen(false)} onUpdateQty={updateQty} onRemove={removeFromCart} />}
       </AnimatePresence>
 
-      <div className="container">
-        {/* Header */}
-        <motion.div className="page-header" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-          style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: 'space-between', gap: '1rem' }}>
-          <div>
-            <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '.1em' }}>Local Marketplace</span>
-            <h1 className="page-title" style={{ marginTop: '0.5rem' }}>Shop Authentic India</h1>
-            <p className="page-desc">Handcrafted goods, homestays, and cultural experiences — directly from artisans.</p>
-          </div>
+      {/* ── Hero Banner ── */}
+      <div style={{ position: 'relative', borderRadius: '2rem', overflow: 'hidden', marginBottom: '3rem', background: 'linear-gradient(135deg, #1e1b4b 0%, #312e81 35%, #4c1d95 65%, #7c3aed 100%)', padding: '3.5rem 2.5rem' }}>
+        {/* Decorative circles */}
+        <div style={{ position: 'absolute', top: '-60px', right: '-60px', width: '280px', height: '280px', borderRadius: '50%', background: 'rgba(249,115,22,.15)' }} />
+        <div style={{ position: 'absolute', bottom: '-40px', left: '40%', width: '180px', height: '180px', borderRadius: '50%', background: 'rgba(139,92,246,.2)' }} />
+        <div style={{ position: 'absolute', top: '20px', left: '60%', width: '80px', height: '80px', borderRadius: '50%', background: 'rgba(255,255,255,.06)' }} />
 
-          {/* Cart button — always visible when items exist */}
-          <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }} onClick={() => setCartOpen(true)}
-            style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '.7rem 1.25rem', borderRadius: '1rem', background: cartCount > 0 ? 'var(--accent)' : 'var(--bg-card)', color: cartCount > 0 ? '#fff' : 'var(--text-muted)', border: `1.5px solid ${cartCount > 0 ? 'var(--accent)' : 'var(--border)'}`, fontWeight: 700, fontSize: '0.875rem', cursor: 'pointer', fontFamily: 'inherit', boxShadow: cartCount > 0 ? '0 4px 14px rgba(249,115,22,.3)' : 'none', transition: 'all .2s' }}>
-            <ShoppingCart size={17} />
-            View Cart
+        <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '2rem' }}>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '.3rem .875rem', borderRadius: '999px', background: 'rgba(249,115,22,.2)', border: '1px solid rgba(249,115,22,.4)', marginBottom: '1rem' }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: '#fb923c', textTransform: 'uppercase', letterSpacing: '.1em' }}>🛍️ Local Marketplace</span>
+            </div>
+            <h1 style={{ fontSize: 'clamp(1.75rem,4vw,2.75rem)', fontWeight: 900, color: '#fff', lineHeight: 1.1, marginBottom: '0.75rem' }}>
+              Shop <span style={{ background: 'linear-gradient(90deg,#fb923c,#fbbf24)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Authentic</span> India
+            </h1>
+            <p style={{ color: 'rgba(255,255,255,.72)', fontSize: '1rem', lineHeight: 1.7, maxWidth: '480px', marginBottom: '1.75rem' }}>
+              Handcrafted goods, homestays &amp; cultural experiences — every rupee goes directly to the artisan.
+            </p>
+            {/* Hero stats */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem' }}>
+              {[{ val: '32+', label: 'Products' }, { val: '2,400+', label: 'Artisans' }, { val: '4.8★', label: 'Avg Rating' }].map(s => (
+                <div key={s.label}>
+                  <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#fff' }}>{s.val}</div>
+                  <div style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,.55)', fontWeight: 600 }}>{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Cart button in hero */}
+          <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={() => setCartOpen(true)}
+            initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.15 }}
+            style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.375rem', padding: '1.25rem 2rem', borderRadius: '1.5rem', background: cartCount > 0 ? 'rgba(249,115,22,1)' : 'rgba(255,255,255,.12)', backdropFilter: 'blur(12px)', color: '#fff', border: `1.5px solid ${cartCount > 0 ? 'rgba(249,115,22,.6)' : 'rgba(255,255,255,.2)'}`, fontFamily: 'inherit', cursor: 'pointer', boxShadow: cartCount > 0 ? '0 8px 32px rgba(249,115,22,.4)' : '0 4px 16px rgba(0,0,0,.2)', minWidth: '140px', transition: 'all .2s' }}>
+            <ShoppingCart size={28} color="#fff" />
+            <span style={{ fontWeight: 800, fontSize: '0.9rem' }}>View Cart</span>
+            {cartCount > 0
+              ? <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'rgba(255,255,255,.85)' }}>{cartCount} item{cartCount !== 1 ? 's' : ''}</span>
+              : <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,.5)' }}>Empty</span>}
             {cartCount > 0 && (
               <motion.span initial={{ scale: 0 }} animate={{ scale: 1 }}
-                style={{ position: 'absolute', top: '-8px', right: '-8px', width: '22px', height: '22px', borderRadius: '50%', background: '#ef4444', color: '#fff', fontSize: '0.7rem', fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid var(--bg-card)' }}>
+                style={{ position: 'absolute', top: '-8px', right: '-8px', width: '24px', height: '24px', borderRadius: '50%', background: '#ef4444', color: '#fff', fontSize: '0.72rem', fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid #1e1b4b' }}>
                 {cartCount}
               </motion.span>
             )}
           </motion.button>
-        </motion.div>
+        </div>
+      </div>
+
+      <div className="container">
 
         {/* Search */}
         <div style={{ position: 'relative', maxWidth: '480px', marginBottom: '2rem' }}>
@@ -226,25 +252,33 @@ const Marketplace = () => {
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = 'var(--shadow-xl)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'var(--shadow)'; }}>
 
-                <div style={{ position: 'relative', height: '200px', overflow: 'hidden' }}>
-                  <img src={p.img} alt={p.name} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform .5s' }}
-                    onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.07)'}
+                <div style={{ position: 'relative', height: '210px', overflow: 'hidden' }}>
+                  <img src={p.img} alt={p.name} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform .6s ease' }}
+                    onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.08)'}
                     onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'} />
-                  <div style={{ position: 'absolute', top: '.875rem', left: '.875rem', padding: '.25rem .7rem', borderRadius: '999px', background: 'var(--primary)', fontSize: '0.7rem', fontWeight: 700, color: '#fff' }}>{p.tag}</div>
-                  {p.originalPrice > p.price && (
-                    <div style={{ position: 'absolute', top: '.875rem', right: '2.75rem', padding: '.25rem .6rem', borderRadius: '999px', background: '#ef4444', fontSize: '0.68rem', fontWeight: 700, color: '#fff' }}>
-                      -{discount(p.originalPrice, p.price)}%
-                    </div>
-                  )}
-                  <motion.button whileTap={{ scale: .85 }} onClick={() => toggleWishlist(p.id, p.name)}
-                    style={{ position: 'absolute', top: '.875rem', right: '.875rem', width: '32px', height: '32px', borderRadius: '50%', background: 'rgba(255,255,255,.92)', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <Heart size={15} color={wishlist.includes(p.id) ? '#ef4444' : '#94a3b8'} fill={wishlist.includes(p.id) ? '#ef4444' : 'none'} />
-                  </motion.button>
+                  {/* gradient overlay */}
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,.5) 0%, transparent 55%)' }} />
+                  {/* tag badge */}
+                  <div style={{ position: 'absolute', top: '.875rem', left: '.875rem', padding: '.25rem .75rem', borderRadius: '999px', background: 'linear-gradient(135deg,#6366f1,#8b5cf6)', fontSize: '0.68rem', fontWeight: 800, color: '#fff', letterSpacing: '.04em', boxShadow: '0 2px 8px rgba(99,102,241,.4)' }}>{p.tag}</div>
+                  {/* discount + wishlist row */}
+                  <div style={{ position: 'absolute', top: '.875rem', right: '.875rem', display: 'flex', gap: '0.375rem', alignItems: 'center' }}>
+                    {p.originalPrice > p.price && (
+                      <div style={{ padding: '.22rem .6rem', borderRadius: '999px', background: '#ef4444', fontSize: '0.68rem', fontWeight: 800, color: '#fff' }}>-{discount(p.originalPrice, p.price)}%</div>
+                    )}
+                    <motion.button whileTap={{ scale: .85 }} onClick={() => toggleWishlist(p.id, p.name)}
+                      style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'rgba(255,255,255,.92)', backdropFilter: 'blur(8px)', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(0,0,0,.15)' }}>
+                      <Heart size={15} color={wishlist.includes(p.id) ? '#ef4444' : '#94a3b8'} fill={wishlist.includes(p.id) ? '#ef4444' : 'none'} />
+                    </motion.button>
+                  </div>
+                  {/* seller label bottom */}
+                  <div style={{ position: 'absolute', bottom: '.75rem', left: '.875rem', fontSize: '0.68rem', fontWeight: 700, color: 'rgba(255,255,255,.85)', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                    <MapPin size={10} /> {p.state}
+                  </div>
                 </div>
 
                 <div style={{ padding: '1.25rem' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '.375rem', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 600, marginBottom: '0.5rem' }}>
-                    <MapPin size={11} /> {p.state} · {p.category}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.375rem', marginBottom: '0.375rem' }}>
+                    <span style={{ padding: '.18rem .6rem', borderRadius: '999px', background: 'rgba(99,102,241,.08)', border: '1px solid rgba(99,102,241,.15)', fontSize: '0.68rem', fontWeight: 700, color: 'var(--primary)' }}>{p.category}</span>
                   </div>
                   <h3 style={{ fontSize: '0.9375rem', fontWeight: 700, color: 'var(--text-heading)', marginBottom: '0.5rem', lineHeight: 1.4 }}>{p.name}</h3>
                   <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.5, marginBottom: '0.875rem' }}>{p.description.slice(0, 70)}…</p>
@@ -255,6 +289,7 @@ const Marketplace = () => {
                     <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>({p.reviews})</span>
                   </div>
 
+                  <div style={{ height: '1px', background: 'var(--border)', margin: '0.75rem 0' }} />
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                     <div>
                       <div style={{ fontSize: '1.125rem', fontWeight: 800, color: 'var(--primary)' }}>₹{p.price.toLocaleString()}</div>
