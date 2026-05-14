@@ -217,6 +217,77 @@ const Home = () => {
         </div>
       </section>
 
+      {/* HOW IT WORKS */}
+      <section className="section" style={{ background:'var(--bg-section)' }}>
+        <div className="container">
+          <motion.div style={{ textAlign:'center', marginBottom:'3.5rem' }} initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }}>
+            <span style={{ fontSize:'0.8rem', fontWeight:700, color:'var(--primary)', textTransform:'uppercase', letterSpacing:'.1em' }}>Simple Steps</span>
+            <h2 style={{ fontSize:'clamp(1.75rem,3.5vw,2.5rem)', marginTop:'0.75rem', color:'var(--text-heading)' }}>How It Works</h2>
+          </motion.div>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(200px,1fr))', gap:'2rem' }}>
+            {[
+              { step:'01', emoji:'🔍', title:'Discover',    desc:'Browse 35+ destinations across every Indian state — filtered by category, budget, and season.' },
+              { step:'02', emoji:'🤖', title:'Plan with AI',desc:'Tell us your style. Our AI generates a personalized day-by-day itinerary in seconds.' },
+              { step:'03', emoji:'🤝', title:'Connect',     desc:'Book verified local guides, artisans, and homestay hosts directly — no middlemen.' },
+              { step:'04', emoji:'🛍️', title:'Shop Local',  desc:'Buy authentic handicrafts, textiles, and food directly from the source community.' },
+            ].map((item, i) => (
+              <motion.div key={item.step} initial={{ opacity:0, y:24 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ delay:i*.1 }}
+                style={{ textAlign:'center', padding:'2rem 1.5rem', borderRadius:'1.5rem', background:'var(--bg-card)', border:'1px solid var(--border)', boxShadow:'var(--shadow)' }}>
+                <div style={{ fontSize:'2.5rem', marginBottom:'1rem' }}>{item.emoji}</div>
+                <div style={{ fontSize:'0.7rem', fontWeight:800, color:'var(--primary)', textTransform:'uppercase', letterSpacing:'.12em', marginBottom:'0.5rem' }}>Step {item.step}</div>
+                <h3 style={{ fontSize:'1.1rem', fontWeight:800, color:'var(--text-heading)', marginBottom:'0.75rem' }}>{item.title}</h3>
+                <p style={{ fontSize:'0.875rem', color:'var(--text-body)', lineHeight:1.7 }}>{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHY TRAILS OF BHARAT */}
+      <section className="section" style={{ background:'var(--bg)' }}>
+        <div className="container">
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))', gap:'4rem', alignItems:'center' }}>
+            <motion.div initial={{ opacity:0, x:-30 }} whileInView={{ opacity:1, x:0 }} viewport={{ once:true }} transition={{ duration:.6 }}>
+              <span style={{ fontSize:'0.8rem', fontWeight:700, color:'var(--accent)', textTransform:'uppercase', letterSpacing:'.1em' }}>🌱 Our Mission</span>
+              <h2 style={{ fontSize:'clamp(1.75rem,3.5vw,2.75rem)', marginTop:'0.75rem', color:'var(--text-heading)', marginBottom:'1.25rem' }}>
+                Tourism That <span style={{ background:'linear-gradient(135deg,#6366f1,#f97316)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text' }}>Empowers</span> Communities
+              </h2>
+              <p style={{ color:'var(--text-body)', lineHeight:1.8, marginBottom:'2rem', fontSize:'1rem' }}>
+                India's 5 million artisans and local guides deserve direct access to travelers. Trails of Bharat is the bridge — cutting out exploitation, building sustainable livelihoods, and giving tourists deeply authentic experiences.
+              </p>
+              <div style={{ display:'flex', flexDirection:'column', gap:'1rem' }}>
+                {[
+                  { emoji:'💚', text:'100% of bookings go directly to local providers' },
+                  { emoji:'🏆', text:'Every guide and vendor is community-verified' },
+                  { emoji:'🌍', text:'Travel data is transparent and community-owned' },
+                ].map((item, i) => (
+                  <motion.div key={i} initial={{ opacity:0, x:-16 }} whileInView={{ opacity:1, x:0 }} viewport={{ once:true }} transition={{ delay:i*.15 }}
+                    style={{ display:'flex', alignItems:'center', gap:'0.875rem' }}>
+                    <span style={{ fontSize:'1.25rem' }}>{item.emoji}</span>
+                    <span style={{ fontSize:'0.9rem', fontWeight:600, color:'var(--text-body)' }}>{item.text}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+            <motion.div initial={{ opacity:0, x:30 }} whileInView={{ opacity:1, x:0 }} viewport={{ once:true }} transition={{ duration:.6 }}
+              style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'1rem' }}>
+              {[
+                { val:'₹2.4Cr+', label:'Earnings to Locals',      color:'#4f46e5', bg:'#eef2ff' },
+                { val:'2,400+',  label:'Local Providers',          color:'#16a34a', bg:'#f0fdf4' },
+                { val:'50K+',    label:'Happy Travelers',          color:'#0284c7', bg:'#f0f9ff' },
+                { val:'0',       label:'Middlemen in Our Chain',   color:'#e11d48', bg:'#fff1f2' },
+              ].map((item, i) => (
+                <motion.div key={i} initial={{ opacity:0, scale:.9 }} whileInView={{ opacity:1, scale:1 }} viewport={{ once:true }} transition={{ delay:i*.1 }}
+                  style={{ padding:'1.5rem', borderRadius:'1.25rem', background:item.bg, textAlign:'center', border:`1px solid ${item.color}22` }}>
+                  <div style={{ fontSize:'1.75rem', fontWeight:900, color:item.color, lineHeight:1 }}>{item.val}</div>
+                  <div style={{ fontSize:'0.75rem', fontWeight:700, color:item.color, marginTop:'0.5rem', lineHeight:1.4 }}>{item.label}</div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="section" style={{ background:'var(--bg-section)' }}>
         <div style={{ maxWidth:'44rem', margin:'0 auto', padding:'0 1.5rem', textAlign:'center' }}>
@@ -230,6 +301,7 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
+
 
     </div>
   );

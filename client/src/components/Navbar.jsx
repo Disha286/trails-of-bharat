@@ -21,9 +21,18 @@ const navItems = [
     label: 'Travel Resources',
     dropdown: [
       { label: 'Trip Planner',  path: '/planner' },
-      { label: 'Travel Guides', path: '/explore' },
+      { label: 'Local Guides',  path: '/guides' },
       { label: 'Marketplace',   path: '/marketplace' },
       { label: 'AI Chatbot',    path: '/chatbot' },
+    ],
+  },
+  {
+    label: 'Community',
+    dropdown: [
+      { label: 'Meet the Locals',   path: '/community' },
+      { label: 'Local Guides',      path: '/guides' },
+      { label: 'Artisans & Crafts', path: '/marketplace' },
+      { label: 'Vendor Portal',     path: '/vendor' },
     ],
   },
   {

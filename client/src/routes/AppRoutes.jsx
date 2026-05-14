@@ -8,6 +8,8 @@ const Explore           = lazy(() => import('../pages/Explore'));
 const DestinationDetail = lazy(() => import('../pages/DestinationDetail'));
 const Planner           = lazy(() => import('../pages/Planner'));
 const Marketplace       = lazy(() => import('../pages/Marketplace'));
+const Community         = lazy(() => import('../pages/Community'));
+const Guides            = lazy(() => import('../pages/Guides'));
 const Chatbot           = lazy(() => import('../pages/Chatbot'));
 const About             = lazy(() => import('../pages/About'));
 const Contact           = lazy(() => import('../pages/Contact'));
@@ -34,6 +36,8 @@ const AppRoutes = () => (
         <Route path="/destination/:id"     element={<DestinationDetail />} />
         <Route path="/planner"             element={<Planner />} />
         <Route path="/marketplace"         element={<Marketplace />} />
+        <Route path="/community"           element={<Community />} />
+        <Route path="/guides"              element={<Guides />} />
         <Route path="/chatbot"             element={<Chatbot />} />
         <Route path="/about"               element={<About />} />
         <Route path="/contact"             element={<Contact />} />
