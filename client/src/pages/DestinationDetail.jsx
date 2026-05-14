@@ -1,9 +1,9 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Star, MapPin, Clock, Utensils, Lightbulb, ChevronLeft, Calendar, ArrowRight, MessageSquare, ThumbsUp } from 'lucide-react';
+import { Star, MapPin, Clock, Utensils, Lightbulb, ChevronLeft, Calendar, ArrowRight, MessageSquare, ThumbsUp, Wallet, IndianRupee } from 'lucide-react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
-import { getDestinationById } from '../data/destinations';
+import { getDestinationById, destinations } from '../data/destinations';
 
 // Fix Vite/Leaflet icon path issue
 delete L.Icon.Default.prototype._getIconUrl;
@@ -211,12 +211,14 @@ const DestinationDetail = () => {
             <div style={{ background: 'var(--bg-card)', borderRadius: '1.25rem', border: '1px solid var(--border)', padding: '1.5rem', marginBottom: '1.75rem', boxShadow: 'var(--shadow-md)', position: 'sticky', top: 'calc(var(--navbar-h) + 1.5rem)' }}>
               <h3 style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--text-heading)', marginBottom: '1.25rem' }}>Quick Info</h3>
               {[
-                { icon: Clock,    label: 'Best Time', val: d.bestTime },
-                { icon: Calendar, label: 'Duration',  val: d.duration },
-                { icon: MapPin,   label: 'State',     val: d.state },
+                { icon: Clock,         label: 'Best Time', val: d.bestTime },
+                { icon: Calendar,      label: 'Duration',  val: d.duration },
+                { icon: MapPin,        label: 'State',     val: d.state },
+                { icon: Wallet,        label: 'Budget',    val: d.budget?.charAt(0).toUpperCase() + d.budget?.slice(1) },
+                { icon: IndianRupee,   label: 'Est. Cost', val: `₹${d.price?.toLocaleString()}/person` },
               ].map(item => {
                 const I = item.icon;
-                return (
+                return item.val ? (
                   <div key={item.label} style={{ display: 'flex', alignItems: 'center', gap: '0.875rem', paddingBlock: '0.75rem', borderBottom: '1px solid var(--border)' }}>
                     <div style={{ width: '36px', height: '36px', borderRadius: '0.625rem', background: 'rgba(99,102,241,.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                       <I size={16} color="var(--primary)" />
@@ -226,7 +228,7 @@ const DestinationDetail = () => {
                       <div style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-heading)' }}>{item.val}</div>
                     </div>
                   </div>
-                );
+                ) : null;
               })}
               <Link to="/planner" className="btn btn-primary btn-full" style={{ marginTop: '1.25rem' }}>Plan This Trip →</Link>
             </div>
@@ -267,6 +269,51 @@ const DestinationDetail = () => {
           </div>
         </div>
       </div>
+
+      {/* ── Nearby Destinations ── */}
+      {(() => {
+        const nearby = destinations
+          .filter(x => x.id !== d.id && (x.category === d.category || x.state === d.state))
+          .sort(() => Math.random() - 0.5)
+          .slice(0, 3);
+        if (!nearby.length) return null;
+        return (
+          <section style={{ background: 'var(--bg-section)', borderTop: '1px solid var(--border)', paddingBlock: '3.5rem' }}>
+            <div className="container">
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '2rem', flexWrap: 'wrap', gap: '1rem' }}>
+                <div>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '.1em', marginBottom: '0.375rem' }}>Explore More</div>
+                  <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-heading)' }}>You Might Also Like</h2>
+                </div>
+                <Link to="/explore" style={{ display: 'flex', alignItems: 'center', gap: '0.375rem', color: 'var(--primary)', fontWeight: 700, fontSize: '0.9rem', textDecoration: 'none' }}>View All <ArrowRight size={15} /></Link>
+              </div>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(260px,1fr))', gap: '1.5rem' }}>
+                {nearby.map((nd, i) => (
+                  <motion.div key={nd.id} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * .1 }}>
+                    <Link to={`/destination/${nd.id}`} style={{ display: 'block', textDecoration: 'none', borderRadius: '1.25rem', overflow: 'hidden', background: 'var(--bg-card)', border: '1px solid var(--border)', boxShadow: 'var(--shadow)', transition: 'all .3s' }}
+                      onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = 'var(--shadow-xl)'; }}
+                      onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'var(--shadow)'; }}>
+                      <div style={{ position: 'relative', height: '170px', overflow: 'hidden' }}>
+                        <img src={nd.img} alt={nd.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top,rgba(0,0,0,.55) 0%,transparent 60%)' }} />
+                        <div style={{ position: 'absolute', top: '.75rem', left: '.75rem', padding: '.2rem .65rem', borderRadius: '999px', background: 'rgba(99,102,241,.8)', fontSize: '0.7rem', fontWeight: 700, color: '#fff' }}>{nd.category}</div>
+                        <div style={{ position: 'absolute', top: '.75rem', right: '.75rem', display: 'flex', alignItems: 'center', gap: '3px', padding: '.2rem .6rem', borderRadius: '999px', background: 'rgba(255,255,255,.9)', fontSize: '0.72rem', fontWeight: 700, color: '#0f172a' }}>
+                          <Star size={10} fill="#f59e0b" color="#f59e0b" /> {nd.rating}
+                        </div>
+                        <div style={{ position: 'absolute', bottom: '.75rem', left: '.875rem', fontSize: '1.1rem', fontWeight: 800, color: '#fff' }}>{nd.name}</div>
+                      </div>
+                      <div style={{ padding: '0.875rem 1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                        <span style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.78rem', color: 'var(--text-muted)', fontWeight: 600 }}><MapPin size={12} />{nd.state}</span>
+                        <span style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--primary)' }}>Explore →</span>
+                      </div>
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
     </div>
   );
 };
