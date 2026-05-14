@@ -7,6 +7,7 @@ import authRoutes from './routes/authRoutes.js';
 import destinationRoutes from './routes/destinationRoutes.js';
 import itineraryRoutes from './routes/itineraryRoutes.js';
 import listingRoutes from './routes/listingRoutes.js';
+import uploadRoutes from './routes/uploadRoutes.js';
 
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -30,6 +31,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/destinations', destinationRoutes);
 app.use('/api/itinerary', itineraryRoutes);
 app.use('/api/listings', listingRoutes);
+app.use('/api/upload', uploadRoutes);
 
 // Health check
 app.get('/', (req, res) => {
