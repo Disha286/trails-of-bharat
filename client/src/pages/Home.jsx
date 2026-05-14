@@ -5,7 +5,7 @@ import { Search, ArrowRight, Star, MapPin, Map, ShoppingBag, Heart, Zap, Globe, 
 import { destinations, categories } from '../data/destinations';
 
 // Curated featured picks — diverse categories & regions
-const FEATURED_IDS = ['rajasthan','kerala','ladakh','meghalaya','tamilnadu','uttarakhand'];
+const FEATURED_IDS = ['agra','alleppey','ladakh','hampi','goa','tawang'];
 const featured = FEATURED_IDS.map(id => destinations.find(d => d.id === id)).filter(Boolean);
 
 const Home = () => {
@@ -65,7 +65,7 @@ const Home = () => {
         <div style={{ position:'absolute', bottom:0, left:0, right:0, zIndex:1, background:'rgba(0,0,0,.3)', backdropFilter:'blur(12px)', borderTop:'1px solid rgba(255,255,255,.08)' }}>
           <div className="container">
             <div style={{ display:'flex', flexWrap:'wrap', justifyContent:'space-around', gap:'0.5rem', paddingBlock:'1.25rem' }}>
-              {[{icon:Globe,val:'29+',label:'States'},{icon:MapPin,val:'10K+',label:'Places'},{icon:Star,val:'4.9',label:'Rating'},{icon:Users,val:'50K+',label:'Travelers'}].map(s => {
+              {[{icon:Globe,val:'29+',label:'States'},{icon:MapPin,val:'96+',label:'Destinations'},{icon:Star,val:'4.8',label:'Avg Rating'},{icon:Users,val:'50K+',label:'Travelers'}].map(s => {
                 const I = s.icon;
                 return (
                   <div key={s.label} style={{ display:'flex', alignItems:'center', gap:'0.75rem' }}>
@@ -100,6 +100,35 @@ const Home = () => {
                   <span style={{ fontSize:'0.85rem', fontWeight:700, color:'var(--text-heading)', textAlign:'center' }}>{cat.label}</span>
                 </Link>
               </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* REGION QUICK-ACCESS STRIP */}
+      <section style={{ background: 'var(--bg)', paddingBlock: '2rem', borderBottom: '1px solid var(--border)' }}>
+        <div className="container">
+          <div style={{ display: 'flex', gap: '0.75rem', overflowX: 'auto', paddingBottom: '0.5rem', scrollbarWidth: 'none' }}>
+            {[
+              { label: 'Taj Mahal',        id: 'agra',          emoji: '🕌' },
+              { label: 'Goa Beaches',      id: 'goa',           emoji: '🏖️' },
+              { label: 'Ladakh',           id: 'ladakh',        emoji: '🏔️' },
+              { label: 'Kerala Backwaters',id: 'alleppey',      emoji: '🚤' },
+              { label: 'Rajasthan',        id: 'jaipur',        emoji: '🏯' },
+              { label: 'Hampi Ruins',      id: 'hampi',         emoji: '🗿' },
+              { label: 'Darjeeling',       id: 'darjeeling',    emoji: '🍵' },
+              { label: 'Varanasi',         id: 'varanasi',      emoji: '🪔' },
+              { label: 'Kaziranga',        id: 'kaziranga',     emoji: '🦏' },
+              { label: 'Meghalaya',        id: 'cherrapunji',   emoji: '🌧️' },
+              { label: 'Tawang',           id: 'tawang',        emoji: '🏳️' },
+              { label: 'Golden Temple',    id: 'amritsar',      emoji: '✨' },
+            ].map(r => (
+              <Link key={r.id} to={`/destination/${r.id}`} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.375rem', padding: '0.875rem 1.25rem', borderRadius: '1rem', background: 'var(--bg-card)', border: '1.5px solid var(--border)', textDecoration: 'none', flexShrink: 0, transition: 'all .2s', minWidth: '90px' }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--primary)'; e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.boxShadow = '0 8px 20px rgba(99,102,241,.15)'; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
+                <span style={{ fontSize: '1.6rem' }}>{r.emoji}</span>
+                <span style={{ fontSize: '0.72rem', fontWeight: 700, color: 'var(--text-heading)', textAlign: 'center', lineHeight: 1.3 }}>{r.label}</span>
+              </Link>
             ))}
           </div>
         </div>
@@ -226,7 +255,7 @@ const Home = () => {
           </motion.div>
           <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(200px,1fr))', gap:'2rem' }}>
             {[
-              { step:'01', emoji:'🔍', title:'Discover',    desc:'Browse 35+ destinations across every Indian state — filtered by category, budget, and season.' },
+              { step:'01', emoji:'🔍', title:'Discover',    desc:'Browse 96+ destinations across every Indian state — filtered by category, budget, and season.' },
               { step:'02', emoji:'🤖', title:'Plan with AI',desc:'Tell us your style. Our AI generates a personalized day-by-day itinerary in seconds.' },
               { step:'03', emoji:'🤝', title:'Connect',     desc:'Book verified local guides, artisans, and homestay hosts directly — no middlemen.' },
               { step:'04', emoji:'🛍️', title:'Shop Local',  desc:'Buy authentic handicrafts, textiles, and food directly from the source community.' },
