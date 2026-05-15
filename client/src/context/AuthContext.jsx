@@ -26,31 +26,14 @@ export const AuthProvider = ({ children }) => {
     setLoading(true);
     setError(null);
     try {
-      // When backend is ready, this calls POST /api/auth/login.
-      // For now, we mock a successful response so the UI works end-to-end.
-      let data;
-      try {
-        data = await loginUser(credentials);
-      } catch {
-        // ── MOCK FALLBACK (remove once backend is live) ──────────────
-        data = {
-          token: 'mock_jwt_token_' + Date.now(),
-          user: {
-            id: '1',
-            name: credentials.email.split('@')[0],
-            email: credentials.email,
-            role: 'tourist',
-          },
-        };
-      }
-
+      const data = await loginUser(credentials);
       saveToken(data.token);
       saveUser(data.user);
       setToken(data.token);
       setUser(data.user);
       navigate('/dashboard');
     } catch (err) {
-      setError(err?.response?.data?.message || 'Login failed. Please try again.');
+      setError(err?.response?.data?.detail || err?.response?.data?.message || 'Login failed. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -61,29 +44,14 @@ export const AuthProvider = ({ children }) => {
     setLoading(true);
     setError(null);
     try {
-      let data;
-      try {
-        data = await registerUser(formData);
-      } catch {
-        // ── MOCK FALLBACK (remove once backend is live) ──────────────
-        data = {
-          token: 'mock_jwt_token_' + Date.now(),
-          user: {
-            id: '2',
-            name: formData.name,
-            email: formData.email,
-            role: formData.role || 'tourist',
-          },
-        };
-      }
-
+      const data = await registerUser(formData);
       saveToken(data.token);
       saveUser(data.user);
       setToken(data.token);
       setUser(data.user);
       navigate('/dashboard');
     } catch (err) {
-      setError(err?.response?.data?.message || 'Registration failed. Please try again.');
+      setError(err?.response?.data?.detail || err?.response?.data?.message || 'Registration failed. Please try again.');
     } finally {
       setLoading(false);
     }
