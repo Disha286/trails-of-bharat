@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronDown, Menu, X, Compass, LayoutDashboard, LogOut, UserCircle } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import ThemeToggle from './ThemeToggle';
 
 /* ── Nav data ──────────────────────────────────────────────────── */
 const navItems = [
@@ -302,6 +303,9 @@ const Navbar = () => {
 
         {/* CTA area */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
+
+          {/* Theme toggle — always visible */}
+          <ThemeToggle />
 
           {isAuthenticated ? (
             /* ── Logged in ─────────────────────────── */

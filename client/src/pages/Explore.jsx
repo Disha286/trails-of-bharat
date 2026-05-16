@@ -48,6 +48,14 @@ const Explore = () => {
   const [geoLoading, setGeoLoading] = useState(false);
   const [geoError, setGeoError]    = useState('');
 
+  // Sync filters when Navbar links change URL params (SPA navigation)
+  useEffect(() => {
+    const cat = searchParams.get('cat');
+    const q   = searchParams.get('q');
+    if (cat) setActiveCat(cat);
+    if (q)   setQuery(q);
+  }, [searchParams]);
+
   const filtered = useMemo(() => destinations.filter(d => {
     if (query && !d.name.toLowerCase().includes(query.toLowerCase()) && !d.state.toLowerCase().includes(query.toLowerCase()) && !d.tags.some(t => t.toLowerCase().includes(query.toLowerCase()))) return false;
     if (activeCat !== 'all' && d.category.toLowerCase() !== categories.find(c => c.id === activeCat)?.label.toLowerCase()) return false;
@@ -109,15 +117,26 @@ const Explore = () => {
   );
 
   return (
-    <div className="page">
-      <div className="container">
+    <div>
+      {/* ── Hero ── */}
+      <section style={{ position: 'relative', background: 'linear-gradient(135deg,#0f0c29 0%,#24243e 50%,#0f2027 100%)', padding: 'clamp(3.5rem,8vw,6rem) 1.5rem', overflow: 'hidden', textAlign: 'center' }}>
+        <div style={{ position: 'absolute', top: '-80px', right: '-60px', width: '300px', height: '300px', borderRadius: '50%', background: 'rgba(99,102,241,.15)', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', bottom: '-60px', left: '-40px', width: '220px', height: '220px', borderRadius: '50%', background: 'rgba(52,211,153,.1)', pointerEvents: 'none' }} />
+        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .65 }} style={{ maxWidth: '680px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '.3rem 1rem', borderRadius: '999px', background: 'rgba(52,211,153,.2)', border: '1px solid rgba(52,211,153,.35)', marginBottom: '1.5rem' }}>
+            <span style={{ fontSize: '0.72rem', fontWeight: 800, color: '#34d399', textTransform: 'uppercase', letterSpacing: '.1em' }}>Explore</span>
+          </div>
+          <h1 style={{ fontSize: 'clamp(2rem,5.5vw,3.5rem)', fontWeight: 900, color: '#fff', lineHeight: 1.1, marginBottom: '1.25rem' }}>
+            Discover <span style={{ background: 'linear-gradient(90deg,#818cf8,#34d399)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Destinations</span>
+          </h1>
+          <p style={{ color: 'rgba(255,255,255,.65)', fontSize: '1.0625rem', lineHeight: 1.75, maxWidth: '520px', margin: '0 auto' }}>
+            Find your perfect Indian adventure across 29 states and territories. Filter by budget, rating, and category.
+          </p>
+        </motion.div>
+      </section>
 
-        {/* Header */}
-        <div className="page-header">
-          <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '.1em' }}>Explore</span>
-          <h1 className="page-title" style={{ marginTop: '0.5rem' }}>Discover Destinations</h1>
-          <p className="page-desc">Find your perfect Indian adventure across 29 states and territories.</p>
-        </div>
+      <div className="page" style={{ paddingTop: '2.5rem' }}>
+      <div className="container">
 
         {/* Category tab pills */}
         <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1.75rem' }}>
@@ -271,6 +290,7 @@ const Explore = () => {
             )}
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

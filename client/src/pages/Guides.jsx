@@ -131,7 +131,7 @@ const Guides = () => {
   });
 
   return (
-    <div className="page">
+    <div>
 
       {/* Detail Modal */}
       <AnimatePresence>
@@ -208,15 +208,35 @@ const Guides = () => {
         )}
       </AnimatePresence>
 
-      <div className="container">
-        {/* Header */}
-        <motion.div className="page-header" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-          <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '.1em' }}>🧭 Expert Guides</span>
-          <h1 className="page-title" style={{ marginTop: '0.5rem' }}>Find Your Guide</h1>
-          <p className="page-desc">
+      {/* ── Hero ── */}
+      <section style={{ position: 'relative', background: 'linear-gradient(135deg,#0f0c29 0%,#24243e 50%,#0f2027 100%)', padding: 'clamp(3.5rem,8vw,6rem) 1.5rem', overflow: 'hidden', textAlign: 'center' }}>
+        <div style={{ position: 'absolute', top: '-80px', left: '-60px', width: '300px', height: '300px', borderRadius: '50%', background: 'rgba(99,102,241,.15)', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', bottom: '-60px', right: '-40px', width: '220px', height: '220px', borderRadius: '50%', background: 'rgba(16,185,129,.1)', pointerEvents: 'none' }} />
+        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .65 }} style={{ maxWidth: '680px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '.3rem 1rem', borderRadius: '999px', background: 'rgba(99,102,241,.2)', border: '1px solid rgba(99,102,241,.35)', marginBottom: '1.5rem' }}>
+            <Compass size={13} color="#818cf8" />
+            <span style={{ fontSize: '0.72rem', fontWeight: 800, color: '#818cf8', textTransform: 'uppercase', letterSpacing: '.1em' }}>Expert Guides</span>
+          </div>
+          <h1 style={{ fontSize: 'clamp(2rem,5.5vw,3.5rem)', fontWeight: 900, color: '#fff', lineHeight: 1.1, marginBottom: '1.25rem' }}>
+            Find Your <span style={{ background: 'linear-gradient(90deg,#818cf8,#34d399)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Guide</span>
+          </h1>
+          <p style={{ color: 'rgba(255,255,255,.65)', fontSize: '1.0625rem', lineHeight: 1.75, maxWidth: '520px', margin: '0 auto 2.5rem' }}>
             Handpicked, verified local experts across India — for cultural tours, treks, wildlife safaris, and spiritual journeys.
           </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', justifyContent: 'center' }}>
+            {[{ val: '180+', label: 'Verified Experts' }, { val: '29', label: 'States' }, { val: '4.8★', label: 'Avg Rating' }, { val: '10k+', label: 'Tours Led' }].map(s => (
+              <div key={s.label} style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: '1.625rem', fontWeight: 900, color: '#fff', lineHeight: 1 }}>{s.val}</div>
+                <div style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,.5)', fontWeight: 600, marginTop: '0.25rem' }}>{s.label}</div>
+              </div>
+            ))}
+          </div>
         </motion.div>
+      </section>
+
+      <div className="page">
+      <div className="container">
+
 
         {/* Search & Filters */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', marginBottom: '2.5rem' }}>
@@ -336,6 +356,7 @@ const Guides = () => {
           </Link>
         </motion.div>
 
+      </div>
       </div>
     </div>
   );
