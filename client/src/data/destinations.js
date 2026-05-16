@@ -1,7 +1,7 @@
 // Combined destinations data — All Indian destinations
-import { destinationsNorth } from './destinationsNorth';
-import { destinationsSouth } from './destinationsSouth';
-import { destinationsEast } from './destinationsEast';
+import { destinationsNorth } from './destinationsNorth.js';
+import { destinationsSouth } from './destinationsSouth.js';
+import { destinationsEast } from './destinationsEast.js';
 
 export const destinations = [
   ...destinationsNorth,
