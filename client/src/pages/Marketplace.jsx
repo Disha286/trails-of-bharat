@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Heart, ShoppingCart, Star, MapPin, Search, X, Plus, Minus, Trash2, ArrowRight, Package } from 'lucide-react';
-import { products, productCategories } from '../data/products';
+import { Heart, ShoppingCart, Star, MapPin, Search, X, Plus, Minus, Trash2, ArrowRight, Package, Loader2 } from 'lucide-react';
+import { productCategories } from '../data/products.js';
+import { getProducts } from '../services/productService.js';
 import { useToast } from '../context/ToastContext';
 
 /* ── Cart Sidebar ──────────────────────────────────────────────── */

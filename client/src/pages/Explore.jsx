@@ -4,7 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Star, MapPin, Filter, X, Map, LayoutGrid, Navigation } from 'lucide-react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
-import { destinations, categories, states } from '../data/destinations';
+import { categories, states } from '../data/destinations.js';
+import { getDestinations } from '../services/destinationService.js';
+import { Loader2 } from 'lucide-react';
 
 // Fix Leaflet default icon paths broken by Vite bundling
 delete L.Icon.Default.prototype._getIconUrl;

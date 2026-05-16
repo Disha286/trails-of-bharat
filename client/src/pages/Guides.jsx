@@ -1,98 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin, Star, Search, Phone, Clock, Shield, ChevronDown, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { getGuides } from '../services/guideService.js';
+import { Loader2 } from 'lucide-react';
 
-const guides = [
-  {
-    id: 1, name: 'Ramesh Choudhary', region: 'Rajasthan', city: 'Jaipur',
-    specialty: 'Heritage & Forts', type: 'Cultural',
-    languages: ['Hindi', 'English', 'French'], rating: 4.9, reviews: 312,
-    price: '₹2,500/day', experience: '14 yrs', availability: 'Available',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80',
-    cover: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?w=600&q=80',
-    bio: 'Born in Jaipur, Ramesh brings Rajasthani history to life through stories passed for generations. Expert in Amber Fort, City Palace, and off-beat havelis.',
-    highlights: ['Amber Fort Expert', 'Desert Safari Guide', 'Royal Heritage Stories', 'Bazaar Food Walks'],
-    verified: true, badge: '🏆 Top Rated',
-  },
-  {
-    id: 2, name: 'Tashi Wangchuk', region: 'Ladakh', city: 'Leh',
-    specialty: 'High-Altitude Trekking', type: 'Adventure',
-    languages: ['Ladakhi', 'Hindi', 'English'], rating: 4.9, reviews: 189,
-    price: '₹3,500/day', experience: '16 yrs', availability: 'Available',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80',
-    cover: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80',
-    bio: 'Ex-army mountaineer with intimate knowledge of Ladakh\'s trails, altitude medicine, and Buddhist culture. Safety-first approach.',
-    highlights: ['Altitude Safety Expert', 'Pangong Lake Route', 'Monastery Circuit', 'Photography Spots'],
-    verified: true, badge: '⛰️ Mountain Expert',
-  },
-  {
-    id: 3, name: 'Priya Krishnamurthy', region: 'Tamil Nadu', city: 'Madurai',
-    specialty: 'Temple Architecture', type: 'Cultural',
-    languages: ['Tamil', 'English', 'Telugu'], rating: 4.8, reviews: 267,
-    price: '₹1,800/day', experience: '9 yrs', availability: 'Available',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&q=80',
-    cover: 'https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=600&q=80',
-    bio: 'Archaeology graduate who decodes Dravidian temple iconography with passion. Also leads midnight temple darshan and local food walks.',
-    highlights: ['Temple Iconography', 'Meenakshi Expert', 'Food Walking Tours', 'Classical Dance Shows'],
-    verified: true, badge: '🏛️ Heritage Expert',
-  },
-  {
-    id: 4, name: 'Arjun Singh Rathore', region: 'Uttarakhand', city: 'Rishikesh',
-    specialty: 'Adventure & Yoga', type: 'Adventure',
-    languages: ['Hindi', 'English'], rating: 4.7, reviews: 430,
-    price: '₹2,000/day', experience: '12 yrs', availability: 'Available',
-    avatar: 'https://images.unsplash.com/photo-1463453091185-61582044d556?w=300&q=80',
-    cover: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc32?w=600&q=80',
-    bio: 'Certified river guide and yoga instructor. Combines white-water rafting days with meditative Ganges evenings and sound healing.',
-    highlights: ['White Water Rafting', 'Yoga & Meditation', 'Bungee Jumping', 'Camping Guru'],
-    verified: true, badge: '🏄 Adventure Pro',
-  },
-  {
-    id: 5, name: 'Bhushan Gogoi', region: 'Assam', city: 'Guwahati',
-    specialty: 'Wildlife & Nature', type: 'Wildlife',
-    languages: ['Assamese', 'Hindi', 'English'], rating: 4.8, reviews: 143,
-    price: '₹2,200/day', experience: '10 yrs', availability: 'Limited',
-    avatar: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=300&q=80',
-    cover: 'https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=600&q=80',
-    bio: 'Wildlife naturalist with expertise in Kaziranga\'s one-horned rhinos and Manas tiger territory. Photographer\'s dream guide.',
-    highlights: ['Kaziranga Safari Expert', 'Bird Watching Pro', 'Majuli Island Treks', 'Tribal Village Visits'],
-    verified: true, badge: '🦏 Wildlife Expert',
-  },
-  {
-    id: 6, name: 'Fatima Sheikh', region: 'Delhi', city: 'Old Delhi',
-    specialty: 'Food & Culture Walks', type: 'Cultural',
-    languages: ['Urdu', 'Hindi', 'English'], rating: 4.9, reviews: 512,
-    price: '₹1,500/day', experience: '7 yrs', availability: 'Available',
-    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&q=80',
-    cover: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?w=600&q=80',
-    bio: 'Old Delhi is Fatima\'s backyard. She reveals the hidden bolis, forgotten Mughal-era mosques, and the best nihari at 4 AM.',
-    highlights: ['Chandni Chowk Expert', 'Mughal Heritage', 'Street Food Walks', 'Sufi Trail'],
-    verified: true, badge: '🥘 Food Expert',
-  },
-  {
-    id: 7, name: 'Ravi Kumar Bishnoi', region: 'Gujarat', city: 'Ahmedabad',
-    specialty: 'Craft & Village Tours', type: 'Cultural',
-    languages: ['Gujarati', 'Hindi', 'English'], rating: 4.6, reviews: 98,
-    price: '₹1,800/day', experience: '8 yrs', availability: 'Available',
-    avatar: 'https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=300&q=80',
-    cover: 'https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=600&q=80',
-    bio: 'Ravi connects travelers with Kutch artisan villages — Rabari embroiderers, Ajrakh printers, and mirror workers. Community-impact tours.',
-    highlights: ['Rann of Kutch Expert', 'Craft Village Access', 'Artisan Workshops', 'Organic Farm Visits'],
-    verified: false, badge: '🧵 Craft Expert',
-  },
-  {
-    id: 8, name: 'Mani Swaminathan', region: 'Kerala', city: 'Kochi',
-    specialty: 'Spiritual & Ayurveda', type: 'Spiritual',
-    languages: ['Malayalam', 'English', 'Hindi'], rating: 4.8, reviews: 201,
-    price: '₹2,000/day', experience: '13 yrs', availability: 'Available',
-    avatar: 'https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=300&q=80',
-    cover: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80',
-    bio: 'Trained in classical Ayurveda and temple ritual traditions. Leads immersive Kerala spiritual journeys from Guruvayur to Thrissur.',
-    highlights: ['Ayurveda Retreats', 'Temple Rituals', 'Backwater Meditation', 'Kathakali Introductions'],
-    verified: true, badge: '🧘 Wellness Guide',
-  },
-];
 
 const guideTypes = ['All', 'Cultural', 'Adventure', 'Wildlife', 'Spiritual'];
 const regions = ['All Regions', 'Rajasthan', 'Ladakh', 'Tamil Nadu', 'Uttarakhand', 'Assam', 'Delhi', 'Gujarat', 'Kerala'];
