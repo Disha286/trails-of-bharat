@@ -10,6 +10,7 @@ import listingRoutes from './routes/listingRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
 import reviewRoutes from './routes/reviewRoutes.js';
 import chatRoutes from './routes/chatRoutes.js';
+import analyticsRoutes from './routes/analyticsRoutes.js';
 
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -36,6 +37,7 @@ app.use('/api/listings', listingRoutes);
 app.use('/api/upload', uploadRoutes);
 app.use('/api/reviews', reviewRoutes);
 app.use('/api/chat', chatRoutes);
+app.use('/api/analytics', analyticsRoutes);
 
 // Health check
 app.get('/', (req, res) => {
