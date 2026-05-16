@@ -9,6 +9,7 @@ import itineraryRoutes from './routes/itineraryRoutes.js';
 import listingRoutes from './routes/listingRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
 import reviewRoutes from './routes/reviewRoutes.js';
+import chatRoutes from './routes/chatRoutes.js';
 
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -34,6 +35,7 @@ app.use('/api/itinerary', itineraryRoutes);
 app.use('/api/listings', listingRoutes);
 app.use('/api/upload', uploadRoutes);
 app.use('/api/reviews', reviewRoutes);
+app.use('/api/chat', chatRoutes);
 
 // Health check
 app.get('/', (req, res) => {
