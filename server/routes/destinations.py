@@ -44,3 +44,4 @@ async def get_destination(destination_id: str):
         from fastapi import HTTPException
         raise HTTPException(status_code=404, detail=f"Destination '{destination_id}' not found")
     return dest
+
