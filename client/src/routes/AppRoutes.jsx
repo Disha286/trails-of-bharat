@@ -15,6 +15,7 @@ const About             = lazy(() => import('../pages/About'));
 const Contact           = lazy(() => import('../pages/Contact'));
 const Dashboard         = lazy(() => import('../pages/Dashboard'));
 const Vendor            = lazy(() => import('../pages/Vendor'));
+const AdminDashboard    = lazy(() => import('../pages/AdminDashboard'));
 const Login             = lazy(() => import('../pages/Login'));
 const Register          = lazy(() => import('../pages/Register'));
 const NotFound          = lazy(() => import('../pages/NotFound'));
@@ -51,6 +52,9 @@ const AppRoutes = () => (
         </Route>
         <Route element={<ProtectedRoute role="vendor" />}>
           <Route path="/vendor"            element={<Vendor />} />
+        </Route>
+        <Route element={<ProtectedRoute role="admin" />}>
+          <Route path="/admin"             element={<AdminDashboard />} />
         </Route>
       </Route>
 

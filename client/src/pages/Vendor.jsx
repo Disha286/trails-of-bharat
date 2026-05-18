@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
+import { getVendorListings, createListing, deleteListing } from '../services/listingService.js';
+import { getOrders, updateOrderStatus } from '../services/orderService.js';
 import {
-  Store, Package, Star, TrendingUp, Plus, Eye, Edit, Trash2, ArrowRight, X, Upload, Tag, IndianRupee,
+  Store, Package, Star, TrendingUp, Plus, Eye, Edit, Trash2, ArrowRight, X, Upload, Tag, IndianRupee, Loader2
 } from 'lucide-react';
 
 const stats = [
@@ -13,11 +15,8 @@ const stats = [
   { icon: Eye,        label: 'Profile Views',    value: '1.2K', bg: '#fdf4ff', color: '#9333ea' },
 ];
 
-const initialProducts = [
-  { id: 1, name: 'Blue Pottery Vase',   price: '₹850',  status: 'Active',   img: 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=200&q=80', category: 'Handicrafts' },
-  { id: 2, name: 'Pashmina Shawl',      price: '₹3200', status: 'Active',   img: 'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=200&q=80', category: 'Textiles' },
-  { id: 3, name: 'Sandalwood Figurine', price: '₹1400', status: 'Inactive', img: 'https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=200&q=80', category: 'Art' },
-];
+const CLOUDINARY_URL = 'https://api.cloudinary.com/v1_1/demo/image/upload';
+const CLOUDINARY_PRESET = 'docs_upload_example_us_preset';
 
 const statusStyle = {
   Active:   { background: '#f0fdf4', color: '#16a34a' },
@@ -32,18 +31,35 @@ const EMPTY_FORM = { name: '', price: '', category: 'Handicrafts', description: 
 const AddProductModal = ({ onClose, onAdd }) => {
   const [form, setForm] = useState(EMPTY_FORM);
   const [submitting, setSubmitting] = useState(false);
+  const [image, setImage] = useState(null);
+  const [uploadingImg, setUploadingImg] = useState(false);
 
   const set = (key, val) => setForm(f => ({ ...f, [key]: val }));
 
+  const handleImageUpload = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    setUploadingImg(true);
+    const data = new FormData();
+    data.append('file', file);
+    data.append('upload_preset', CLOUDINARY_PRESET);
+    try {
+      const res = await fetch(CLOUDINARY_URL, { method: 'POST', body: data });
+      const fileData = await res.json();
+      setImage(fileData.secure_url);
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setUploadingImg(false);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!form.name || !form.price) return;
+    if (!form.name || !form.price || uploadingImg) return;
     setSubmitting(true);
-    setTimeout(() => {
-      onAdd({ ...form, id: Date.now(), status: 'Active', img: 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=200&q=80' });
-      setSubmitting(false);
-      onClose();
-    }, 800);
+    const imgUrl = image || 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=200&q=80';
+    onAdd({ ...form, price: Number(form.price), img: imgUrl });
   };
 
   const inputStyle = {
@@ -142,15 +158,27 @@ const AddProductModal = ({ onClose, onAdd }) => {
                 onBlur={e => e.target.style.borderColor = 'var(--border)'} />
             </div>
 
-            {/* Image upload (visual placeholder) */}
+            {/* Image upload */}
             <div>
               <label style={labelStyle}>Product Image</label>
-              <div style={{ border: '2px dashed var(--border)', borderRadius: '1rem', padding: '2rem', textAlign: 'center', cursor: 'pointer', transition: 'border-color .2s' }}
+              <div style={{ position: 'relative', border: '2px dashed var(--border)', borderRadius: '1rem', padding: '2rem', textAlign: 'center', transition: 'border-color .2s' }}
                 onMouseEnter={e => e.currentTarget.style.borderColor = 'var(--primary)'}
                 onMouseLeave={e => e.currentTarget.style.borderColor = 'var(--border)'}>
-                <Upload size={28} color="var(--text-muted)" style={{ margin: '0 auto 0.75rem' }} />
-                <div style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--text-muted)' }}>Click to upload or drag & drop</div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>PNG, JPG up to 5MB</div>
+                <input type="file" accept="image/*" onChange={handleImageUpload} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', opacity: 0, cursor: 'pointer' }} />
+                {uploadingImg ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
+                    <Loader2 size={28} className="spin" color="var(--primary)" />
+                    <div style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--primary)' }}>Uploading...</div>
+                  </div>
+                ) : image ? (
+                  <img src={image} alt="Uploaded preview" style={{ width: '80px', height: '80px', objectFit: 'cover', borderRadius: '0.5rem', margin: '0 auto' }} />
+                ) : (
+                  <>
+                    <Upload size={28} color="var(--text-muted)" style={{ margin: '0 auto 0.75rem' }} />
+                    <div style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--text-muted)' }}>Click to upload or drag & drop</div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>PNG, JPG up to 5MB</div>
+                  </>
+                )}
               </div>
             </div>
 
@@ -177,17 +205,69 @@ const AddProductModal = ({ onClose, onAdd }) => {
 const Vendor = () => {
   const { user } = useAuth();
   const { toast } = useToast();
-  const [products, setProducts] = useState(initialProducts);
+  const [products, setProducts] = useState([]);
   const [showModal, setShowModal] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [orders, setOrders] = useState([]);
+  const [loadingOrders, setLoadingOrders] = useState(true);
 
-  const handleAdd = (product) => {
-    setProducts(p => [...p, product]);
-    toast(`"${product.name}" added to marketplace! 🎉`, 'success');
+  useEffect(() => {
+    const fetchListings = async () => {
+      try {
+        const data = await getVendorListings();
+        setProducts(data);
+      } catch (err) {
+        console.error('Error fetching vendor listings', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    const fetchOrders = async () => {
+      try {
+        const data = await getOrders();
+        setOrders(data);
+      } catch (err) {
+        console.error('Error fetching orders', err);
+      } finally {
+        setLoadingOrders(false);
+      }
+    };
+
+    if (user) {
+      fetchListings();
+      fetchOrders();
+    }
+  }, [user]);
+
+  const handleUpdateStatus = async (orderId, newStatus) => {
+    try {
+      await updateOrderStatus(orderId, newStatus);
+      setOrders(orders.map(o => o.id === orderId ? { ...o, status: newStatus } : o));
+      toast(`Order status updated to "${newStatus}"!`, 'success');
+    } catch (err) {
+      toast('Failed to update order status', 'error');
+    }
   };
 
-  const handleDelete = (id, name) => {
-    setProducts(p => p.filter(p => p.id !== id));
-    toast(`"${name}" removed.`, 'info');
+  const handleAdd = async (productData) => {
+    try {
+      const newProduct = await createListing(productData);
+      setProducts(p => [...p, newProduct]);
+      toast(`"${newProduct.name}" added to marketplace! 🎉`, 'success');
+    } catch (err) {
+      toast('Failed to add product', 'error');
+    }
+  };
+
+  const handleDelete = async (id, name) => {
+    try {
+      await deleteListing(id);
+      setProducts(p => p.filter(p => p.id !== id));
+      toast(`"${name}" removed.`, 'info');
+    } catch (err) {
+      toast('Failed to delete product', 'error');
+    }
   };
 
   const toggleStatus = (id) => {
@@ -297,6 +377,65 @@ const Vendor = () => {
               <button onClick={() => setShowModal(true)} className="btn btn-primary">
                 <Plus size={16} /> Add Your First Product
               </button>
+            </div>
+          )}
+        </motion.div>
+
+        {/* Order Status Section */}
+        <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} style={{ marginTop: '3.5rem' }}>
+          <h2 style={{ fontSize: '1.25rem', marginBottom: '1.5rem' }}>Recent Orders <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: 600 }}>({orders.length})</span></h2>
+          
+          {loadingOrders ? (
+            <div style={{ textAlign: 'center', padding: '2rem', color: 'var(--text-muted)' }}>
+              <Loader2 className="animate-spin" style={{ margin: '0 auto' }} />
+            </div>
+          ) : orders.length === 0 ? (
+            <div style={{ background: 'var(--bg-card)', borderRadius: '1.5rem', border: '1px solid var(--border)', overflow: 'hidden' }}>
+              <div style={{ padding: '2rem', textAlign: 'center' }}>
+                <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '64px', height: '64px', borderRadius: '50%', background: 'rgba(249,115,22,.1)', color: 'var(--accent)', marginBottom: '1rem' }}>
+                  <Package size={32} />
+                </div>
+                <h3 style={{ fontSize: '1.125rem', color: 'var(--text-heading)', marginBottom: '0.5rem' }}>No orders yet</h3>
+                <p style={{ color: 'var(--text-muted)', maxWidth: '400px', margin: '0 auto' }}>
+                  Once buyers purchase your authentic items, they will appear here for you to fulfill!
+                </p>
+              </div>
+            </div>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {orders.map((o) => (
+                <div key={o.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', padding: '1.25rem', borderRadius: '1.25rem', background: 'var(--bg-card)', border: '1px solid var(--border)', boxShadow: 'var(--shadow)' }}>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '0.5rem' }}>
+                    <div>
+                      <span style={{ fontWeight: 800, color: 'var(--text-heading)', fontSize: '0.95rem' }}>{o.id}</span>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginLeft: '0.75rem' }}>{o.date}</span>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                      <span style={{ fontWeight: 800, color: 'var(--primary)' }}>₹{o.totalAmount.toLocaleString()}</span>
+                      <select 
+                        value={o.status} 
+                        onChange={(e) => handleUpdateStatus(o.id, e.target.value)}
+                        style={{ padding: '0.25rem 0.5rem', borderRadius: '0.5rem', border: '1px solid var(--border)', background: 'var(--bg-section)', color: 'var(--text-body)', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer', outline: 'none' }}
+                      >
+                        <option value="Pending">Pending</option>
+                        <option value="Shipped">Shipped</option>
+                        <option value="Delivered">Delivered</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', borderTop: '1px solid var(--border)', paddingTop: '0.75rem' }}>
+                    {o.items.map((item, idx) => (
+                      <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                        <img src={item.img} alt={item.name} style={{ width: '36px', height: '36px', borderRadius: '0.375rem', objectFit: 'cover' }} />
+                        <div style={{ flex: 1, minWidth: 0 }}>
+                          <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-heading)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{item.name}</div>
+                          <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Qty: {item.qty} · ₹{(item.price * item.qty).toLocaleString()}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           )}
         </motion.div>

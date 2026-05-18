@@ -15,6 +15,8 @@ from routes.auth         import router as auth_router
 from routes.destinations import router as destinations_router
 from routes.products     import router as products_router
 from routes.guides       import router as guides_router
+from routes.listings     import router as listings_router
+from routes.orders       import router as orders_router
 
 # ── App ───────────────────────────────────────────────────────────
 app = FastAPI(
@@ -39,6 +41,8 @@ app.include_router(auth_router,         prefix="/api/auth",         tags=["Auth"
 app.include_router(destinations_router, prefix="/api/destinations",  tags=["Destinations"])
 app.include_router(products_router,     prefix="/api/products",      tags=["Products"])
 app.include_router(guides_router,       prefix="/api/guides",        tags=["Guides"])
+app.include_router(listings_router,     prefix="/api/listings",      tags=["Listings"])
+app.include_router(orders_router,       prefix="/api/orders",        tags=["Orders"])
 
 # ── Health check ─────────────────────────────────────────────────
 @app.get("/", tags=["Health"])

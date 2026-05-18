@@ -2,6 +2,11 @@
 @import "tailwindcss";
 @import "leaflet/dist/leaflet.css";
 
+/* ── Tailwind V4 configuration ──────────────────────────────────── */
+@theme {
+  --variant-dark: .dark;
+}
+
 /* ── Leaflet overrides ──────────────────────────────────────────── */
 .leaflet-container { z-index: 1; border-radius: inherit; }
 .leaflet-control-attribution { font-size: 10px; }
@@ -14,20 +19,20 @@
 .leaflet-popup-content { margin: 0; }
 .leaflet-popup-tip { display: none; }
 
-/* ── Design Tokens ──────────────────────────────────────────────── */
+/* ── Design Tokens (Fog Theme - Light) ──────────────────────────── */
 :root {
-  --primary: #6366F1;
-  --primary-hover: #4F46E5;
-  --accent: #F97316;
-  --accent-light: #FB923C;
-  --bg: #FFFFFF;
-  --bg-section: #F8FAFC;
-  --bg-card: #FFFFFF;
-  --text-heading: #0F172A;
-  --text-body: #475569;
-  --text-muted: #94A3B8;
-  --border: #E2E8F0;
-  --border-hover: #CBD5E1;
+  --bg: #f4f6f7;
+  --bg-section: #eef1f2;
+  --bg-card: #ffffff;
+  --primary: #475569;
+  --primary-hover: #334155;
+  --accent: #0ea5e9;
+  --accent-light: #38bdf8;
+  --text-heading: #1e293b;
+  --text-body: #64748b;
+  --text-muted: #94a3b8;
+  --border: #cbd5e1;
+  --border-hover: #94a3b8;
   --radius: 16px;
   --shadow:    0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
   --shadow-md: 0 4px 6px rgba(0,0,0,0.04), 0 2px 4px rgba(0,0,0,0.03);
@@ -36,16 +41,20 @@
   --navbar-h: 70px;
 }
 
-/* ── Dark Mode Tokens ───────────────────────────────────────────── */
-[data-theme="dark"] {
-  --bg: #0F1117;
-  --bg-section: #161B27;
-  --bg-card: #1E2433;
-  --text-heading: #F1F5F9;
-  --text-body: #94A3B8;
-  --text-muted: #64748B;
-  --border: #2A3347;
-  --border-hover: #3B4A62;
+/* ── Dark Mode Tokens (Forest Theme) ────────────────────────────── */
+:is([data-theme="dark"], .dark) {
+  --bg: #06100e;
+  --bg-section: #0a1c17;
+  --bg-card: #0f2b23;
+  --primary: #10b981;
+  --primary-hover: #059669;
+  --accent: #fb923c;
+  --accent-light: #fdba74;
+  --text-heading: #ecfdf5;
+  --text-body: #a7f3d0;
+  --text-muted: #34d399;
+  --border: #164e3d;
+  --border-hover: #0f766e;
   --shadow:    0 1px 3px rgba(0,0,0,0.3),  0 1px 2px rgba(0,0,0,0.2);
   --shadow-md: 0 4px 6px rgba(0,0,0,0.25), 0 2px 4px rgba(0,0,0,0.2);
   --shadow-lg: 0 10px 25px rgba(0,0,0,0.3), 0 4px 10px rgba(0,0,0,0.2);
@@ -53,60 +62,60 @@
 }
 
 /* ── Dark Mode component overrides ─────────────────────────────── */
-[data-theme="dark"] body {
+:is([data-theme="dark"], .dark) body {
   background: var(--bg);
   color: var(--text-body);
 }
-[data-theme="dark"] .navbar,
-[data-theme="dark"] nav {
-  background: rgba(15,17,23,0.97) !important;
+:is([data-theme="dark"], .dark) .navbar,
+:is([data-theme="dark"], .dark) nav {
+  background: rgba(6,16,14,0.97) !important;
   border-bottom-color: var(--border) !important;
 }
-[data-theme="dark"] .navbar.scrolled {
-  background: rgba(15,17,23,0.98) !important;
+:is([data-theme="dark"], .dark) .navbar.scrolled {
+  background: rgba(6,16,14,0.98) !important;
 }
-[data-theme="dark"] .card,
-[data-theme="dark"] .stat-card,
-[data-theme="dark"] .trip-row {
+:is([data-theme="dark"], .dark) .card,
+:is([data-theme="dark"], .dark) .stat-card,
+:is([data-theme="dark"], .dark) .trip-row {
   background: var(--bg-card);
   border-color: var(--border);
 }
-[data-theme="dark"] .chat-bubble.bot,
-[data-theme="dark"] .chat-input,
-[data-theme="dark"] .suggestion-chip {
+:is([data-theme="dark"], .dark) .chat-bubble.bot,
+:is([data-theme="dark"], .dark) .chat-input,
+:is([data-theme="dark"], .dark) .suggestion-chip {
   background: var(--bg-card);
   border-color: var(--border);
   color: var(--text-body);
 }
-[data-theme="dark"] .chat-page,
-[data-theme="dark"] .section-bg {
+:is([data-theme="dark"], .dark) .chat-page,
+:is([data-theme="dark"], .dark) .section-bg {
   background: var(--bg-section);
 }
-[data-theme="dark"] .form-input,
-[data-theme="dark"] .search-input {
+:is([data-theme="dark"], .dark) .form-input,
+:is([data-theme="dark"], .dark) .search-input {
   background: var(--bg-section);
   border-color: var(--border);
   color: var(--text-heading);
 }
-[data-theme="dark"] .chip {
+:is([data-theme="dark"], .dark) .chip {
   background: var(--bg-section);
   border-color: var(--border);
   color: var(--text-body);
 }
-[data-theme="dark"] .step-circle {
+:is([data-theme="dark"], .dark) .step-circle {
   background: var(--bg-card);
   border-color: var(--border);
   color: var(--text-muted);
 }
-[data-theme="dark"] .rating-badge {
-  background: rgba(30,36,51,0.92);
+:is([data-theme="dark"], .dark) .rating-badge {
+  background: rgba(15,43,35,0.92);
   color: var(--text-heading);
 }
-[data-theme="dark"] .footer {
-  background: #080C13;
+:is([data-theme="dark"], .dark) .footer {
+  background: #030807;
 }
-[data-theme="dark"] ::-webkit-scrollbar-thumb { background: #2A3347; }
-[data-theme="dark"] ::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+:is([data-theme="dark"], .dark) ::-webkit-scrollbar-thumb { background: #164e3d; }
+:is([data-theme="dark"], .dark) ::-webkit-scrollbar-thumb:hover { background: var(--primary); }
 
 /* ── Home page sections ─────────────────────────────────────────── */
 .home-hero {
@@ -125,13 +134,13 @@
 }
 
 /* Dark overrides for Home */
-[data-theme="dark"] .home-hero {
-  background: linear-gradient(135deg, #0F1117 0%, #161B27 55%, rgba(30,36,51,0.6) 100%);
+:is([data-theme="dark"], .dark) .home-hero {
+  background: linear-gradient(135deg, #06100e 0%, #0a1c17 55%, rgba(15,43,35,0.6) 100%);
 }
-[data-theme="dark"] .home-features {
+:is([data-theme="dark"], .dark) .home-features {
   background: var(--bg);
 }
-[data-theme="dark"] .home-stat-icon {
+:is([data-theme="dark"], .dark) .home-stat-icon {
   background: var(--bg-card);
   border-color: var(--border);
 }
@@ -193,9 +202,10 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; bac
 
 .grid-4 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
 }
+@media (min-width: 480px) { .grid-4 { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1024px) { .grid-4 { grid-template-columns: repeat(4, 1fr); } }
 
 .grid-2 {

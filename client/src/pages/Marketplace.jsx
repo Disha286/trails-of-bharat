@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Heart, ShoppingCart, Star, MapPin, Search, X, Plus, Minus, Trash2, ArrowRight, Package, Loader2 } from 'lucide-react';
-import { productCategories } from '../data/products.js';
-import { getProducts } from '../services/productService.js';
+import { getListings } from '../services/listingService.js';
+import { createOrder } from '../services/orderService.js';
 import { useToast } from '../context/ToastContext';
 
+const productCategories = ['All', 'handicrafts', 'homestays', 'events', 'ecotourism'];
+
 /* ── Cart Sidebar ──────────────────────────────────────────────── */
-const CartSidebar = ({ cart, onClose, onUpdateQty, onRemove }) => {
+const CartSidebar = ({ cart, onClose, onUpdateQty, onRemove, onCheckout }) => {
   const subtotal = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
   const shipping = cart.length > 0 ? 99 : 0;
   const total = subtotal + shipping;
@@ -112,6 +114,7 @@ const CartSidebar = ({ cart, onClose, onUpdateQty, onRemove }) => {
               </div>
             </div>
             <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97 }}
+              onClick={onCheckout}
               style={{ width: '100%', padding: '1rem', borderRadius: '1rem', background: 'var(--primary)', color: '#fff', fontWeight: 800, fontSize: '0.9375rem', border: 'none', cursor: 'pointer', fontFamily: 'inherit', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', boxShadow: '0 4px 14px rgba(99,102,241,.35)' }}>
               Proceed to Checkout <ArrowRight size={16} />
             </motion.button>
@@ -130,9 +133,25 @@ const Marketplace = () => {
   const [wishlist, setWishlist] = useState([]);
   const [cart, setCart]         = useState([]); // [{ id, name, price, img, state, category, qty }]
   const [cartOpen, setCartOpen] = useState(false);
+  const [listings, setListings] = useState([]);
+  const [loading, setLoading]   = useState(true);
 
-  const filtered = products.filter(p => {
-    if (activeCategory !== 'All' && p.category !== activeCategory) return false;
+  useEffect(() => {
+    const fetchListings = async () => {
+      setLoading(true);
+      try {
+        const data = await getListings(activeCategory);
+        setListings(data);
+      } catch (err) {
+        toast('Failed to load listings', 'error');
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchListings();
+  }, [activeCategory, toast]);
+
+  const filtered = listings.filter(p => {
     if (query && !p.name.toLowerCase().includes(query.toLowerCase()) && !p.state.toLowerCase().includes(query.toLowerCase())) return false;
     return true;
   });
@@ -166,10 +185,26 @@ const Marketplace = () => {
   const discount = (orig, price) => Math.round(((orig - price) / orig) * 100);
   const inCart = (id) => cart.some(i => i.id === id);
 
+  const handleCheckout = async () => {
+    if (cart.length === 0) return;
+    const subtotal = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+    const shipping = 99;
+    const total = subtotal + shipping;
+    
+    try {
+      await createOrder(cart, total);
+      toast('Order placed successfully! 🇮🇳', 'success');
+      setCart([]);
+      setCartOpen(false);
+    } catch (err) {
+      toast('Failed to place order. Please try again.', 'error');
+    }
+  };
+
   return (
     <div className="page">
       <AnimatePresence>
-        {cartOpen && <CartSidebar cart={cart} onClose={() => setCartOpen(false)} onUpdateQty={updateQty} onRemove={removeFromCart} />}
+        {cartOpen && <CartSidebar cart={cart} onClose={() => setCartOpen(false)} onUpdateQty={updateQty} onRemove={removeFromCart} onCheckout={handleCheckout} />}
       </AnimatePresence>
 
       {/* ── Hero Banner ── */}
@@ -246,6 +281,11 @@ const Marketplace = () => {
 
         {/* Product grid */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(260px,1fr))', gap: '1.75rem' }}>
+          {loading ? (
+            <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '4rem 0' }}>
+              <Loader2 size={32} className="spin" style={{ color: 'var(--primary)', margin: '0 auto' }} />
+            </div>
+          ) : (
           <AnimatePresence>
             {filtered.map((p, i) => (
               <motion.div key={p.id} layout initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, scale: .95 }} transition={{ delay: i * .04 }}
@@ -313,9 +353,10 @@ const Marketplace = () => {
               </motion.div>
             ))}
           </AnimatePresence>
+          )}
         </div>
 
-        {filtered.length === 0 && (
+        {!loading && filtered.length === 0 && (
           <div style={{ textAlign: 'center', padding: '5rem 2rem', background: 'var(--bg-card)', borderRadius: '1.5rem', border: '1px solid var(--border)' }}>
             <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🛍️</div>
             <h3 style={{ color: 'var(--text-heading)', marginBottom: '0.5rem' }}>No products found</h3>

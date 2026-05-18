@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Star, MapPin, Clock, Utensils, Lightbulb, ChevronLeft, Calendar, ArrowRight, MessageSquare, ThumbsUp, Wallet, IndianRupee } from 'lucide-react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import { getDestinationById, destinations } from '../data/destinations';
+import { useAuth } from '../context/AuthContext';
 
 // Fix Vite/Leaflet icon path issue
 delete L.Icon.Default.prototype._getIconUrl;
@@ -38,6 +40,30 @@ const DestinationDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const d = getDestinationById(id);
+  
+  const { isAuthenticated, user } = useAuth();
+  const [reviews, setReviews] = useState(REVIEWS);
+  const [reviewText, setReviewText] = useState('');
+  const [rating, setRating] = useState(5);
+  
+  const handleReviewSubmit = (e) => {
+    e.preventDefault();
+    if (!reviewText.trim()) return;
+    
+    const newReview = {
+      id: Date.now(),
+      name: user?.name || 'Traveler',
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80',
+      rating,
+      date: new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+      text: reviewText,
+      helpful: 0,
+    };
+    
+    setReviews([newReview, ...reviews]);
+    setReviewText('');
+    setRating(5);
+  };
 
   if (!d) return (
     <div style={{ minHeight: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1rem' }}>
@@ -175,7 +201,7 @@ const DestinationDetail = () => {
 
               {/* Review cards */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1.5rem' }}>
-                {REVIEWS.map((r, i) => (
+                {reviews.map((r, i) => (
                   <motion.div key={r.id} initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * .1 }}
                     style={{ background: 'var(--bg-card)', borderRadius: '1.25rem', border: '1px solid var(--border)', padding: '1.25rem', boxShadow: 'var(--shadow)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.875rem', marginBottom: '0.875rem' }}>
@@ -196,12 +222,30 @@ const DestinationDetail = () => {
                 ))}
               </div>
 
-              {/* Write review CTA */}
-              <Link to="/login" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', padding: '0.875rem', borderRadius: '1rem', background: 'var(--bg-section)', border: '1.5px dashed var(--border)', color: 'var(--text-muted)', fontWeight: 700, fontSize: '0.875rem', textDecoration: 'none', transition: 'all .2s' }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--primary)'; e.currentTarget.style.color = 'var(--primary)'; }}
-                onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.color = 'var(--text-muted)'; }}>
-                ✏️ Write a Review — Login to contribute
-              </Link>
+              {/* Write review CTA or Form */}
+              {isAuthenticated ? (
+                <form onSubmit={handleReviewSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem', padding: '1.25rem', borderRadius: '1rem', background: 'var(--bg-section)', border: '1px solid var(--border)' }}>
+                  <div style={{ fontSize: '0.875rem', fontWeight: 700, color: 'var(--text-heading)' }}>Write a Review</div>
+                  <div style={{ display: 'flex', gap: '4px' }}>
+                    {[1, 2, 3, 4, 5].map(i => (
+                      <Star key={i} size={18} fill={i <= rating ? '#f59e0b' : 'none'} color={i <= rating ? '#f59e0b' : 'var(--border)'} cursor="pointer" onClick={() => setRating(i)} />
+                    ))}
+                  </div>
+                  <textarea 
+                    value={reviewText} 
+                    onChange={e => setReviewText(e.target.value)} 
+                    placeholder="Share your experience..." 
+                    style={{ padding: '0.875rem', borderRadius: '0.75rem', border: '1px solid var(--border)', background: 'var(--bg)', color: 'var(--text-body)', fontSize: '0.875rem', fontFamily: 'inherit', resize: 'vertical', minHeight: '80px', outline: 'none' }} 
+                  />
+                  <button type="submit" disabled={!reviewText.trim()} style={{ alignSelf: 'flex-start', padding: '0.75rem 1.5rem', borderRadius: '0.75rem', background: 'var(--primary)', color: '#fff', border: 'none', fontWeight: 700, cursor: reviewText.trim() ? 'pointer' : 'not-allowed', opacity: reviewText.trim() ? 1 : 0.5, transition: 'background 0.2s' }}>Submit Review</button>
+                </form>
+              ) : (
+                <Link to="/login" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', padding: '0.875rem', borderRadius: '1rem', background: 'var(--bg-section)', border: '1.5px dashed var(--border)', color: 'var(--text-muted)', fontWeight: 700, fontSize: '0.875rem', textDecoration: 'none', transition: 'all .2s' }}
+                  onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--primary)'; e.currentTarget.style.color = 'var(--primary)'; }}
+                  onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.color = 'var(--text-muted)'; }}>
+                  ✏️ Write a Review — Login to contribute
+                </Link>
+              )}
             </section>
           </div>
 

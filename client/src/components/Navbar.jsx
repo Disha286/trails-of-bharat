@@ -3,12 +3,13 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronDown, Menu, X, Compass, LayoutDashboard, LogOut, UserCircle } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { useTranslation } from 'react-i18next';
 import ThemeToggle from './ThemeToggle';
 
 /* ── Nav data ──────────────────────────────────────────────────── */
-const navItems = [
+const getNavItems = (t) => [
   {
-    label: 'Destinations',
+    label: t('nav.destinations'),
     dropdown: [
       { label: '🏔️ North India',      path: '/explore?cat=heritage' },
       { label: '🌿 South India',       path: '/explore?cat=eco' },
@@ -19,7 +20,7 @@ const navItems = [
     ],
   },
   {
-    label: 'Travel Resources',
+    label: t('nav.travelResources'),
     dropdown: [
       { label: 'Trip Planner',  path: '/planner' },
       { label: 'Local Guides',  path: '/guides' },
@@ -28,7 +29,7 @@ const navItems = [
     ],
   },
   {
-    label: 'Community',
+    label: t('nav.community'),
     dropdown: [
       { label: 'Meet the Locals',   path: '/community' },
       { label: 'Local Guides',      path: '/guides' },
@@ -37,7 +38,7 @@ const navItems = [
     ],
   },
   {
-    label: 'About',
+    label: t('nav.about'),
     dropdown: [
       { label: 'Our Story', path: '/about' },
       { label: 'Team',      path: '/about' },
@@ -45,14 +46,14 @@ const navItems = [
     ],
   },
   {
-    label: 'Group Tours',
+    label: t('nav.groupTours'),
     dropdown: [
       { label: 'Upcoming Tours', path: '/explore' },
       { label: 'Custom Groups',  path: '/planner' },
       { label: 'School Trips',   path: '/explore' },
     ],
   },
-  { label: 'Contact Us', path: '/contact' },
+  { label: t('nav.contactUs'), path: '/contact' },
 ];
 
 /* ── Dropdown animation ─────────────────────────────────────────── */
@@ -260,12 +261,19 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { isAuthenticated, user, logout } = useAuth();
+  const { t, i18n } = useTranslation();
+  const navItems = getNavItems(t);
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 12);
     window.addEventListener('scroll', fn);
     return () => window.removeEventListener('scroll', fn);
   }, []);
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'en' ? 'hi' : 'en';
+    i18n.changeLanguage(newLang);
+  };
 
   return (
     <nav style={{
@@ -307,6 +315,23 @@ const Navbar = () => {
           {/* Theme toggle — always visible */}
           <ThemeToggle />
 
+          {/* Language toggle */}
+          <button 
+            onClick={toggleLanguage}
+            style={{ 
+              display: 'flex', alignItems: 'center', justifyContent: 'center', 
+              width: '38px', height: '38px', borderRadius: '50%', 
+              background: 'var(--bg-section)', border: '1.5px solid var(--border)', 
+              color: 'var(--text-heading)', fontWeight: 700, fontSize: '13px', 
+              cursor: 'pointer', fontFamily: 'inherit', transition: 'all 0.2s' 
+            }}
+            title="Toggle Language"
+            onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--primary)'; e.currentTarget.style.color = 'var(--primary)'; }}
+            onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.color = 'var(--text-heading)'; }}
+          >
+            {i18n.language === 'en' ? 'EN' : 'HI'}
+          </button>
+
           {isAuthenticated ? (
             /* ── Logged in ─────────────────────────── */
             <>
@@ -318,9 +343,9 @@ const Navbar = () => {
                 </span>
               </div>
 
-              {/* Dashboard */}
+              {/* Dashboard / Admin Portal */}
               <Link
-                to="/dashboard"
+                to={user?.role === 'admin' ? '/admin' : '/dashboard'}
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: '6px',
                   padding: '8px 16px', borderRadius: '10px',
@@ -332,7 +357,7 @@ const Navbar = () => {
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--primary)'; e.currentTarget.style.color = '#fff'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'rgba(99,102,241,0.08)'; e.currentTarget.style.color = 'var(--primary)'; }}
               >
-                <LayoutDashboard size={15} /> Dashboard
+                <LayoutDashboard size={15} /> {user?.role === 'admin' ? 'Admin Portal' : t('nav.dashboard')}
               </Link>
 
               {/* Logout */}
@@ -349,7 +374,7 @@ const Navbar = () => {
                 onMouseEnter={e => { e.currentTarget.style.borderColor = '#ef4444'; e.currentTarget.style.color = '#ef4444'; }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.color = 'var(--text-muted)'; }}
               >
-                <LogOut size={14} /> Logout
+                <LogOut size={14} /> {t('nav.logout')}
               </button>
             </>
           ) : (
@@ -368,7 +393,7 @@ const Navbar = () => {
                 onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--primary)'; e.currentTarget.style.color = 'var(--primary)'; }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.color = 'var(--text-heading)'; }}
               >
-                Login
+                {t('nav.login')}
               </Link>
               <Link
                 to="/register"
@@ -385,7 +410,7 @@ const Navbar = () => {
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--primary-hover)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'var(--primary)'; e.currentTarget.style.transform = 'translateY(0)'; }}
               >
-                Register
+                {t('nav.register')}
               </Link>
             </>
           )}
@@ -436,24 +461,24 @@ const Navbar = () => {
                         <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>{user?.email}</div>
                       </div>
                     </div>
-                    <Link to="/dashboard" onClick={() => setMobileOpen(false)}
+                    <Link to={user?.role === 'admin' ? '/admin' : '/dashboard'} onClick={() => setMobileOpen(false)}
                       style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '12px 16px', borderRadius: '10px', background: 'rgba(99,102,241,0.07)', color: 'var(--primary)', fontWeight: 700, fontSize: '15px', textDecoration: 'none' }}>
-                      <LayoutDashboard size={16} /> Dashboard
+                      <LayoutDashboard size={16} /> {user?.role === 'admin' ? 'Admin Portal' : t('nav.dashboard')}
                     </Link>
                     <button onClick={() => { logout(); setMobileOpen(false); }}
                       style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '12px 16px', borderRadius: '10px', background: 'transparent', border: '1.5px solid var(--border)', color: 'var(--text-muted)', fontWeight: 700, fontSize: '15px', cursor: 'pointer', fontFamily: 'inherit', width: '100%' }}>
-                      <LogOut size={16} /> Logout
+                      <LogOut size={16} /> {t('nav.logout')}
                     </button>
                   </>
                 ) : (
                   <>
                     <Link to="/login" onClick={() => setMobileOpen(false)}
                       style={{ display: 'block', textAlign: 'center', padding: '13px', borderRadius: '10px', border: '1.5px solid var(--border)', color: 'var(--text-heading)', fontWeight: 700, fontSize: '15px', textDecoration: 'none' }}>
-                      Login
+                      {t('nav.login')}
                     </Link>
                     <Link to="/register" onClick={() => setMobileOpen(false)}
                       style={{ display: 'block', textAlign: 'center', padding: '13px', borderRadius: '10px', background: 'var(--primary)', color: '#fff', fontWeight: 700, fontSize: '15px', textDecoration: 'none' }}>
-                      Register
+                      {t('nav.register')}
                     </Link>
                   </>
                 )}

@@ -44,4 +44,19 @@ export const registerUser = (data) =>
 export const fetchProfile = () =>
   api.get('/auth/me').then((r) => r.data);
 
+/**
+ * Trigger forgot password email.
+ * @param {string} email
+ */
+export const forgotPassword = (email) =>
+  api.post('/auth/forgot-password', { email }).then((r) => r.data);
+
+/**
+ * Reset password using token.
+ * @param {string} token
+ * @param {string} newPassword
+ */
+export const resetPassword = (token, newPassword) =>
+  api.post('/auth/reset-password', { token, new_password: newPassword }).then((r) => r.data);
+
 export default api;

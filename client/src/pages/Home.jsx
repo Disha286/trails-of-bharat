@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Search, ArrowRight, Star, MapPin, Map, ShoppingBag, Heart, Zap, Globe, Users } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { destinations, categories } from '../data/destinations';
 
 // Curated featured picks — diverse categories & regions
@@ -9,6 +10,7 @@ const FEATURED_IDS = ['agra','alleppey','ladakh','hampi','goa','tawang'];
 const featured = FEATURED_IDS.map(id => destinations.find(d => d.id === id)).filter(Boolean);
 
 const Home = () => {
+  const { t } = useTranslation();
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
 
@@ -30,32 +32,32 @@ const Home = () => {
         <div className="container" style={{ position: 'relative', zIndex: 1, paddingBlock: '5rem' }}>
           <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} style={{ maxWidth: '680px' }}>
             <span style={{ display:'inline-flex', alignItems:'center', gap:'0.5rem', padding:'0.4rem 1rem', borderRadius:'999px', background:'rgba(99,102,241,.25)', border:'1px solid rgba(99,102,241,.4)', color:'#a5b4fc', fontSize:'0.8rem', fontWeight:700, marginBottom:'1.75rem' }}>
-              <Zap size={13} /> AI-Powered Travel Platform
+              <Zap size={13} /> {t('hero.aiPowered')}
             </span>
             <h1 style={{ fontSize:'clamp(2.5rem,6vw,4.5rem)', fontWeight:900, color:'#fff', lineHeight:1.08, marginBottom:'1.25rem' }}>
-              Discover Incredible<br />
-              <span style={{ background:'linear-gradient(135deg,#818cf8,#fb923c)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text' }}>India with AI</span>
+              {t('hero.discoverIncredible')}<br />
+              <span style={{ background:'linear-gradient(135deg,#818cf8,#fb923c)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text' }}>{t('hero.indiaWithAi')}</span>
             </h1>
             <p style={{ fontSize:'1.1rem', color:'rgba(255,255,255,.7)', lineHeight:1.7, maxWidth:'32rem', marginBottom:'2.25rem' }}>
-              Personalized itineraries, hidden gems, and smart recommendations for your perfect Indian adventure.
+              {t('hero.subtitle')}
             </p>
 
             {/* Search */}
             <form onSubmit={handleSearch} style={{ display:'flex', background:'rgba(255,255,255,.1)', backdropFilter:'blur(16px)', borderRadius:'1rem', border:'1.5px solid rgba(255,255,255,.2)', overflow:'hidden', maxWidth:'520px', marginBottom:'2rem' }}>
               <div style={{ display:'flex', alignItems:'center', gap:'0.75rem', flex:1, padding:'0 1.25rem' }}>
                 <Search size={18} color="rgba(255,255,255,.5)" />
-                <input value={query} onChange={e => setQuery(e.target.value)} placeholder="Search destinations, experiences…"
+                <input value={query} onChange={e => setQuery(e.target.value)} placeholder={t('hero.searchPlaceholder')}
                   style={{ flex:1, background:'none', border:'none', outline:'none', fontSize:'0.9375rem', color:'#fff', fontFamily:'inherit', padding:'0.95rem 0' }} />
               </div>
               <button type="submit" style={{ padding:'0 1.5rem', background:'var(--primary)', border:'none', color:'#fff', fontWeight:700, cursor:'pointer', fontFamily:'inherit', transition:'background .2s' }}>
-                Search
+                {t('hero.searchBtn')}
               </button>
             </form>
 
             <div style={{ display:'flex', flexWrap:'wrap', gap:'1rem' }}>
-              <Link to="/explore" className="btn btn-primary btn-lg">Start Exploring <ArrowRight size={16} /></Link>
+              <Link to="/explore" className="btn btn-primary btn-lg">{t('hero.startExploring')} <ArrowRight size={16} /></Link>
               <Link to="/planner" style={{ display:'inline-flex', alignItems:'center', gap:'0.5rem', padding:'0.9rem 1.75rem', borderRadius:'0.875rem', background:'rgba(255,255,255,.1)', backdropFilter:'blur(10px)', color:'#fff', fontWeight:700, fontSize:'0.9375rem', textDecoration:'none', border:'1.5px solid rgba(255,255,255,.25)' }}>
-                <Map size={16} /> Plan with AI
+                <Map size={16} /> {t('hero.planWithAi')}
               </Link>
             </div>
           </motion.div>
@@ -321,11 +323,11 @@ const Home = () => {
       <section className="section" style={{ background:'var(--bg-section)' }}>
         <div style={{ maxWidth:'44rem', margin:'0 auto', padding:'0 1.5rem', textAlign:'center' }}>
           <motion.div initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }}>
-            <h2 style={{ fontSize:'clamp(2rem,4vw,3rem)', color:'var(--text-heading)', marginBottom:'1rem' }}>Ready to Explore India? 🇮🇳</h2>
-            <p style={{ color:'var(--text-body)', fontSize:'1.0625rem', marginBottom:'2.5rem', lineHeight:1.7 }}>Join 50,000+ travelers who've discovered incredible India with AI.</p>
+            <h2 style={{ fontSize:'clamp(2rem,4vw,3rem)', color:'var(--text-heading)', marginBottom:'1rem' }}>{t('cta.ready')}</h2>
+            <p style={{ color:'var(--text-body)', fontSize:'1.0625rem', marginBottom:'2.5rem', lineHeight:1.7 }}>{t('cta.joinText')}</p>
             <div style={{ display:'flex', flexWrap:'wrap', justifyContent:'center', gap:'1rem' }}>
-              <Link to="/register" className="btn btn-primary btn-lg">Get Started Free</Link>
-              <Link to="/explore" className="btn btn-outline btn-lg">Browse Destinations</Link>
+              <Link to="/register" className="btn btn-primary btn-lg">{t('cta.getStarted')}</Link>
+              <Link to="/explore" className="btn btn-outline btn-lg">{t('cta.browse')}</Link>
             </div>
           </motion.div>
         </div>

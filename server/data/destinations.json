@@ -1,0 +1,3842 @@
+[
+  {
+    "id": "agra",
+    "name": "Agra – Taj Mahal",
+    "state": "Uttar Pradesh",
+    "tagline": "Monument of Eternal Love",
+    "category": "Heritage",
+    "rating": 4.9,
+    "reviews": 8200,
+    "budget": "moderate",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80",
+    "desc": "The Taj Mahal, a UNESCO World Heritage Site and one of the Seven Wonders, is an eternal symbol of love built by Shah Jahan.",
+    "highlights": [
+      "Taj Mahal",
+      "Agra Fort",
+      "Mehtab Bagh",
+      "Fatehpur Sikri"
+    ],
+    "localFood": [
+      "Petha",
+      "Mughlai Biryani"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80"
+    ],
+    "tips": [
+      "Visit at sunrise for golden light",
+      "Taj closed on Fridays"
+    ],
+    "tags": [
+      "Heritage",
+      "Monuments",
+      "History"
+    ],
+    "lat": 27.1767,
+    "lng": 78.0081
+  },
+  {
+    "id": "jaipur",
+    "name": "Jaipur – Pink City",
+    "state": "Rajasthan",
+    "tagline": "Land of Maharajas",
+    "category": "Heritage",
+    "rating": 4.8,
+    "reviews": 6100,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80",
+    "desc": "Jaipur enchants with its rose-hued palaces, vibrant bazaars, and tales of Rajput grandeur.",
+    "highlights": [
+      "Amber Fort",
+      "Hawa Mahal",
+      "City Palace",
+      "Jantar Mantar"
+    ],
+    "localFood": [
+      "Dal Baati Churma",
+      "Ghewar"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80"
+    ],
+    "tips": [
+      "Book palace hotels early",
+      "Avoid Apr-Jun heat"
+    ],
+    "tags": [
+      "Heritage",
+      "Forts",
+      "Culture"
+    ],
+    "lat": 26.9124,
+    "lng": 75.7873
+  },
+  {
+    "id": "udaipur",
+    "name": "Udaipur – City of Lakes",
+    "state": "Rajasthan",
+    "tagline": "Venice of the East",
+    "category": "Heritage",
+    "rating": 4.8,
+    "reviews": 4800,
+    "budget": "high",
+    "duration": "3-4 days",
+    "bestTime": "Oct–Feb",
+    "img": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80",
+    "desc": "Udaipur is a dreamy lakeside city of white palaces, shimmering waters, and regal hospitality.",
+    "highlights": [
+      "Lake Palace",
+      "City Palace",
+      "Pichola Lake",
+      "Jagdish Temple"
+    ],
+    "localFood": [
+      "Dal Baati",
+      "Mawa Kachori"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80"
+    ],
+    "tips": [
+      "Boat ride on Lake Pichola is a must",
+      "Book rooftop restaurants early"
+    ],
+    "tags": [
+      "Heritage",
+      "Lakes",
+      "Romance"
+    ],
+    "lat": 24.5854,
+    "lng": 73.7125
+  },
+  {
+    "id": "jaisalmer",
+    "name": "Jaisalmer – Golden City",
+    "state": "Rajasthan",
+    "tagline": "The Desert Fortress",
+    "category": "Heritage",
+    "rating": 4.7,
+    "reviews": 3200,
+    "budget": "moderate",
+    "duration": "2-3 days",
+    "bestTime": "Nov–Feb",
+    "img": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80",
+    "desc": "Jaisalmer rises like a mirage from the Thar Desert, a living fort city of sandstone havelis.",
+    "highlights": [
+      "Jaisalmer Fort",
+      "Sam Sand Dunes",
+      "Patwon ki Haveli",
+      "Gadisar Lake"
+    ],
+    "localFood": [
+      "Ker Sangri",
+      "Dal Baati"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80"
+    ],
+    "tips": [
+      "Book camel safari at sunset",
+      "Avoid May-Jun desert heat"
+    ],
+    "tags": [
+      "Desert",
+      "Heritage",
+      "Forts"
+    ],
+    "lat": 26.9157,
+    "lng": 70.9083
+  },
+  {
+    "id": "jodhpur",
+    "name": "Jodhpur – Blue City",
+    "state": "Rajasthan",
+    "tagline": "Sun City",
+    "category": "Heritage",
+    "rating": 4.7,
+    "reviews": 3800,
+    "budget": "moderate",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80",
+    "desc": "Jodhpur mesmerises with its blue-washed houses spreading beneath the imposing Mehrangarh Fort.",
+    "highlights": [
+      "Mehrangarh Fort",
+      "Jaswant Thada",
+      "Clock Tower Market",
+      "Umaid Bhawan"
+    ],
+    "localFood": [
+      "Makhania Lassi",
+      "Mirchi Bada"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80"
+    ],
+    "tips": [
+      "Explore blue lanes on foot",
+      "Visit fort at sunrise"
+    ],
+    "tags": [
+      "Heritage",
+      "Forts",
+      "Culture"
+    ],
+    "lat": 26.2389,
+    "lng": 73.0243
+  },
+  {
+    "id": "ranthambore",
+    "name": "Ranthambore National Park",
+    "state": "Rajasthan",
+    "tagline": "Land of the Tiger",
+    "category": "Wildlife",
+    "rating": 4.8,
+    "reviews": 2100,
+    "budget": "high",
+    "duration": "2-3 days",
+    "bestTime": "Oct–May",
+    "img": "https://images.unsplash.com/photo-1552410260-0fd9b577afa6?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1552410260-0fd9b577afa6?w=800&q=80",
+    "desc": "Ranthambore is Rajasthan's premier wildlife sanctuary where tigers roam ancient fort ruins.",
+    "highlights": [
+      "Tiger Safari",
+      "Ranthambore Fort",
+      "Padam Talao",
+      "Raj Bagh Ruins"
+    ],
+    "localFood": [
+      "Laal Maas",
+      "Dal Baati"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1552410260-0fd9b577afa6?w=800&q=80"
+    ],
+    "tips": [
+      "Book safari 3 months ahead",
+      "Morning safaris are best"
+    ],
+    "tags": [
+      "Wildlife",
+      "Safari",
+      "Nature"
+    ],
+    "lat": 26.0173,
+    "lng": 76.5026
+  },
+  {
+    "id": "pushkar",
+    "name": "Pushkar",
+    "state": "Rajasthan",
+    "tagline": "Holy City of Brahma",
+    "category": "Spiritual",
+    "rating": 4.6,
+    "reviews": 2400,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80",
+    "desc": "Pushkar is a sacred town wrapped around a holy lake, famous for its Brahma Temple and camel fair.",
+    "highlights": [
+      "Brahma Temple",
+      "Pushkar Lake",
+      "Savitri Temple",
+      "Camel Fair Grounds"
+    ],
+    "localFood": [
+      "Malpua",
+      "Lassi"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80"
+    ],
+    "tips": [
+      "Visit during Camel Fair in Nov",
+      "Respect religious customs – no meat/alcohol"
+    ],
+    "tags": [
+      "Spiritual",
+      "Culture",
+      "Heritage"
+    ],
+    "lat": 26.4899,
+    "lng": 74.5511
+  },
+  {
+    "id": "delhi",
+    "name": "Delhi – Capital City",
+    "state": "Delhi",
+    "tagline": "Heart of India",
+    "category": "Heritage",
+    "rating": 4.6,
+    "reviews": 9200,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80",
+    "desc": "Delhi layers thousands of years of history — Mughal, British, and modern — in one vibrant megacity.",
+    "highlights": [
+      "Red Fort",
+      "Qutub Minar",
+      "India Gate",
+      "Humayun's Tomb"
+    ],
+    "localFood": [
+      "Chole Bhature",
+      "Daulat ki Chaat"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80"
+    ],
+    "tips": [
+      "Use Metro to avoid traffic",
+      "Street food at Chandni Chowk is unmissable"
+    ],
+    "tags": [
+      "Heritage",
+      "Food",
+      "History"
+    ],
+    "lat": 28.6139,
+    "lng": 77.209
+  },
+  {
+    "id": "amritsar",
+    "name": "Amritsar – Golden Temple",
+    "state": "Punjab",
+    "tagline": "City of the Holy Shrine",
+    "category": "Spiritual",
+    "rating": 4.9,
+    "reviews": 5600,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1514222134-b57cbb8ce073?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1514222134-b57cbb8ce073?w=800&q=80",
+    "desc": "Amritsar is home to the Golden Temple, the holiest Sikh shrine, shimmering in a sacred pool.",
+    "highlights": [
+      "Golden Temple",
+      "Wagah Border",
+      "Jallianwala Bagh",
+      "Gobindgarh Fort"
+    ],
+    "localFood": [
+      "Amritsari Kulcha",
+      "Lassi"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1514222134-b57cbb8ce073?w=800&q=80"
+    ],
+    "tips": [
+      "Free langar served 24/7",
+      "Wagah ceremony at sunset is spectacular"
+    ],
+    "tags": [
+      "Spiritual",
+      "Heritage",
+      "Culture"
+    ],
+    "lat": 31.634,
+    "lng": 74.8723
+  },
+  {
+    "id": "srinagar",
+    "name": "Srinagar – Dal Lake",
+    "state": "Jammu & Kashmir",
+    "tagline": "Paradise on Earth",
+    "category": "Eco Tourism",
+    "rating": 4.8,
+    "reviews": 3900,
+    "budget": "high",
+    "duration": "4-5 days",
+    "bestTime": "Apr–Oct",
+    "img": "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=800&q=80",
+    "desc": "Srinagar enchants with its shikara-dotted Dal Lake, Mughal gardens, and snow-framed mountains.",
+    "highlights": [
+      "Dal Lake Shikara",
+      "Mughal Gardens",
+      "Shankaracharya Temple",
+      "Nishat Bagh"
+    ],
+    "localFood": [
+      "Rogan Josh",
+      "Kahwa Tea"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=800&q=80"
+    ],
+    "tips": [
+      "Stay in a houseboat for the full experience",
+      "Visit Tulip Garden in April"
+    ],
+    "tags": [
+      "Lakes",
+      "Gardens",
+      "Culture"
+    ],
+    "lat": 34.0837,
+    "lng": 74.7973
+  },
+  {
+    "id": "gulmarg",
+    "name": "Gulmarg",
+    "state": "Jammu & Kashmir",
+    "tagline": "Meadow of Flowers",
+    "category": "Adventure",
+    "rating": 4.7,
+    "reviews": 2800,
+    "budget": "high",
+    "duration": "3-4 days",
+    "bestTime": "Dec–Mar (ski), Apr–Jun",
+    "img": "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=800&q=80",
+    "desc": "Gulmarg offers Asia's highest gondola, world-class skiing in winter, and meadows of wildflowers in summer.",
+    "highlights": [
+      "Gulmarg Gondola",
+      "Alpather Lake",
+      "Skiing slopes",
+      "St. Mary's Church"
+    ],
+    "localFood": [
+      "Rogan Josh",
+      "Haakh"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=800&q=80"
+    ],
+    "tips": [
+      "Book gondola tickets in advance",
+      "Ski equipment available on rent"
+    ],
+    "tags": [
+      "Adventure",
+      "Mountains",
+      "Snow"
+    ],
+    "lat": 34.0484,
+    "lng": 74.3805
+  },
+  {
+    "id": "pahalgam",
+    "name": "Pahalgam",
+    "state": "Jammu & Kashmir",
+    "tagline": "Valley of Shepherds",
+    "category": "Eco Tourism",
+    "rating": 4.7,
+    "reviews": 2400,
+    "budget": "high",
+    "duration": "3-4 days",
+    "bestTime": "Apr–Oct",
+    "img": "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=800&q=80",
+    "desc": "Pahalgam is a serene valley of pine forests and gushing rivers, base camp for the Amarnath Yatra.",
+    "highlights": [
+      "Betaab Valley",
+      "Aru Valley",
+      "Baisaran Meadow",
+      "Chandanwari"
+    ],
+    "localFood": [
+      "Rogan Josh",
+      "Yakhni"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=800&q=80"
+    ],
+    "tips": [
+      "Best Apr-Jun and Sep-Oct",
+      "Carry warm layers even in summer"
+    ],
+    "tags": [
+      "Nature",
+      "Mountains",
+      "Spiritual"
+    ],
+    "lat": 34.0161,
+    "lng": 75.3197
+  },
+  {
+    "id": "ladakh",
+    "name": "Leh-Ladakh",
+    "state": "Ladakh",
+    "tagline": "Land of High Passes",
+    "category": "Adventure",
+    "rating": 4.9,
+    "reviews": 3800,
+    "budget": "high",
+    "duration": "7-10 days",
+    "bestTime": "Jun–Sep",
+    "img": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
+    "desc": "Ladakh stuns with Pangong Lake, ancient monasteries, and some of the world's highest motorable roads.",
+    "highlights": [
+      "Pangong Tso Lake",
+      "Nubra Valley",
+      "Khardung La Pass",
+      "Hemis Monastery"
+    ],
+    "localFood": [
+      "Thukpa",
+      "Butter Tea"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80"
+    ],
+    "tips": [
+      "Acclimatize 2 days in Leh",
+      "Carry altitude medicine"
+    ],
+    "tags": [
+      "Adventure",
+      "Mountains",
+      "Lakes"
+    ],
+    "lat": 34.1526,
+    "lng": 77.5771
+  },
+  {
+    "id": "shimla",
+    "name": "Shimla",
+    "state": "Himachal Pradesh",
+    "tagline": "Queen of Hills",
+    "category": "Eco Tourism",
+    "rating": 4.6,
+    "reviews": 4800,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Mar–Jun, Sep–Nov",
+    "img": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "desc": "Shimla is a charming colonial hill station with a toy train, Mall Road, and Himalayan panoramas.",
+    "highlights": [
+      "Mall Road",
+      "Christ Church",
+      "Jakhu Temple",
+      "Toy Train Ride"
+    ],
+    "localFood": [
+      "Siddu",
+      "Chha Gosht"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80"
+    ],
+    "tips": [
+      "Take toy train from Kalka for the full experience",
+      "Avoid Christmas week rush"
+    ],
+    "tags": [
+      "Hills",
+      "Heritage",
+      "Nature"
+    ],
+    "lat": 31.1048,
+    "lng": 77.1734
+  },
+  {
+    "id": "manali",
+    "name": "Manali",
+    "state": "Himachal Pradesh",
+    "tagline": "Valley of the Gods",
+    "category": "Adventure",
+    "rating": 4.8,
+    "reviews": 5200,
+    "budget": "moderate",
+    "duration": "4-6 days",
+    "bestTime": "Mar–Jun, Sep–Nov",
+    "img": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "desc": "Manali is a high-altitude adventure hub of glaciers, apple orchards, and thrilling mountain roads.",
+    "highlights": [
+      "Rohtang Pass",
+      "Solang Valley",
+      "Hadimba Temple",
+      "Old Manali"
+    ],
+    "localFood": [
+      "Sidu",
+      "Trout Fish"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80"
+    ],
+    "tips": [
+      "Check Rohtang road status before going",
+      "Book early for summer holidays"
+    ],
+    "tags": [
+      "Adventure",
+      "Mountains",
+      "Snow"
+    ],
+    "lat": 32.2396,
+    "lng": 77.1887
+  },
+  {
+    "id": "dharamshala",
+    "name": "Dharamshala & McLeodganj",
+    "state": "Himachal Pradesh",
+    "tagline": "Little Lhasa",
+    "category": "Spiritual",
+    "rating": 4.7,
+    "reviews": 3600,
+    "budget": "budget",
+    "duration": "3-4 days",
+    "bestTime": "Mar–Jun, Sep–Nov",
+    "img": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "desc": "Dharamshala, home to the Dalai Lama, blends Tibetan Buddhist culture with Himalayan trekking trails.",
+    "highlights": [
+      "Dalai Lama Temple",
+      "Bhagsu Waterfall",
+      "Triund Trek",
+      "Tibet Museum"
+    ],
+    "localFood": [
+      "Thukpa",
+      "Thenthuk"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80"
+    ],
+    "tips": [
+      "Get permit for Triund trek",
+      "Best Sep-Nov for clear skies"
+    ],
+    "tags": [
+      "Spiritual",
+      "Trekking",
+      "Culture"
+    ],
+    "lat": 32.219,
+    "lng": 76.3234
+  },
+  {
+    "id": "spiti",
+    "name": "Spiti Valley",
+    "state": "Himachal Pradesh",
+    "tagline": "Little Tibet",
+    "category": "Adventure",
+    "rating": 4.8,
+    "reviews": 1800,
+    "budget": "high",
+    "duration": "6-8 days",
+    "bestTime": "Jun–Sep",
+    "img": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "desc": "Spiti is a cold desert mountain valley dotted with ancient mud monasteries and lunar landscapes.",
+    "highlights": [
+      "Key Monastery",
+      "Chandratal Lake",
+      "Kibber Village",
+      "Pin Valley"
+    ],
+    "localFood": [
+      "Tsampa",
+      "Butter Tea"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80"
+    ],
+    "tips": [
+      "Route via Manali open Jun-Sep only",
+      "Carry cash — no ATMs in villages"
+    ],
+    "tags": [
+      "Adventure",
+      "Mountains",
+      "Monasteries"
+    ],
+    "lat": 32.2461,
+    "lng": 78.0338
+  },
+  {
+    "id": "kasol",
+    "name": "Kasol",
+    "state": "Himachal Pradesh",
+    "tagline": "Mini Israel of India",
+    "category": "Eco Tourism",
+    "rating": 4.6,
+    "reviews": 2200,
+    "budget": "budget",
+    "duration": "3-4 days",
+    "bestTime": "Mar–Jun, Sep–Nov",
+    "img": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "desc": "Kasol is a tiny backpacker haven in Parvati Valley with lush forests, clear rivers, and café culture.",
+    "highlights": [
+      "Kheerganga Trek",
+      "Chalal Village",
+      "Parvati River",
+      "Manikaran Gurudwara"
+    ],
+    "localFood": [
+      "Israeli Food",
+      "Maggi"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80"
+    ],
+    "tips": [
+      "Trek to Kheerganga (12 km) for hot springs",
+      "Pack warm clothes even in summer"
+    ],
+    "tags": [
+      "Trekking",
+      "Nature",
+      "Backpacker"
+    ],
+    "lat": 32.0122,
+    "lng": 77.3156
+  },
+  {
+    "id": "dalhousie",
+    "name": "Dalhousie",
+    "state": "Himachal Pradesh",
+    "tagline": "Scotland of India",
+    "category": "Eco Tourism",
+    "rating": 4.5,
+    "reviews": 2000,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Mar–Jun, Sep–Nov",
+    "img": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "desc": "Dalhousie is a peaceful colonial hill station of pine-clad ridges, Victorian churches, and Himalayan views.",
+    "highlights": [
+      "Khajjiar Meadow",
+      "Dainkund Peak",
+      "St. Francis Church",
+      "Satdhara Falls"
+    ],
+    "localFood": [
+      "Chha Gosht",
+      "Madra"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80"
+    ],
+    "tips": [
+      "Visit Khajjiar (18 km away) for Switzerland vibes",
+      "Carry warm clothes year-round"
+    ],
+    "tags": [
+      "Hills",
+      "Nature",
+      "Heritage"
+    ],
+    "lat": 32.5391,
+    "lng": 75.9789
+  },
+  {
+    "id": "khajjiar",
+    "name": "Khajjiar",
+    "state": "Himachal Pradesh",
+    "tagline": "Mini Switzerland of India",
+    "category": "Eco Tourism",
+    "rating": 4.7,
+    "reviews": 1800,
+    "budget": "budget",
+    "duration": "1-2 days",
+    "bestTime": "Apr–Jun, Sep–Oct",
+    "img": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "desc": "Khajjiar is a lush saucer-shaped meadow framed by cedar forests and the Dhauladhar range.",
+    "highlights": [
+      "Khajjiar Lake",
+      "Khajji Nag Temple",
+      "Paragliding",
+      "Horse Riding"
+    ],
+    "localFood": [
+      "Chha Gosht",
+      "Aktori"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80"
+    ],
+    "tips": [
+      "Can be done as day trip from Dalhousie",
+      "Best Apr-Jun"
+    ],
+    "tags": [
+      "Nature",
+      "Hills",
+      "Eco Tourism"
+    ],
+    "lat": 32.5455,
+    "lng": 76.0637
+  },
+  {
+    "id": "haridwar",
+    "name": "Haridwar",
+    "state": "Uttarakhand",
+    "tagline": "Gateway to the Gods",
+    "category": "Spiritual",
+    "rating": 4.7,
+    "reviews": 4800,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Apr",
+    "img": "https://images.unsplash.com/photo-1544644181-1484b3fdfc32?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1544644181-1484b3fdfc32?w=800&q=80",
+    "desc": "Haridwar is a sacred city on the Ganges where pilgrims take holy dips and the Ganga Aarti mesmerises at sunset.",
+    "highlights": [
+      "Har Ki Pauri Ghat",
+      "Mansa Devi Temple",
+      "Ganga Aarti",
+      "Chandi Devi Temple"
+    ],
+    "localFood": [
+      "Aloo Puri",
+      "Lassi"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1544644181-1484b3fdfc32?w=800&q=80"
+    ],
+    "tips": [
+      "Ganga Aarti at sunset is unmissable",
+      "Avoid Kumbh Mela unless planned ahead"
+    ],
+    "tags": [
+      "Spiritual",
+      "Ghats",
+      "Culture"
+    ],
+    "lat": 29.9457,
+    "lng": 78.1642
+  },
+  {
+    "id": "rishikesh",
+    "name": "Rishikesh",
+    "state": "Uttarakhand",
+    "tagline": "Yoga Capital of the World",
+    "category": "Adventure",
+    "rating": 4.8,
+    "reviews": 5600,
+    "budget": "moderate",
+    "duration": "3-5 days",
+    "bestTime": "Sep–Jun",
+    "img": "https://images.unsplash.com/photo-1544644181-1484b3fdfc32?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1544644181-1484b3fdfc32?w=800&q=80",
+    "desc": "Rishikesh combines white-water rafting, yoga ashrams, and ancient temples on the Ganges.",
+    "highlights": [
+      "Laxman Jhula",
+      "River Rafting",
+      "Triveni Ghat Aarti",
+      "Beatles Ashram"
+    ],
+    "localFood": [
+      "Aloo Puri",
+      "Kafuli"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1544644181-1484b3fdfc32?w=800&q=80"
+    ],
+    "tips": [
+      "Book rafting in advance",
+      "Attend sunrise yoga on the banks"
+    ],
+    "tags": [
+      "Adventure",
+      "Spiritual",
+      "Yoga"
+    ],
+    "lat": 30.0869,
+    "lng": 78.2676
+  },
+  {
+    "id": "mussoorie",
+    "name": "Mussoorie",
+    "state": "Uttarakhand",
+    "tagline": "Queen of the Hills",
+    "category": "Eco Tourism",
+    "rating": 4.6,
+    "reviews": 4200,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Mar–Jun, Sep–Nov",
+    "img": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "desc": "Mussoorie is a charming ridge-top hill station with sweeping valley views, waterfalls, and a lively Mall Road.",
+    "highlights": [
+      "Kempty Falls",
+      "Gun Hill",
+      "Camel's Back Road",
+      "Landour"
+    ],
+    "localFood": [
+      "Singodi",
+      "Bal Mithai"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80"
+    ],
+    "tips": [
+      "Visit on weekdays to avoid crowds",
+      "Cable car to Gun Hill for panoramic views"
+    ],
+    "tags": [
+      "Hills",
+      "Nature",
+      "Heritage"
+    ],
+    "lat": 30.4598,
+    "lng": 78.0664
+  },
+  {
+    "id": "nainital",
+    "name": "Nainital",
+    "state": "Uttarakhand",
+    "tagline": "Lake District of India",
+    "category": "Eco Tourism",
+    "rating": 4.6,
+    "reviews": 4400,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Mar–Jun, Sep–Nov",
+    "img": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "desc": "Nainital is a picturesque hill station centered on a shimmering lake surrounded by wooded hills.",
+    "highlights": [
+      "Naini Lake",
+      "Snow View Point",
+      "Naina Devi Temple",
+      "Bhimtal"
+    ],
+    "localFood": [
+      "Bal Mithai",
+      "Singodi"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80"
+    ],
+    "tips": [
+      "Boating on Naini Lake is a must",
+      "Avoid Oct-Dec for clear weather"
+    ],
+    "tags": [
+      "Lakes",
+      "Hills",
+      "Nature"
+    ],
+    "lat": 29.3919,
+    "lng": 79.4542
+  },
+  {
+    "id": "valleyofflowers",
+    "name": "Valley of Flowers",
+    "state": "Uttarakhand",
+    "tagline": "Himalayan Floral Paradise",
+    "category": "Eco Tourism",
+    "rating": 4.9,
+    "reviews": 1200,
+    "budget": "moderate",
+    "duration": "2-3 days",
+    "bestTime": "Jul–Sep",
+    "img": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "desc": "The Valley of Flowers is a UNESCO World Heritage Site bursting with 500+ species of alpine wildflowers.",
+    "highlights": [
+      "Flower Valley Trek",
+      "Hemkund Sahib",
+      "Ghangaria Base Camp",
+      "Pushpawati River"
+    ],
+    "localFood": [
+      "Maggi",
+      "Rajma Chawal"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+    ],
+    "tips": [
+      "Open Jul-Sep only",
+      "Trek 14 km from Govindghat"
+    ],
+    "tags": [
+      "Nature",
+      "Trekking",
+      "UNESCO"
+    ],
+    "lat": 30.7283,
+    "lng": 79.6057
+  },
+  {
+    "id": "auli",
+    "name": "Auli",
+    "state": "Uttarakhand",
+    "tagline": "Skiing Paradise",
+    "category": "Adventure",
+    "rating": 4.7,
+    "reviews": 1600,
+    "budget": "high",
+    "duration": "3-4 days",
+    "bestTime": "Jan–Mar (ski), May–Jun",
+    "img": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "desc": "Auli is India's premier ski resort with panoramic views of Nanda Devi and Himalayan peaks.",
+    "highlights": [
+      "Ski Slopes",
+      "Cable Car",
+      "Auli Artificial Lake",
+      "Gurso Bugyal"
+    ],
+    "localFood": [
+      "Kafuli",
+      "Aloo Ke Gutke"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+    ],
+    "tips": [
+      "Best skiing Jan-Mar",
+      "Ropeway from Joshimath is spectacular"
+    ],
+    "tags": [
+      "Adventure",
+      "Snow",
+      "Mountains"
+    ],
+    "lat": 30.5197,
+    "lng": 79.5641
+  },
+  {
+    "id": "varanasi",
+    "name": "Varanasi",
+    "state": "Uttar Pradesh",
+    "tagline": "City of Light",
+    "category": "Spiritual",
+    "rating": 4.8,
+    "reviews": 5800,
+    "budget": "budget",
+    "duration": "2-4 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1561361058-c24e36b4e33a?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1561361058-c24e36b4e33a?w=800&q=80",
+    "desc": "Varanasi is the world's oldest living city — a spiritual epicenter of burning ghats, temple bells, and Ganga Aarti.",
+    "highlights": [
+      "Dashashwamedh Ghat",
+      "Kashi Vishwanath Temple",
+      "Sarnath",
+      "Sunrise Boat Ride"
+    ],
+    "localFood": [
+      "Thandai",
+      "Kachori Sabzi"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1561361058-c24e36b4e33a?w=800&q=80"
+    ],
+    "tips": [
+      "Wake at 4am for Ganga Aarti",
+      "Visit Sarnath (10 km) where Buddha gave first sermon"
+    ],
+    "tags": [
+      "Spiritual",
+      "Ghats",
+      "Culture"
+    ],
+    "lat": 25.3176,
+    "lng": 82.9739
+  },
+  {
+    "id": "lucknow",
+    "name": "Lucknow",
+    "state": "Uttar Pradesh",
+    "tagline": "City of Nawabs",
+    "category": "Heritage",
+    "rating": 4.5,
+    "reviews": 3200,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80",
+    "desc": "Lucknow is a city of Nawabi elegance — biryani, kebabs, chikankari embroidery, and Mughal architecture.",
+    "highlights": [
+      "Bara Imambara",
+      "Rumi Darwaza",
+      "Hazratganj Market",
+      "Residency"
+    ],
+    "localFood": [
+      "Lucknawi Biryani",
+      "Galouti Kebab"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80"
+    ],
+    "tips": [
+      "Iftari at Chowk during Ramadan is special",
+      "Visit Hazratganj for chikankari shopping"
+    ],
+    "tags": [
+      "Heritage",
+      "Food",
+      "Culture"
+    ],
+    "lat": 26.8467,
+    "lng": 80.9462
+  },
+  {
+    "id": "khajuraho",
+    "name": "Khajuraho",
+    "state": "Madhya Pradesh",
+    "tagline": "Temple of Desires",
+    "category": "Heritage",
+    "rating": 4.8,
+    "reviews": 3400,
+    "budget": "moderate",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    "desc": "Khajuraho's medieval temples are UNESCO-listed masterpieces of erotic and devotional sculpture.",
+    "highlights": [
+      "Western Temple Group",
+      "Eastern Temple Group",
+      "Sound & Light Show",
+      "Panna National Park"
+    ],
+    "localFood": [
+      "Dal Bafla",
+      "Poha Jalebi"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+    ],
+    "tips": [
+      "Sound & Light show is unmissable",
+      "Hire a certified guide for temple explanations"
+    ],
+    "tags": [
+      "Heritage",
+      "Temples",
+      "UNESCO"
+    ],
+    "lat": 24.8318,
+    "lng": 79.9199
+  },
+  {
+    "id": "gwalior",
+    "name": "Gwalior",
+    "state": "Madhya Pradesh",
+    "tagline": "City of Fortress",
+    "category": "Heritage",
+    "rating": 4.5,
+    "reviews": 2200,
+    "budget": "budget",
+    "duration": "1-2 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    "desc": "Gwalior Fort is one of India's grandest hill forts, commanding views over the city below.",
+    "highlights": [
+      "Gwalior Fort",
+      "Man Singh Palace",
+      "Jai Vilas Palace",
+      "Tansen's Tomb"
+    ],
+    "localFood": [
+      "Dal Baati",
+      "Gajak"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+    ],
+    "tips": [
+      "Fort is spectacular at dusk",
+      "Great day trip from Agra (120 km)"
+    ],
+    "tags": [
+      "Heritage",
+      "Forts",
+      "History"
+    ],
+    "lat": 26.2183,
+    "lng": 78.1828
+  },
+  {
+    "id": "sanchi",
+    "name": "Sanchi",
+    "state": "Madhya Pradesh",
+    "tagline": "The Buddhist Heritage",
+    "category": "Heritage",
+    "rating": 4.7,
+    "reviews": 1800,
+    "budget": "budget",
+    "duration": "1-2 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    "desc": "Sanchi has the oldest stone structures in India — the Great Stupa built by Emperor Ashoka for the Buddha.",
+    "highlights": [
+      "Great Stupa",
+      "Ashoka Pillar",
+      "Archaeological Museum",
+      "Monastery Ruins"
+    ],
+    "localFood": [
+      "Poha",
+      "Jalebi"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+    ],
+    "tips": [
+      "Can be combined with Bhopal trip",
+      "Quiet and uncrowded — ideal for reflection"
+    ],
+    "tags": [
+      "Heritage",
+      "Buddhist",
+      "UNESCO"
+    ],
+    "lat": 23.4793,
+    "lng": 77.7392
+  },
+  {
+    "id": "kanha",
+    "name": "Kanha National Park",
+    "state": "Madhya Pradesh",
+    "tagline": "Jungle Book Country",
+    "category": "Wildlife",
+    "rating": 4.8,
+    "reviews": 2600,
+    "budget": "high",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Jun",
+    "img": "https://images.unsplash.com/photo-1552410260-0fd9b577afa6?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1552410260-0fd9b577afa6?w=800&q=80",
+    "desc": "Kanha inspired Rudyard Kipling's Jungle Book — now a premier tiger reserve with grasslands and sal forests.",
+    "highlights": [
+      "Tiger Safari",
+      "Barasingha Deer",
+      "Night Safari",
+      "Bamni Dadar Sunset"
+    ],
+    "localFood": [
+      "Dal Bafla",
+      "Bhutte Ki Kees"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1552410260-0fd9b577afa6?w=800&q=80"
+    ],
+    "tips": [
+      "Book safari 3 months ahead in peak season",
+      "Morning safaris offer best tiger sightings"
+    ],
+    "tags": [
+      "Wildlife",
+      "Safari",
+      "Nature"
+    ],
+    "lat": 22.335,
+    "lng": 80.6115
+  },
+  {
+    "id": "bandhavgarh",
+    "name": "Bandhavgarh National Park",
+    "state": "Madhya Pradesh",
+    "tagline": "Land of the White Tiger",
+    "category": "Wildlife",
+    "rating": 4.9,
+    "reviews": 2400,
+    "budget": "high",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Jun",
+    "img": "https://images.unsplash.com/photo-1552410260-0fd9b577afa6?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1552410260-0fd9b577afa6?w=800&q=80",
+    "desc": "Bandhavgarh has one of India's highest tiger densities, making it the best park for guaranteed sightings.",
+    "highlights": [
+      "Tiger Safari",
+      "Bandhavgarh Fort Ruins",
+      "Elephant Safari",
+      "Chakradhara Meadow"
+    ],
+    "localFood": [
+      "Dal Bafla",
+      "Poha"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1552410260-0fd9b577afa6?w=800&q=80"
+    ],
+    "tips": [
+      "Zone Tala has best tiger density",
+      "Book 3 months ahead for peak season"
+    ],
+    "tags": [
+      "Wildlife",
+      "Safari",
+      "Nature"
+    ],
+    "lat": 23.7157,
+    "lng": 80.9754
+  },
+  {
+    "id": "pachmarhi",
+    "name": "Pachmarhi",
+    "state": "Madhya Pradesh",
+    "tagline": "Queen of Satpura",
+    "category": "Eco Tourism",
+    "rating": 4.6,
+    "reviews": 2000,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Oct–Jun",
+    "img": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+    "desc": "Pachmarhi is Madhya Pradesh's only hill station — waterfalls, ancient caves, and dense Satpura forests.",
+    "highlights": [
+      "Bee Falls",
+      "Pandav Caves",
+      "Dhupgarh Sunset",
+      "Jata Shankar Cave"
+    ],
+    "localFood": [
+      "Korma",
+      "Poha"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80"
+    ],
+    "tips": [
+      "Jata Shankar cave is uniquely spiritual",
+      "Best Oct-Feb for waterfalls"
+    ],
+    "tags": [
+      "Nature",
+      "Hills",
+      "Heritage"
+    ],
+    "lat": 22.4678,
+    "lng": 78.434
+  },
+  {
+    "id": "mumbai",
+    "name": "Mumbai – Gateway of India",
+    "state": "Maharashtra",
+    "tagline": "City of Dreams",
+    "category": "Heritage",
+    "rating": 4.7,
+    "reviews": 9800,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Nov–Mar",
+    "img": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80",
+    "desc": "Mumbai pulses with Bollywood glamour, colonial heritage, street food, and the iconic Marine Drive coastline.",
+    "highlights": [
+      "Gateway of India",
+      "Marine Drive",
+      "Elephanta Caves",
+      "Dharavi & Juhu"
+    ],
+    "localFood": [
+      "Vada Pav",
+      "Pav Bhaji"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80"
+    ],
+    "tips": [
+      "Use local trains for authentic experience",
+      "Elephanta Caves need a 1hr ferry ride"
+    ],
+    "tags": [
+      "Heritage",
+      "Food",
+      "Beaches"
+    ],
+    "lat": 19.076,
+    "lng": 72.8777
+  },
+  {
+    "id": "ajantaellora",
+    "name": "Ajanta & Ellora Caves",
+    "state": "Maharashtra",
+    "tagline": "Ancient Rock-Cut Wonders",
+    "category": "Heritage",
+    "rating": 4.9,
+    "reviews": 3600,
+    "budget": "moderate",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80",
+    "desc": "Ajanta and Ellora are UNESCO rock-cut cave complexes with Buddhist, Hindu, and Jain masterpieces.",
+    "highlights": [
+      "Ajanta Painted Caves",
+      "Kailasa Temple Ellora",
+      "Buddhist Viharas",
+      "Jain Caves"
+    ],
+    "localFood": [
+      "Puran Poli",
+      "Vada Pav"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80"
+    ],
+    "tips": [
+      "Ajanta closed Mondays, Ellora closed Tuesdays",
+      "Hire a guide for historical context"
+    ],
+    "tags": [
+      "Heritage",
+      "UNESCO",
+      "History"
+    ],
+    "lat": 20.5519,
+    "lng": 75.7033
+  },
+  {
+    "id": "lonavala",
+    "name": "Lonavala & Khandala",
+    "state": "Maharashtra",
+    "tagline": "Jewels of the Sahyadris",
+    "category": "Eco Tourism",
+    "rating": 4.5,
+    "reviews": 4200,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Jun–Sep",
+    "img": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80",
+    "desc": "Lonavala is a misty hill station of waterfalls, ancient caves, and viewpoints above the Deccan plateau.",
+    "highlights": [
+      "Bhushi Dam",
+      "Tiger's Leap",
+      "Karla Caves",
+      "Ryewood Park"
+    ],
+    "localFood": [
+      "Chikki",
+      "Corn"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80"
+    ],
+    "tips": [
+      "Spectacular in monsoon Jul-Sep",
+      "Avoid weekends from Mumbai"
+    ],
+    "tags": [
+      "Hills",
+      "Nature",
+      "Waterfalls"
+    ],
+    "lat": 18.7481,
+    "lng": 73.4072
+  },
+  {
+    "id": "mahabaleshwar",
+    "name": "Mahabaleshwar",
+    "state": "Maharashtra",
+    "tagline": "Strawberry Capital",
+    "category": "Eco Tourism",
+    "rating": 4.6,
+    "reviews": 3800,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Mar–Jun, Sep–Nov",
+    "img": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80",
+    "desc": "Mahabaleshwar is a lush hill station of strawberry farms, five rivers, and sweeping valley viewpoints.",
+    "highlights": [
+      "Arthur's Seat Viewpoint",
+      "Venna Lake",
+      "Mapro Garden",
+      "Pratapgarh Fort"
+    ],
+    "localFood": [
+      "Strawberries & Cream",
+      "Missal Pav"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80"
+    ],
+    "tips": [
+      "Fresh strawberries Mar-May",
+      "Best views at Arthur's Seat"
+    ],
+    "tags": [
+      "Hills",
+      "Nature",
+      "Eco Tourism"
+    ],
+    "lat": 17.9236,
+    "lng": 73.6586
+  },
+  {
+    "id": "matheran",
+    "name": "Matheran",
+    "state": "Maharashtra",
+    "tagline": "Car-Free Hill Station",
+    "category": "Eco Tourism",
+    "rating": 4.5,
+    "reviews": 2800,
+    "budget": "budget",
+    "duration": "2 days",
+    "bestTime": "Oct–Jun",
+    "img": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80",
+    "desc": "Matheran is India's only car-free hill station reached by a toy train — a peaceful red-laterite plateau.",
+    "highlights": [
+      "Charlotte Lake",
+      "Echo Point",
+      "Panorama Point",
+      "Mini Train Ride"
+    ],
+    "localFood": [
+      "Chikki",
+      "Corn"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80"
+    ],
+    "tips": [
+      "No vehicles allowed inside — hire a horse",
+      "Best Oct-Jun, avoid monsoon for trekking"
+    ],
+    "tags": [
+      "Hills",
+      "Eco Tourism",
+      "Nature"
+    ],
+    "lat": 18.9793,
+    "lng": 73.2714
+  },
+  {
+    "id": "pune",
+    "name": "Pune",
+    "state": "Maharashtra",
+    "tagline": "Oxford of the East",
+    "category": "Heritage",
+    "rating": 4.5,
+    "reviews": 5400,
+    "budget": "moderate",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80",
+    "desc": "Pune is a vibrant city of education, startups, and history with Shaniwar Wada palace and Aga Khan Palace.",
+    "highlights": [
+      "Shaniwar Wada",
+      "Aga Khan Palace",
+      "Sinhagad Fort",
+      "Koregaon Park"
+    ],
+    "localFood": [
+      "Misal Pav",
+      "Puran Poli"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80"
+    ],
+    "tips": [
+      "Best for day trips to forts and ghats",
+      "Vibrant cafe culture in Koregaon Park"
+    ],
+    "tags": [
+      "Heritage",
+      "Culture",
+      "Food"
+    ],
+    "lat": 18.5204,
+    "lng": 73.8567
+  },
+  {
+    "id": "ganpatipule",
+    "name": "Ganpatipule",
+    "state": "Maharashtra",
+    "tagline": "Beachside Temple Town",
+    "category": "Spiritual",
+    "rating": 4.5,
+    "reviews": 2000,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80",
+    "desc": "Ganpatipule is a pristine coastal town famous for its self-formed Ganpati idol facing the Arabian Sea.",
+    "highlights": [
+      "Swayambhu Ganpati Temple",
+      "Ganpatipule Beach",
+      "Aare Ware Beach",
+      "Jaigad Fort"
+    ],
+    "localFood": [
+      "Koliwada Fish",
+      "Sol Kadhi"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80"
+    ],
+    "tips": [
+      "Combine with Ratnagiri Alphonso mango trail",
+      "Peaceful alternative to Goa"
+    ],
+    "tags": [
+      "Spiritual",
+      "Beaches",
+      "Nature"
+    ],
+    "lat": 17.1457,
+    "lng": 73.2647
+  },
+  {
+    "id": "goa",
+    "name": "Goa – Beaches & Heritage",
+    "state": "Goa",
+    "tagline": "Pearl of the Orient",
+    "category": "Beaches",
+    "rating": 4.7,
+    "reviews": 9200,
+    "budget": "budget",
+    "duration": "4-5 days",
+    "bestTime": "Nov–Feb",
+    "img": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=80",
+    "desc": "Goa blends Portuguese heritage with Indian coastal charm — golden beaches, seafood shacks, and vibrant nightlife.",
+    "highlights": [
+      "Calangute Beach",
+      "Old Goa Churches",
+      "Dudhsagar Falls",
+      "Anjuna Flea Market"
+    ],
+    "localFood": [
+      "Fish Curry Rice",
+      "Bebinca"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=80"
+    ],
+    "tips": [
+      "Rent a scooter for beach hopping",
+      "Avoid peak Dec-Jan for budget travel"
+    ],
+    "tags": [
+      "Beaches",
+      "Nightlife",
+      "Heritage"
+    ],
+    "lat": 15.2993,
+    "lng": 74.124
+  },
+  {
+    "id": "rannofkutch",
+    "name": "Rann of Kutch",
+    "state": "Gujarat",
+    "tagline": "White Desert Wonder",
+    "category": "Heritage",
+    "rating": 4.8,
+    "reviews": 3400,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Nov–Feb",
+    "img": "https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=800&q=80",
+    "desc": "The Rann of Kutch is a vast white salt desert that transforms into a magical moonscape during the Rann Utsav festival.",
+    "highlights": [
+      "White Rann",
+      "Kala Dungar Black Hill",
+      "Kutch Museum",
+      "Bhuj Old City"
+    ],
+    "localFood": [
+      "Dhokla",
+      "Thepla"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=800&q=80"
+    ],
+    "tips": [
+      "Visit during Rann Utsav (Nov-Feb) for cultural shows",
+      "Full moon nights are ethereal"
+    ],
+    "tags": [
+      "Desert",
+      "Heritage",
+      "Culture"
+    ],
+    "lat": 23.7337,
+    "lng": 69.8597
+  },
+  {
+    "id": "statueofunity",
+    "name": "Statue of Unity",
+    "state": "Gujarat",
+    "tagline": "World's Tallest Statue",
+    "category": "Heritage",
+    "rating": 4.6,
+    "reviews": 2800,
+    "budget": "moderate",
+    "duration": "1-2 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=800&q=80",
+    "desc": "The Statue of Unity at 182m is the world's tallest statue, a tribute to Sardar Vallabhbhai Patel.",
+    "highlights": [
+      "Viewing Gallery at 153m",
+      "Valley of Flowers",
+      "Laser Show",
+      "Sardar Sarovar Dam"
+    ],
+    "localFood": [
+      "Dhokla",
+      "Fafda"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=800&q=80"
+    ],
+    "tips": [
+      "Book tickets online in advance",
+      "Take the glass bridge for thrilling views"
+    ],
+    "tags": [
+      "Heritage",
+      "Monuments",
+      "Architecture"
+    ],
+    "lat": 21.8381,
+    "lng": 73.7199
+  },
+  {
+    "id": "dwarka",
+    "name": "Dwarka",
+    "state": "Gujarat",
+    "tagline": "City of Lord Krishna",
+    "category": "Spiritual",
+    "rating": 4.7,
+    "reviews": 3200,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=800&q=80",
+    "desc": "Dwarka is one of the four sacred Hindu dhams and the legendary kingdom of Lord Krishna on the Arabian Sea.",
+    "highlights": [
+      "Dwarkadhish Temple",
+      "Beyt Dwarka Island",
+      "Nageshwar Jyotirlinga",
+      "Rukmini Devi Temple"
+    ],
+    "localFood": [
+      "Undhiyu",
+      "Fafda Jalebi"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=800&q=80"
+    ],
+    "tips": [
+      "Temple is most vibrant during Janmashtami",
+      "Take ferry to Beyt Dwarka island"
+    ],
+    "tags": [
+      "Spiritual",
+      "Heritage",
+      "Temples"
+    ],
+    "lat": 22.2372,
+    "lng": 68.9678
+  },
+  {
+    "id": "somnath",
+    "name": "Somnath",
+    "state": "Gujarat",
+    "tagline": "First of Twelve Jyotirlingas",
+    "category": "Spiritual",
+    "rating": 4.8,
+    "reviews": 3800,
+    "budget": "budget",
+    "duration": "1-2 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=800&q=80",
+    "desc": "Somnath is the first and most sacred of the twelve Jyotirlinga temples, standing defiant on the Arabian Sea shore.",
+    "highlights": [
+      "Somnath Temple",
+      "Triveni Sangam",
+      "Bhalka Tirth",
+      "Sound & Light Show"
+    ],
+    "localFood": [
+      "Undhiyu",
+      "Jalebi"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=800&q=80"
+    ],
+    "tips": [
+      "Evening aarti and Sound & Light Show are unmissable",
+      "Temple faces open ocean with no land till Antarctica"
+    ],
+    "tags": [
+      "Spiritual",
+      "Heritage",
+      "Temples"
+    ],
+    "lat": 20.888,
+    "lng": 70.4012
+  },
+  {
+    "id": "ahmedabad",
+    "name": "Ahmedabad",
+    "state": "Gujarat",
+    "tagline": "Manchester of India",
+    "category": "Heritage",
+    "rating": 4.6,
+    "reviews": 4800,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=800&q=80",
+    "desc": "Ahmedabad is India's first UNESCO World Heritage City with Mughal bazaars, Jain temples, and Sabarmati Ashram.",
+    "highlights": [
+      "Sabarmati Ashram",
+      "Old City Heritage Walk",
+      "Adalaj Stepwell",
+      "Kankaria Lake"
+    ],
+    "localFood": [
+      "Dhokla",
+      "Thepla"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1617501979280-3b7e2b0a2a2e?w=800&q=80"
+    ],
+    "tips": [
+      "Old city heritage walk on Friday evenings",
+      "Gandhi Ashram is the emotional heart of modern India"
+    ],
+    "tags": [
+      "Heritage",
+      "Culture",
+      "UNESCO"
+    ],
+    "lat": 23.0225,
+    "lng": 72.5714
+  },
+  {
+    "id": "coorg",
+    "name": "Coorg",
+    "state": "Karnataka",
+    "tagline": "Scotland of India",
+    "category": "Eco Tourism",
+    "rating": 4.8,
+    "reviews": 4600,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "desc": "Coorg is a misty coffee and spice district of the Western Ghats, known for Kodava culture and trekking.",
+    "highlights": [
+      "Abbey Falls",
+      "Raja's Seat",
+      "Tadiandamol Trek",
+      "Dubare Elephant Camp"
+    ],
+    "localFood": [
+      "Coorg Pork Curry",
+      "Kadambuttu"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80"
+    ],
+    "tips": [
+      "Best Oct-Mar; avoid heavy monsoon Jun-Aug",
+      "Hire local guides for jungle trails"
+    ],
+    "tags": [
+      "Nature",
+      "Coffee",
+      "Trekking"
+    ],
+    "lat": 12.3375,
+    "lng": 75.8069
+  },
+  {
+    "id": "hampi",
+    "name": "Hampi",
+    "state": "Karnataka",
+    "tagline": "Lost City of the Vijayanagara Empire",
+    "category": "Heritage",
+    "rating": 4.9,
+    "reviews": 3800,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1600697230100-7a2b0e1e1e2e?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1600697230100-7a2b0e1e1e2e?w=800&q=80",
+    "desc": "Hampi is a UNESCO-listed landscape of ancient temples, boulders, and ruins of the mighty Vijayanagara Empire.",
+    "highlights": [
+      "Virupaksha Temple",
+      "Vittala Temple & Stone Chariot",
+      "Lotus Mahal",
+      "Matanga Hill Sunrise"
+    ],
+    "localFood": [
+      "Bisi Bele Bath",
+      "Ragi Mudde"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1600697230100-7a2b0e1e1e2e?w=800&q=80"
+    ],
+    "tips": [
+      "Explore by bicycle",
+      "Sunrise from Matanga Hill is spectacular"
+    ],
+    "tags": [
+      "Heritage",
+      "UNESCO",
+      "History"
+    ],
+    "lat": 15.335,
+    "lng": 76.46
+  },
+  {
+    "id": "mysuru",
+    "name": "Mysuru – Palace City",
+    "state": "Karnataka",
+    "tagline": "City of Palaces",
+    "category": "Heritage",
+    "rating": 4.7,
+    "reviews": 5600,
+    "budget": "moderate",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1600697230100-7a2b0e1e1e2e?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1600697230100-7a2b0e1e1e2e?w=800&q=80",
+    "desc": "Mysuru is Karnataka's regal capital, home to the illuminated Mysore Palace and vibrant Dasara celebrations.",
+    "highlights": [
+      "Mysore Palace",
+      "Chamundi Hills",
+      "Brindavan Gardens",
+      "Devaraja Market"
+    ],
+    "localFood": [
+      "Mysore Pak",
+      "Bisi Bele Bath"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1600697230100-7a2b0e1e1e2e?w=800&q=80"
+    ],
+    "tips": [
+      "Palace illuminated on Sunday evenings",
+      "Visit during Dasara festival in October"
+    ],
+    "tags": [
+      "Heritage",
+      "Culture",
+      "Palaces"
+    ],
+    "lat": 12.2958,
+    "lng": 76.6394
+  },
+  {
+    "id": "bengaluru",
+    "name": "Bengaluru",
+    "state": "Karnataka",
+    "tagline": "Silicon Valley of India",
+    "category": "Heritage",
+    "rating": 4.5,
+    "reviews": 7200,
+    "budget": "moderate",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Feb",
+    "img": "https://images.unsplash.com/photo-1600697230100-7a2b0e1e1e2e?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1600697230100-7a2b0e1e1e2e?w=800&q=80",
+    "desc": "Bengaluru is India's IT capital with a vibrant café culture, gardens, craft breweries, and colonial heritage.",
+    "highlights": [
+      "Lalbagh Botanical Garden",
+      "Cubbon Park",
+      "ISKCON Temple",
+      "UB City"
+    ],
+    "localFood": [
+      "Bisi Bele Bath",
+      "Filter Coffee"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1600697230100-7a2b0e1e1e2e?w=800&q=80"
+    ],
+    "tips": [
+      "Pleasant weather year-round",
+      "Explore Indiranagar for food and nightlife"
+    ],
+    "tags": [
+      "Heritage",
+      "Culture",
+      "Modern"
+    ],
+    "lat": 12.9716,
+    "lng": 77.5946
+  },
+  {
+    "id": "gokarna",
+    "name": "Gokarna",
+    "state": "Karnataka",
+    "tagline": "God's Navel",
+    "category": "Spiritual",
+    "rating": 4.7,
+    "reviews": 2800,
+    "budget": "budget",
+    "duration": "3-4 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80",
+    "desc": "Gokarna is a laid-back coastal town combining an ancient Shiva temple with pristine beaches and cliffs.",
+    "highlights": [
+      "Om Beach",
+      "Mahabaleshwar Temple",
+      "Half Moon Beach",
+      "Paradise Beach Trek"
+    ],
+    "localFood": [
+      "Fish Curry",
+      "Coconut Rice"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80"
+    ],
+    "tips": [
+      "Trek between beaches for the full experience",
+      "Far quieter than Goa — ideal for backpackers"
+    ],
+    "tags": [
+      "Beaches",
+      "Spiritual",
+      "Nature"
+    ],
+    "lat": 14.5479,
+    "lng": 74.3188
+  },
+  {
+    "id": "murudeshwar",
+    "name": "Murudeshwar",
+    "state": "Karnataka",
+    "tagline": "Abode of Lord Shiva",
+    "category": "Spiritual",
+    "rating": 4.6,
+    "reviews": 2400,
+    "budget": "budget",
+    "duration": "1-2 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1600697230100-7a2b0e1e1e2e?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1600697230100-7a2b0e1e1e2e?w=800&q=80",
+    "desc": "Murudeshwar is home to the world's second-tallest Shiva statue (123 ft) rising from a rocky Arabian Sea promontory.",
+    "highlights": [
+      "Shiva Statue",
+      "Murudeshwar Temple",
+      "RN Shetty Tower",
+      "Beach"
+    ],
+    "localFood": [
+      "Karavali Fish Curry",
+      "Coconut Prawn"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1600697230100-7a2b0e1e1e2e?w=800&q=80"
+    ],
+    "tips": [
+      "Take the lift inside the gopuram for sea views",
+      "Combine with Gokarna trip"
+    ],
+    "tags": [
+      "Spiritual",
+      "Beaches",
+      "Temples"
+    ],
+    "lat": 14.0954,
+    "lng": 74.4855
+  },
+  {
+    "id": "chikmagalur",
+    "name": "Chikmagalur",
+    "state": "Karnataka",
+    "tagline": "Land of Coffee",
+    "category": "Eco Tourism",
+    "rating": 4.7,
+    "reviews": 3200,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "desc": "Chikmagalur is the birthplace of Indian coffee, with misty estates, wildlife sanctuaries, and waterfalls.",
+    "highlights": [
+      "Mullayanagiri Peak",
+      "Baba Budangiri",
+      "Hebbe Falls",
+      "Bhadra Wildlife Sanctuary"
+    ],
+    "localFood": [
+      "Coorg Coffee",
+      "Akki Roti"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80"
+    ],
+    "tips": [
+      "Trek Mullayanagiri for Karnataka's highest peak",
+      "Best Oct-Mar; very foggy Jul-Sep"
+    ],
+    "tags": [
+      "Nature",
+      "Coffee",
+      "Trekking"
+    ],
+    "lat": 13.3161,
+    "lng": 75.772
+  },
+  {
+    "id": "udupi",
+    "name": "Udupi",
+    "state": "Karnataka",
+    "tagline": "Land of Krishna Temple",
+    "category": "Spiritual",
+    "rating": 4.6,
+    "reviews": 3000,
+    "budget": "budget",
+    "duration": "1-2 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1600697230100-7a2b0e1e1e2e?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1600697230100-7a2b0e1e1e2e?w=800&q=80",
+    "desc": "Udupi is a coastal pilgrim town famous for its 800-year-old Krishna temple and the birthplace of Udupi cuisine.",
+    "highlights": [
+      "Krishna Temple",
+      "St. Mary's Island",
+      "Malpe Beach",
+      "Manipal"
+    ],
+    "localFood": [
+      "Udupi Idli Sambar",
+      "Dosa"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1600697230100-7a2b0e1e1e2e?w=800&q=80"
+    ],
+    "tips": [
+      "Darshan at Krishna temple at 4am is divine",
+      "St. Mary's Island has unique hexagonal basalt rocks"
+    ],
+    "tags": [
+      "Spiritual",
+      "Beaches",
+      "Food"
+    ],
+    "lat": 13.3409,
+    "lng": 74.7421
+  },
+  {
+    "id": "ooty",
+    "name": "Ooty – Nilgiris",
+    "state": "Tamil Nadu",
+    "tagline": "Queen of Hill Stations",
+    "category": "Eco Tourism",
+    "rating": 4.6,
+    "reviews": 5800,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Apr–Jun, Sep–Nov",
+    "img": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80",
+    "desc": "Ooty is the classic Nilgiri hill station of tea gardens, a toy train, botanical gardens, and cool misty air.",
+    "highlights": [
+      "Ooty Botanical Garden",
+      "Doddabetta Peak",
+      "Nilgiri Toy Train",
+      "Ooty Lake"
+    ],
+    "localFood": [
+      "Ooty Chocolate",
+      "Varkey"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80"
+    ],
+    "tips": [
+      "Toy train from Coonoor is a must",
+      "Avoid Pongal holiday rush"
+    ],
+    "tags": [
+      "Hills",
+      "Nature",
+      "Tea"
+    ],
+    "lat": 11.4102,
+    "lng": 76.695
+  },
+  {
+    "id": "kodaikanal",
+    "name": "Kodaikanal",
+    "state": "Tamil Nadu",
+    "tagline": "Princess of Hill Stations",
+    "category": "Eco Tourism",
+    "rating": 4.7,
+    "reviews": 4200,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Apr–Jun, Sep–Nov",
+    "img": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80",
+    "desc": "Kodaikanal is a tranquil hill station of star-shaped lakes, pine forests, and dramatic shola grasslands.",
+    "highlights": [
+      "Kodaikanal Lake",
+      "Pillar Rocks",
+      "Coaker's Walk",
+      "Berijam Lake"
+    ],
+    "localFood": [
+      "Homemade Chocolate",
+      "Sathukudi Juice"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80"
+    ],
+    "tips": [
+      "Berijam Lake requires a permit",
+      "Cycle around the star-shaped lake"
+    ],
+    "tags": [
+      "Hills",
+      "Nature",
+      "Lakes"
+    ],
+    "lat": 10.2381,
+    "lng": 77.4892
+  },
+  {
+    "id": "madurai",
+    "name": "Madurai",
+    "state": "Tamil Nadu",
+    "tagline": "Temple City",
+    "category": "Spiritual",
+    "rating": 4.8,
+    "reviews": 5200,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80",
+    "desc": "Madurai is one of South India's oldest cities, dominated by the soaring gopurams of the Meenakshi Amman Temple.",
+    "highlights": [
+      "Meenakshi Amman Temple",
+      "Thirumalai Nayakkar Palace",
+      "Gandhi Memorial Museum",
+      "Alagar Koyil"
+    ],
+    "localFood": [
+      "Jigarthanda",
+      "Kari Dosai"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80"
+    ],
+    "tips": [
+      "Temple most vibrant during Chithirai festival",
+      "Climb the tower for aerial views of gopurams"
+    ],
+    "tags": [
+      "Spiritual",
+      "Temples",
+      "Heritage"
+    ],
+    "lat": 9.9252,
+    "lng": 78.1198
+  },
+  {
+    "id": "mahabalipuram",
+    "name": "Mahabalipuram",
+    "state": "Tamil Nadu",
+    "tagline": "Shore Temple Town",
+    "category": "Heritage",
+    "rating": 4.7,
+    "reviews": 3800,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80",
+    "desc": "Mahabalipuram's UNESCO rock-cut monuments, shore temples, and sculpted caves line the Bay of Bengal.",
+    "highlights": [
+      "Shore Temple",
+      "Arjuna's Penance",
+      "Pancha Rathas",
+      "Crocodile Bank"
+    ],
+    "localFood": [
+      "Fish Curry",
+      "Prawn Biryani"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80"
+    ],
+    "tips": [
+      "Best light for photography at sunrise",
+      "Can be a day trip from Chennai (60 km)"
+    ],
+    "tags": [
+      "Heritage",
+      "UNESCO",
+      "Beaches"
+    ],
+    "lat": 12.6269,
+    "lng": 80.1927
+  },
+  {
+    "id": "rameshwaram",
+    "name": "Rameshwaram",
+    "state": "Tamil Nadu",
+    "tagline": "Island Pilgrim Town",
+    "category": "Spiritual",
+    "rating": 4.8,
+    "reviews": 4400,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80",
+    "desc": "Rameshwaram is a sacred island town where Rama built his bridge to Lanka and where land meets the two seas.",
+    "highlights": [
+      "Ramanathaswamy Temple",
+      "Pamban Bridge",
+      "Dhanushkodi Ghost Town",
+      "Adam's Bridge View"
+    ],
+    "localFood": [
+      "Pamban Fish",
+      "Pongal"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80"
+    ],
+    "tips": [
+      "Dhanushkodi ghost town is hauntingly beautiful",
+      "Walk through the 1000-pillar corridor in the temple"
+    ],
+    "tags": [
+      "Spiritual",
+      "Heritage",
+      "Temples"
+    ],
+    "lat": 9.2876,
+    "lng": 79.3129
+  },
+  {
+    "id": "kanyakumari",
+    "name": "Kanyakumari",
+    "state": "Tamil Nadu",
+    "tagline": "Land's End of India",
+    "category": "Spiritual",
+    "rating": 4.7,
+    "reviews": 4600,
+    "budget": "budget",
+    "duration": "1-2 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80",
+    "desc": "Kanyakumari is the tip of India where the Arabian Sea, Bay of Bengal, and Indian Ocean meet in a spectacular sunset.",
+    "highlights": [
+      "Sunrise & Sunset Point",
+      "Vivekananda Rock Memorial",
+      "Thiruvalluvar Statue",
+      "Kumari Amman Temple"
+    ],
+    "localFood": [
+      "Kothu Parotta",
+      "Fish Curry"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80"
+    ],
+    "tips": [
+      "Sunrise and sunset are the main attractions",
+      "Take a boat to Vivekananda Rock"
+    ],
+    "tags": [
+      "Spiritual",
+      "Beaches",
+      "Nature"
+    ],
+    "lat": 8.0883,
+    "lng": 77.5385
+  },
+  {
+    "id": "chennai",
+    "name": "Chennai",
+    "state": "Tamil Nadu",
+    "tagline": "Gateway of South India",
+    "category": "Heritage",
+    "rating": 4.5,
+    "reviews": 7800,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Nov–Feb",
+    "img": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80",
+    "desc": "Chennai is the cultural capital of South India with Dravidian temples, colonial forts, and Marina Beach.",
+    "highlights": [
+      "Marina Beach",
+      "Kapaleeshwarar Temple",
+      "Fort St. George",
+      "Mahabalipuram Day Trip"
+    ],
+    "localFood": [
+      "Filter Coffee",
+      "Dosa"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80"
+    ],
+    "tips": [
+      "Marina Beach is the world's second longest",
+      "Best Nov-Feb to avoid the scorching heat"
+    ],
+    "tags": [
+      "Heritage",
+      "Beaches",
+      "Culture"
+    ],
+    "lat": 13.0827,
+    "lng": 80.2707
+  },
+  {
+    "id": "munnar",
+    "name": "Munnar",
+    "state": "Kerala",
+    "tagline": "Tea Garden Paradise",
+    "category": "Eco Tourism",
+    "rating": 4.9,
+    "reviews": 5200,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Sep–Mar",
+    "img": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "desc": "Munnar is a high-altitude retreat of rolling tea estates, misty mountains, and rare Neelakurinji flowers.",
+    "highlights": [
+      "Tea Plantations",
+      "Eravikulam National Park",
+      "Top Station",
+      "Attukal Waterfalls"
+    ],
+    "localFood": [
+      "Appam & Fish Curry",
+      "Puttu Kadala"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80"
+    ],
+    "tips": [
+      "Neelakurinji blooms once in 12 years (next 2030)",
+      "Sunrise at Top Station is spectacular"
+    ],
+    "tags": [
+      "Tea",
+      "Nature",
+      "Eco Tourism"
+    ],
+    "lat": 10.0889,
+    "lng": 77.0595
+  },
+  {
+    "id": "alleppey",
+    "name": "Alleppey – Backwaters",
+    "state": "Kerala",
+    "tagline": "Venice of the East",
+    "category": "Eco Tourism",
+    "rating": 4.9,
+    "reviews": 5800,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Sep–Mar",
+    "img": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "desc": "Alleppey's emerald backwaters, coconut-fringed canals, and houseboat cruises define God's Own Country.",
+    "highlights": [
+      "Houseboat Cruise",
+      "Vembanad Lake",
+      "Alappuzha Beach",
+      "Nehru Trophy Boat Race"
+    ],
+    "localFood": [
+      "Karimeen Fish",
+      "Sadya"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80"
+    ],
+    "tips": [
+      "Book a houseboat 2 months ahead",
+      "Nehru Trophy Race held in August"
+    ],
+    "tags": [
+      "Backwaters",
+      "Nature",
+      "Culture"
+    ],
+    "lat": 9.4981,
+    "lng": 76.3388
+  },
+  {
+    "id": "kochi",
+    "name": "Kochi",
+    "state": "Kerala",
+    "tagline": "Queen of the Arabian Sea",
+    "category": "Heritage",
+    "rating": 4.7,
+    "reviews": 5600,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "desc": "Kochi blends Portuguese, Dutch, Jewish, and Indian heritage at its waterfront fort, spice markets, and cafes.",
+    "highlights": [
+      "Fort Kochi",
+      "Chinese Fishing Nets",
+      "Mattancherry Palace",
+      "Kerala Kathakali Show"
+    ],
+    "localFood": [
+      "Fish Curry",
+      "Appam"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80"
+    ],
+    "tips": [
+      "Walk Fort Kochi in the morning for colonial vibes",
+      "Kathakali show is unmissable"
+    ],
+    "tags": [
+      "Heritage",
+      "Culture",
+      "Beaches"
+    ],
+    "lat": 9.9312,
+    "lng": 76.2673
+  },
+  {
+    "id": "wayanad",
+    "name": "Wayanad",
+    "state": "Kerala",
+    "tagline": "Land of Tribal Culture",
+    "category": "Eco Tourism",
+    "rating": 4.8,
+    "reviews": 3800,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Sep–Mar",
+    "img": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "desc": "Wayanad is a green highland of wildlife sanctuaries, coffee estates, waterfalls, and ancient tribal culture.",
+    "highlights": [
+      "Edakkal Caves",
+      "Chembra Peak Trek",
+      "Soochipara Falls",
+      "Wayanad Wildlife Sanctuary"
+    ],
+    "localFood": [
+      "Bamboo Biryani",
+      "Puttu Kadala"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80"
+    ],
+    "tips": [
+      "Chembra Peak trek permit needed from forest dept",
+      "Best Sep-Mar for clear skies"
+    ],
+    "tags": [
+      "Nature",
+      "Wildlife",
+      "Tribal"
+    ],
+    "lat": 11.6854,
+    "lng": 76.132
+  },
+  {
+    "id": "varkala",
+    "name": "Varkala",
+    "state": "Kerala",
+    "tagline": "Cliff Beach Paradise",
+    "category": "Beaches",
+    "rating": 4.7,
+    "reviews": 3600,
+    "budget": "budget",
+    "duration": "3-4 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "desc": "Varkala is a dramatic red cliff beach town with a sacred temple spring, yoga retreats, and sunset cafes.",
+    "highlights": [
+      "Papanasam Beach",
+      "Varkala Cliff",
+      "Janardanaswamy Temple",
+      "Sivagiri Mutt"
+    ],
+    "localFood": [
+      "Fish & Chips",
+      "Coconut Prawn"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80"
+    ],
+    "tips": [
+      "Cliff-top restaurants offer sunset views",
+      "A quieter, more spiritual alternative to Goa"
+    ],
+    "tags": [
+      "Beaches",
+      "Spiritual",
+      "Yoga"
+    ],
+    "lat": 8.7379,
+    "lng": 76.7163
+  },
+  {
+    "id": "kumarakom",
+    "name": "Kumarakom",
+    "state": "Kerala",
+    "tagline": "Bird Sanctuary Backwaters",
+    "category": "Eco Tourism",
+    "rating": 4.8,
+    "reviews": 2800,
+    "budget": "high",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "desc": "Kumarakom sits on Vembanad Lake with a famous bird sanctuary, luxury resorts, and tranquil backwater stays.",
+    "highlights": [
+      "Kumarakom Bird Sanctuary",
+      "Houseboat Stay",
+      "Vembanad Lake",
+      "Aruvikkuzhi Waterfall"
+    ],
+    "localFood": [
+      "Karimeen Fish",
+      "Kerala Prawns"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80"
+    ],
+    "tips": [
+      "Best Sep-Jan for migratory birds",
+      "Sunrise canoe through paddy fields is magical"
+    ],
+    "tags": [
+      "Backwaters",
+      "Wildlife",
+      "Eco Tourism"
+    ],
+    "lat": 9.6177,
+    "lng": 76.4241
+  },
+  {
+    "id": "thekkady",
+    "name": "Thekkady – Periyar",
+    "state": "Kerala",
+    "tagline": "Spice Garden of India",
+    "category": "Wildlife",
+    "rating": 4.8,
+    "reviews": 4200,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Sep–May",
+    "img": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
+    "desc": "Thekkady is home to Periyar Tiger Reserve — a jungle cruise lake surrounded by cardamom and pepper plantations.",
+    "highlights": [
+      "Periyar Lake Cruise",
+      "Elephant Sighting",
+      "Spice Plantation Tour",
+      "Kumily Spice Market"
+    ],
+    "localFood": [
+      "Cardamom Tea",
+      "Fish Molee"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80"
+    ],
+    "tips": [
+      "Bamboo rafting and jungle trekking need permits",
+      "Book boat cruise tickets the night before"
+    ],
+    "tags": [
+      "Wildlife",
+      "Nature",
+      "Spices"
+    ],
+    "lat": 9.5986,
+    "lng": 77.1662
+  },
+  {
+    "id": "hyderabad",
+    "name": "Hyderabad",
+    "state": "Telangana",
+    "tagline": "City of Pearls & Biryani",
+    "category": "Heritage",
+    "rating": 4.6,
+    "reviews": 7800,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1578894381163-e72c17f2d45f?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1578894381163-e72c17f2d45f?w=800&q=80",
+    "desc": "Hyderabad dazzles with Charminar, Golconda Fort, legendary Biryani, and a thriving technology culture.",
+    "highlights": [
+      "Charminar",
+      "Golconda Fort",
+      "Hussain Sagar",
+      "Ramoji Film City"
+    ],
+    "localFood": [
+      "Hyderabadi Biryani",
+      "Haleem"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1578894381163-e72c17f2d45f?w=800&q=80"
+    ],
+    "tips": [
+      "Sound & Light show at Golconda is spectacular",
+      "Try biryani at Paradise or Shah Ghouse"
+    ],
+    "tags": [
+      "Heritage",
+      "Food",
+      "Culture"
+    ],
+    "lat": 17.385,
+    "lng": 78.4867
+  },
+  {
+    "id": "visakhapatnam",
+    "name": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "tagline": "City of Destiny",
+    "category": "Beaches",
+    "rating": 4.5,
+    "reviews": 4200,
+    "budget": "budget",
+    "duration": "3-4 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80",
+    "desc": "Visakhapatnam (Vizag) is a port city of beaches, submarine museums, and green Araku Valley hill resort.",
+    "highlights": [
+      "RK Beach",
+      "INS Kursura Submarine Museum",
+      "Araku Valley",
+      "Borra Caves"
+    ],
+    "localFood": [
+      "Pesarattu",
+      "Bamboo Chicken (Araku)"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80"
+    ],
+    "tips": [
+      "Araku Valley day trip by scenic train is unmissable",
+      "Borra Caves near Araku are spectacular"
+    ],
+    "tags": [
+      "Beaches",
+      "Nature",
+      "Heritage"
+    ],
+    "lat": 17.6868,
+    "lng": 83.2185
+  },
+  {
+    "id": "tirupati",
+    "name": "Tirupati",
+    "state": "Andhra Pradesh",
+    "tagline": "Abode of Lord Venkateswara",
+    "category": "Spiritual",
+    "rating": 4.9,
+    "reviews": 8400,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80",
+    "desc": "Tirupati's Tirumala temple is the world's most visited pilgrimage site, drawing 75,000 devotees daily.",
+    "highlights": [
+      "Tirumala Venkateswara Temple",
+      "Srivari Paadalu",
+      "Kapila Theertham",
+      "Sri Govindarajaswami Temple"
+    ],
+    "localFood": [
+      "Tirupati Laddu",
+      "Pulihora"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&q=80"
+    ],
+    "tips": [
+      "Book darshan tickets online 2 months ahead",
+      "Special entry tickets are faster"
+    ],
+    "tags": [
+      "Spiritual",
+      "Temples",
+      "Heritage"
+    ],
+    "lat": 13.6288,
+    "lng": 79.4192
+  },
+  {
+    "id": "kolkata",
+    "name": "Kolkata",
+    "state": "West Bengal",
+    "tagline": "City of Joy",
+    "category": "Heritage",
+    "rating": 4.6,
+    "reviews": 7400,
+    "budget": "budget",
+    "duration": "3-4 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=800&q=80",
+    "desc": "Kolkata is a city of intellect, art, Durga Puja celebrations, colonial ghats, and legendary street food.",
+    "highlights": [
+      "Victoria Memorial",
+      "Howrah Bridge",
+      "Dakshineswar Temple",
+      "College Street"
+    ],
+    "localFood": [
+      "Kathi Roll",
+      "Mishti Doi"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=800&q=80"
+    ],
+    "tips": [
+      "Durga Puja in Oct is unmissable",
+      "Take a tram ride — Kolkata has India's last tram network"
+    ],
+    "tags": [
+      "Heritage",
+      "Culture",
+      "Food"
+    ],
+    "lat": 22.5726,
+    "lng": 88.3639
+  },
+  {
+    "id": "sundarbans",
+    "name": "Sundarbans",
+    "state": "West Bengal",
+    "tagline": "Land of the Royal Bengal Tiger",
+    "category": "Wildlife",
+    "rating": 4.8,
+    "reviews": 2200,
+    "budget": "high",
+    "duration": "2-3 days",
+    "bestTime": "Nov–Mar",
+    "img": "https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&q=80",
+    "desc": "The Sundarbans is the world's largest mangrove delta and home to the Royal Bengal Tiger.",
+    "highlights": [
+      "Tiger Safari",
+      "Mangrove Boat Cruise",
+      "Sajnekhali Bird Sanctuary",
+      "Watch Tower"
+    ],
+    "localFood": [
+      "Ilish Maach",
+      "Prawn Curry"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&q=80"
+    ],
+    "tips": [
+      "Book a multi-day boat safari package",
+      "Tide-dependent entry — follow guide instructions strictly"
+    ],
+    "tags": [
+      "Wildlife",
+      "Nature",
+      "UNESCO"
+    ],
+    "lat": 21.9497,
+    "lng": 89.1833
+  },
+  {
+    "id": "darjeeling",
+    "name": "Darjeeling",
+    "state": "West Bengal",
+    "tagline": "Queen of Hills & Tea",
+    "category": "Eco Tourism",
+    "rating": 4.8,
+    "reviews": 4600,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Mar–May, Sep–Nov",
+    "img": "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=800&q=80",
+    "desc": "Darjeeling offers sunrise over Kanchenjunga, world-famous tea estates, a toy train, and Tiger Hill dawn.",
+    "highlights": [
+      "Tiger Hill Sunrise",
+      "Tea Garden Tour",
+      "Darjeeling Himalayan Railway",
+      "Rock Garden"
+    ],
+    "localFood": [
+      "Darjeeling First Flush Tea",
+      "Momos"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=800&q=80"
+    ],
+    "tips": [
+      "Book Tiger Hill jeep the night before",
+      "Toy train from New Jalpaiguri is an experience in itself"
+    ],
+    "tags": [
+      "Tea",
+      "Hills",
+      "Nature"
+    ],
+    "lat": 27.036,
+    "lng": 88.2627
+  },
+  {
+    "id": "kalimpong",
+    "name": "Kalimpong",
+    "state": "West Bengal",
+    "tagline": "Flower Hill Town",
+    "category": "Eco Tourism",
+    "rating": 4.6,
+    "reviews": 1800,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Mar–May, Sep–Nov",
+    "img": "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=800&q=80",
+    "desc": "Kalimpong is a sleepy hill town of orchids, Buddhist monasteries, and misty views of the Teesta Valley.",
+    "highlights": [
+      "Deolo Hill",
+      "Zong Dog Palri Temple",
+      "Durpin Monastery",
+      "Nurseries & Flower Market"
+    ],
+    "localFood": [
+      "Sel Roti",
+      "Thukpa"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=800&q=80"
+    ],
+    "tips": [
+      "Quieter than Darjeeling — ideal for slow travel",
+      "Great base for Sikkim and Bhutan border areas"
+    ],
+    "tags": [
+      "Hills",
+      "Monasteries",
+      "Eco Tourism"
+    ],
+    "lat": 27.0669,
+    "lng": 88.4677
+  },
+  {
+    "id": "bhubaneswar",
+    "name": "Bhubaneswar",
+    "state": "Odisha",
+    "tagline": "Temple City of India",
+    "category": "Heritage",
+    "rating": 4.6,
+    "reviews": 3200,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1620374645498-af8bd16f2e1d?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1620374645498-af8bd16f2e1d?w=800&q=80",
+    "desc": "Bhubaneswar is the Temple City of India with over 700 ancient temples, including the magnificent Lingaraj.",
+    "highlights": [
+      "Lingaraj Temple",
+      "Mukteshwar Temple",
+      "Udaygiri Khandagiri Caves",
+      "Nandankanan Zoo"
+    ],
+    "localFood": [
+      "Dalma",
+      "Chhena Poda"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1620374645498-af8bd16f2e1d?w=800&q=80"
+    ],
+    "tips": [
+      "Lingaraj Temple entry restricted to Hindus",
+      "Great hub for exploring all of Odisha"
+    ],
+    "tags": [
+      "Heritage",
+      "Temples",
+      "History"
+    ],
+    "lat": 20.2961,
+    "lng": 85.8245
+  },
+  {
+    "id": "puri",
+    "name": "Puri",
+    "state": "Odisha",
+    "tagline": "Abode of Lord Jagannath",
+    "category": "Spiritual",
+    "rating": 4.8,
+    "reviews": 5200,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1620374645498-af8bd16f2e1d?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1620374645498-af8bd16f2e1d?w=800&q=80",
+    "desc": "Puri is a sacred coastal town of the Jagannath Temple — one of India's four holy dhams — and golden beaches.",
+    "highlights": [
+      "Jagannath Temple",
+      "Puri Beach",
+      "Konark Day Trip",
+      "Raghurajpur Artist Village"
+    ],
+    "localFood": [
+      "Mahaprasad",
+      "Rasgolla"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1620374645498-af8bd16f2e1d?w=800&q=80"
+    ],
+    "tips": [
+      "Rath Yatra festival in Jun-Jul draws millions",
+      "Mahaprasad from Jagannath Temple is sacred — do try it"
+    ],
+    "tags": [
+      "Spiritual",
+      "Beaches",
+      "Heritage"
+    ],
+    "lat": 19.8135,
+    "lng": 85.8312
+  },
+  {
+    "id": "konark",
+    "name": "Konark",
+    "state": "Odisha",
+    "tagline": "Sun Temple Masterpiece",
+    "category": "Heritage",
+    "rating": 4.8,
+    "reviews": 3800,
+    "budget": "budget",
+    "duration": "1-2 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1620374645498-af8bd16f2e1d?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1620374645498-af8bd16f2e1d?w=800&q=80",
+    "desc": "Konark's 13th-century Sun Temple is a UNESCO-listed masterpiece shaped like the chariot of the Sun God.",
+    "highlights": [
+      "Sun Temple",
+      "Konark Beach",
+      "Archaeological Museum",
+      "Dance Festival (Dec)"
+    ],
+    "localFood": [
+      "Dalma",
+      "Chhena Poda"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1620374645498-af8bd16f2e1d?w=800&q=80"
+    ],
+    "tips": [
+      "Visit at sunrise for the best light",
+      "Konark Dance Festival in December is spectacular"
+    ],
+    "tags": [
+      "Heritage",
+      "UNESCO",
+      "Architecture"
+    ],
+    "lat": 19.8876,
+    "lng": 86.0945
+  },
+  {
+    "id": "chilika",
+    "name": "Chilika Lake",
+    "state": "Odisha",
+    "tagline": "Asia's Largest Coastal Lagoon",
+    "category": "Wildlife",
+    "rating": 4.7,
+    "reviews": 2800,
+    "budget": "budget",
+    "duration": "1-2 days",
+    "bestTime": "Nov–Feb",
+    "img": "https://images.unsplash.com/photo-1620374645498-af8bd16f2e1d?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1620374645498-af8bd16f2e1d?w=800&q=80",
+    "desc": "Chilika Lake is Asia's largest brackish lagoon hosting a million migratory birds and rare Irrawaddy dolphins.",
+    "highlights": [
+      "Dolphin Spotting",
+      "Nalabana Bird Sanctuary",
+      "Kalijai Island Temple",
+      "Rambha Bay"
+    ],
+    "localFood": [
+      "Prawn Curry",
+      "Fish Fry"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1620374645498-af8bd16f2e1d?w=800&q=80"
+    ],
+    "tips": [
+      "Best Nov-Feb for migratory birds",
+      "Early morning boat ride for dolphin spotting"
+    ],
+    "tags": [
+      "Wildlife",
+      "Nature",
+      "Birds"
+    ],
+    "lat": 19.7046,
+    "lng": 85.3205
+  },
+  {
+    "id": "patna",
+    "name": "Patna",
+    "state": "Bihar",
+    "tagline": "Ancient Pataliputra",
+    "category": "Heritage",
+    "rating": 4.3,
+    "reviews": 2200,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1625244695120-f8ea5862371d?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1625244695120-f8ea5862371d?w=800&q=80",
+    "desc": "Patna, ancient Pataliputra, is one of the world's oldest continuously inhabited cities and a gateway to Buddhist Bihar.",
+    "highlights": [
+      "Golghar Granary",
+      "Patna Museum",
+      "Mahavir Mandir",
+      "Gandhi Maidan"
+    ],
+    "localFood": [
+      "Litti Chokha",
+      "Sattu Paratha"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1625244695120-f8ea5862371d?w=800&q=80"
+    ],
+    "tips": [
+      "Base for Bodh Gaya (115 km) and Nalanda (90 km)",
+      "Patna Museum has Didarganj Yakshi — a 3rd-century BC masterpiece"
+    ],
+    "tags": [
+      "Heritage",
+      "History",
+      "Culture"
+    ],
+    "lat": 25.5941,
+    "lng": 85.1376
+  },
+  {
+    "id": "bodhgaya",
+    "name": "Bodh Gaya",
+    "state": "Bihar",
+    "tagline": "Where Buddha Attained Enlightenment",
+    "category": "Spiritual",
+    "rating": 4.9,
+    "reviews": 4800,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1625244695120-f8ea5862371d?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1625244695120-f8ea5862371d?w=800&q=80",
+    "desc": "Bodh Gaya is the world's most important Buddhist pilgrimage site where Siddhartha Gautama became the Buddha.",
+    "highlights": [
+      "Mahabodhi Temple",
+      "Bodhi Tree",
+      "Great Buddha Statue",
+      "Thai & Tibetan Monasteries"
+    ],
+    "localFood": [
+      "Litti Chokha",
+      "Sattu Paratha"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1625244695120-f8ea5862371d?w=800&q=80"
+    ],
+    "tips": [
+      "UNESCO World Heritage Site — dress modestly",
+      "Meditating under the Bodhi tree is deeply moving"
+    ],
+    "tags": [
+      "Spiritual",
+      "Buddhist",
+      "Heritage"
+    ],
+    "lat": 24.6961,
+    "lng": 84.9916
+  },
+  {
+    "id": "ranchi",
+    "name": "Ranchi",
+    "state": "Jharkhand",
+    "tagline": "City of Waterfalls",
+    "category": "Adventure",
+    "rating": 4.4,
+    "reviews": 2200,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "desc": "Ranchi is the gateway to Jharkhand's tribal culture and surrounding waterfalls like Hundru and Jonha Falls.",
+    "highlights": [
+      "Hundru Falls",
+      "Jonha Falls",
+      "Deori Temple",
+      "Rock Garden"
+    ],
+    "localFood": [
+      "Dhuska",
+      "Rugra"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+    ],
+    "tips": [
+      "Visit monsoon Jul-Sep for spectacular waterfalls",
+      "Betla National Park (150 km) for wildlife"
+    ],
+    "tags": [
+      "Waterfalls",
+      "Tribal",
+      "Nature"
+    ],
+    "lat": 23.3441,
+    "lng": 85.3096
+  },
+  {
+    "id": "guwahati",
+    "name": "Guwahati",
+    "state": "Assam",
+    "tagline": "Gateway to the Northeast",
+    "category": "Heritage",
+    "rating": 4.5,
+    "reviews": 3600,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&q=80",
+    "desc": "Guwahati is the main gateway to Northeast India with the Kamakhya Temple, Brahmaputra ghats, and Kaziranga proximity.",
+    "highlights": [
+      "Kamakhya Temple",
+      "Umananda Island Temple",
+      "Assam State Museum",
+      "Brahmaputra River Cruise"
+    ],
+    "localFood": [
+      "Pitha",
+      "Masor Tenga"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&q=80"
+    ],
+    "tips": [
+      "Kamakhya Temple most vibrant during Ambubachi Mela",
+      "Base for day trip to Kaziranga (200 km)"
+    ],
+    "tags": [
+      "Heritage",
+      "Spiritual",
+      "Nature"
+    ],
+    "lat": 26.1445,
+    "lng": 91.7362
+  },
+  {
+    "id": "kaziranga",
+    "name": "Kaziranga National Park",
+    "state": "Assam",
+    "tagline": "Rhino Kingdom",
+    "category": "Wildlife",
+    "rating": 4.9,
+    "reviews": 3200,
+    "budget": "high",
+    "duration": "2-3 days",
+    "bestTime": "Nov–Apr",
+    "img": "https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&q=80",
+    "desc": "Kaziranga has the world's largest population of the one-horned rhinoceros and a thriving tiger population.",
+    "highlights": [
+      "Rhino Safari",
+      "Tiger Zone",
+      "Elephant Safari",
+      "Brahmaputra Floodplains"
+    ],
+    "localFood": [
+      "Pitha",
+      "Fish Tenga"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&q=80"
+    ],
+    "tips": [
+      "Book jeep safari through certified operators",
+      "Elephant safari gives closer access to rhinos"
+    ],
+    "tags": [
+      "Wildlife",
+      "Safari",
+      "UNESCO"
+    ],
+    "lat": 26.5775,
+    "lng": 93.1711
+  },
+  {
+    "id": "majuli",
+    "name": "Majuli",
+    "state": "Assam",
+    "tagline": "World's Largest River Island",
+    "category": "Tribal",
+    "rating": 4.7,
+    "reviews": 1800,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&q=80",
+    "desc": "Majuli is the world's largest river island, a sanctuary of Vaishnavite monasteries and tribal Mishing culture.",
+    "highlights": [
+      "Sattra Monasteries",
+      "Mishing Tribal Villages",
+      "Mask Making Workshops",
+      "Sunrise over Brahmaputra"
+    ],
+    "localFood": [
+      "Apong Rice Beer",
+      "Paro"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&q=80"
+    ],
+    "tips": [
+      "Take ferry from Jorhat",
+      "Island is slowly eroding — visit while it lasts"
+    ],
+    "tags": [
+      "Tribal",
+      "Culture",
+      "Nature"
+    ],
+    "lat": 26.9546,
+    "lng": 94.1682
+  },
+  {
+    "id": "shillong",
+    "name": "Shillong",
+    "state": "Meghalaya",
+    "tagline": "Scotland of the East",
+    "category": "Eco Tourism",
+    "rating": 4.7,
+    "reviews": 3600,
+    "budget": "budget",
+    "duration": "3-4 days",
+    "bestTime": "Oct–May",
+    "img": "https://images.unsplash.com/photo-1598977123118-4e30ba3c4f5b?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1598977123118-4e30ba3c4f5b?w=800&q=80",
+    "desc": "Shillong is a breezy hill station of pine forests, colonial charm, waterfall hikes, and Khasi tribal culture.",
+    "highlights": [
+      "Ward's Lake",
+      "Elephant Falls",
+      "Don Bosco Museum",
+      "Shillong Peak"
+    ],
+    "localFood": [
+      "Jadoh",
+      "Tungrymbai"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1598977123118-4e30ba3c4f5b?w=800&q=80"
+    ],
+    "tips": [
+      "Day trips to Cherrapunji (50 km) and Dawki (90 km)",
+      "Carry rain gear — even in winter"
+    ],
+    "tags": [
+      "Hills",
+      "Eco Tourism",
+      "Culture"
+    ],
+    "lat": 25.5788,
+    "lng": 91.8933
+  },
+  {
+    "id": "cherrapunji",
+    "name": "Cherrapunji & Mawlynnong",
+    "state": "Meghalaya",
+    "tagline": "Wettest Place on Earth",
+    "category": "Eco Tourism",
+    "rating": 4.8,
+    "reviews": 2600,
+    "budget": "moderate",
+    "duration": "2-3 days",
+    "bestTime": "Oct–May",
+    "img": "https://images.unsplash.com/photo-1598977123118-4e30ba3c4f5b?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1598977123118-4e30ba3c4f5b?w=800&q=80",
+    "desc": "Cherrapunji holds rainfall records and hosts stunning living root bridges; Mawlynnong is Asia's cleanest village.",
+    "highlights": [
+      "Living Root Bridge",
+      "Nohkalikai Falls",
+      "Mawlynnong Village",
+      "Dawki Crystal River"
+    ],
+    "localFood": [
+      "Jadoh",
+      "Dohneiiong"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1598977123118-4e30ba3c4f5b?w=800&q=80"
+    ],
+    "tips": [
+      "Trek to double-decker living root bridge (2hrs each way)",
+      "Dawki river is clearest Dec-Mar"
+    ],
+    "tags": [
+      "Nature",
+      "Waterfalls",
+      "Culture"
+    ],
+    "lat": 25.2645,
+    "lng": 91.7233
+  },
+  {
+    "id": "gangtok",
+    "name": "Gangtok",
+    "state": "Sikkim",
+    "tagline": "City in the Clouds",
+    "category": "Eco Tourism",
+    "rating": 4.8,
+    "reviews": 4200,
+    "budget": "moderate",
+    "duration": "4-5 days",
+    "bestTime": "Mar–May, Oct–Dec",
+    "img": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80",
+    "desc": "Gangtok is Sikkim's capital — a hillside city of Buddhist monasteries, prayer flags, and Kanchenjunga views.",
+    "highlights": [
+      "Rumtek Monastery",
+      "MG Marg",
+      "Tsomgo Lake",
+      "Nathu La Pass (permit required)"
+    ],
+    "localFood": [
+      "Thukpa",
+      "Sel Roti"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80"
+    ],
+    "tips": [
+      "Tsomgo Lake and Nathu La need permits from Gangtok",
+      "Best views Mar-May and Oct-Dec"
+    ],
+    "tags": [
+      "Monasteries",
+      "Mountains",
+      "Culture"
+    ],
+    "lat": 27.3389,
+    "lng": 88.6065
+  },
+  {
+    "id": "pelling",
+    "name": "Pelling",
+    "state": "Sikkim",
+    "tagline": "Kanchenjunga Viewpoint",
+    "category": "Eco Tourism",
+    "rating": 4.7,
+    "reviews": 2400,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Mar–May, Oct–Dec",
+    "img": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80",
+    "desc": "Pelling offers some of the most dramatic views of Kanchenjunga from its monasteries and skywalk.",
+    "highlights": [
+      "Pemayangtse Monastery",
+      "Rabdentse Ruins",
+      "Skywalk",
+      "Kanchenjunga View"
+    ],
+    "localFood": [
+      "Gundruk",
+      "Chhang"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80"
+    ],
+    "tips": [
+      "Pemayangtse Monastery is Sikkim's oldest",
+      "Sunrise view of Kanchenjunga is life-changing"
+    ],
+    "tags": [
+      "Mountains",
+      "Monasteries",
+      "Nature"
+    ],
+    "lat": 27.2986,
+    "lng": 88.2283
+  },
+  {
+    "id": "ziro",
+    "name": "Ziro Valley",
+    "state": "Arunachal Pradesh",
+    "tagline": "Land of Apatani Tribe",
+    "category": "Tribal",
+    "rating": 4.8,
+    "reviews": 1400,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Sep–Oct (Ziro Fest)",
+    "img": "https://images.unsplash.com/photo-1601897535779-5c72f61af9b0?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1601897535779-5c72f61af9b0?w=800&q=80",
+    "desc": "Ziro Valley is a UNESCO tentative site of lush rice fields, Apatani tribal villages, and a legendary music festival.",
+    "highlights": [
+      "Apatani Village",
+      "Ziro Music Festival (Sep)",
+      "Talley Valley Wildlife Sanctuary",
+      "Pine Grove"
+    ],
+    "localFood": [
+      "Apong Rice Beer",
+      "Smoked Pork"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1601897535779-5c72f61af9b0?w=800&q=80"
+    ],
+    "tips": [
+      "Ziro Music Festival in September is unmissable",
+      "Inner Line Permit required"
+    ],
+    "tags": [
+      "Tribal",
+      "Nature",
+      "Culture"
+    ],
+    "lat": 27.5416,
+    "lng": 93.8312
+  },
+  {
+    "id": "tawang",
+    "name": "Tawang",
+    "state": "Arunachal Pradesh",
+    "tagline": "Land of Dawn-Lit Mountains",
+    "category": "Spiritual",
+    "rating": 4.9,
+    "reviews": 2200,
+    "budget": "high",
+    "duration": "4-5 days",
+    "bestTime": "Mar–Oct",
+    "img": "https://images.unsplash.com/photo-1601897535779-5c72f61af9b0?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1601897535779-5c72f61af9b0?w=800&q=80",
+    "desc": "Tawang houses Asia's largest monastery and dramatic mountain landscapes on the border with Bhutan and China.",
+    "highlights": [
+      "Tawang Monastery",
+      "Sela Pass",
+      "Madhuri Lake",
+      "Nuranang Falls"
+    ],
+    "localFood": [
+      "Thukpa",
+      "Apong"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1601897535779-5c72f61af9b0?w=800&q=80"
+    ],
+    "tips": [
+      "Inner Line Permit mandatory from Guwahati or Tezpur",
+      "Visit during Torgya Festival in January"
+    ],
+    "tags": [
+      "Monasteries",
+      "Mountains",
+      "Spiritual"
+    ],
+    "lat": 27.5861,
+    "lng": 91.8688
+  },
+  {
+    "id": "imphal",
+    "name": "Imphal",
+    "state": "Manipur",
+    "tagline": "Jewel of India",
+    "category": "Tribal",
+    "rating": 4.6,
+    "reviews": 1600,
+    "budget": "budget",
+    "duration": "3-4 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1583416750470-965b2707b355?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1583416750470-965b2707b355?w=800&q=80",
+    "desc": "Imphal is Manipur's capital surrounded by Loktak Lake's floating islands and the ancient Kangla Fort.",
+    "highlights": [
+      "Kangla Fort",
+      "Ima Keithel Women's Market",
+      "Loktak Lake",
+      "Keibul Lamjao National Park"
+    ],
+    "localFood": [
+      "Eromba",
+      "Singju"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1583416750470-965b2707b355?w=800&q=80"
+    ],
+    "tips": [
+      "Ima Keithel is the only all-women market in Asia",
+      "Inner Line Permit required"
+    ],
+    "tags": [
+      "Tribal",
+      "Culture",
+      "Nature"
+    ],
+    "lat": 24.817,
+    "lng": 93.9368
+  },
+  {
+    "id": "kohima",
+    "name": "Kohima",
+    "state": "Nagaland",
+    "tagline": "Land of the Hornbill",
+    "category": "Tribal",
+    "rating": 4.7,
+    "reviews": 1800,
+    "budget": "moderate",
+    "duration": "3-4 days",
+    "bestTime": "Nov–Mar",
+    "img": "https://images.unsplash.com/photo-1617886903355-9354bb57751f?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1617886903355-9354bb57751f?w=800&q=80",
+    "desc": "Kohima is the dramatic hilltop capital of Nagaland, famous for the Hornbill Festival and WWII war cemetery.",
+    "highlights": [
+      "Hornbill Festival (Dec 1-10)",
+      "Kohima War Cemetery",
+      "Naga Heritage Village",
+      "Dzukou Valley"
+    ],
+    "localFood": [
+      "Smoked Pork",
+      "Axone"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1617886903355-9354bb57751f?w=800&q=80"
+    ],
+    "tips": [
+      "Plan around Hornbill Festival for a spectacular experience",
+      "WWII cemetery is deeply moving"
+    ],
+    "tags": [
+      "Tribal",
+      "Festivals",
+      "History"
+    ],
+    "lat": 25.6747,
+    "lng": 94.1086
+  },
+  {
+    "id": "aizawl",
+    "name": "Aizawl",
+    "state": "Mizoram",
+    "tagline": "Blue Mountain Capital",
+    "category": "Tribal",
+    "rating": 4.5,
+    "reviews": 1200,
+    "budget": "budget",
+    "duration": "3-4 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1601897535779-5c72f61af9b0?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1601897535779-5c72f61af9b0?w=800&q=80",
+    "desc": "Aizawl is a vertical city of stacked houses on steep ridges, surrounded by bamboo forests and Mizo culture.",
+    "highlights": [
+      "Durtlang Hills",
+      "Solomon's Temple",
+      "Mizoram State Museum",
+      "Reiek Tlang"
+    ],
+    "localFood": [
+      "Bai",
+      "Chhum Han"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1601897535779-5c72f61af9b0?w=800&q=80"
+    ],
+    "tips": [
+      "Inner Line Permit required",
+      "Visit during Chapchar Kut festival in March"
+    ],
+    "tags": [
+      "Tribal",
+      "Hills",
+      "Culture"
+    ],
+    "lat": 23.7271,
+    "lng": 92.7176
+  },
+  {
+    "id": "agartala",
+    "name": "Agartala",
+    "state": "Tripura",
+    "tagline": "Land of Fourteen Gods",
+    "category": "Heritage",
+    "rating": 4.4,
+    "reviews": 1400,
+    "budget": "budget",
+    "duration": "2-3 days",
+    "bestTime": "Oct–Mar",
+    "img": "https://images.unsplash.com/photo-1601897535779-5c72f61af9b0?w=800&q=80",
+    "heroImg": "https://images.unsplash.com/photo-1601897535779-5c72f61af9b0?w=800&q=80",
+    "desc": "Agartala is Tripura's capital with the Ujjayanta Palace, Neermahal Water Palace, and Unakoti rock carvings.",
+    "highlights": [
+      "Ujjayanta Palace",
+      "Neermahal Water Palace",
+      "Unakoti Rock Carvings",
+      "Sepahijala Sanctuary"
+    ],
+    "localFood": [
+      "Mui Borok",
+      "Wahan Mosdeng"
+    ],
+    "attractions": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1601897535779-5c72f61af9b0?w=800&q=80"
+    ],
+    "tips": [
+      "Neermahal is best visited at sunset by boat",
+      "Unakoti rock carvings are a hidden gem"
+    ],
+    "tags": [
+      "Heritage",
+      "Palaces",
+      "Culture"
+    ],
+    "lat": 23.8315,
+    "lng": 91.2868
+  }
+]

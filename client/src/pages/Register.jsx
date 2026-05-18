@@ -154,6 +154,7 @@ const Register = () => {
             <div style={{ display: 'flex', gap: '0.75rem' }}>
               <RoleChip value="tourist" label="Tourist" icon={Backpack} selected={role === 'tourist'} onClick={() => setRole('tourist')} />
               <RoleChip value="vendor"  label="Vendor"  icon={Store}    selected={role === 'vendor'}  onClick={() => setRole('vendor')} />
+              <RoleChip value="admin"   label="Admin"   icon={User}     selected={role === 'admin'}   onClick={() => setRole('admin')} />
             </div>
           </div>
 

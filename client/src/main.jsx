@@ -6,6 +6,7 @@ import { AuthProvider } from './context/AuthContext';
 import { ToastProvider } from './context/ToastContext';
 import App from './App.jsx';
 import './styles/index.css';
+import './i18n';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
